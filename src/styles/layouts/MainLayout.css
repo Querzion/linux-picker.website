@@ -1,0 +1,29 @@
+.app-layout {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100vh;
+
+    background: var(--bg-main);
+    color: var(--text-primary);
+}
+
+/* Main content takes remaining space */
+.app-main {
+    flex: 1;
+
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+    padding: 24px;
+}
+
+/* Optional: ensure header/footer behave consistently */
+.app-layout header {
+    flex-shrink: 0;
+}
+
+.app-layout footer {
+    flex-shrink: 0;
+}

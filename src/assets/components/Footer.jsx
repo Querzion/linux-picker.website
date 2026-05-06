@@ -1,29 +1,31 @@
 import React from "react";
+import Copyright from "./Copyright";
+import DarkMode from "./DarkMode";
+import "../../styles/components/Footer.css";
 
 export default function Footer() {
     return (
-        <footer className="hidden md:block bg-(--surface) border-t border-(--border) py-8">
-            <div className="max-w-7xl mx-auto px-6 text-center">
+        <footer className="footer">
+            <DarkMode />
+
+            <div className="footer-container">
 
                 {/* Main Footer Content */}
-                <div className="mb-4">
-                    <p className="text-xl font-serif tracking-wide text-text-strong">
+                <div className="footer-main">
+                    <p className="footer-title">
                         The Linux Picker
                     </p>
 
-                    <p className="text-sm italic text-(--text-muted) mt-1">
+                    <p className="footer-subtitle">
                         Sapientia et Ingenium
                     </p>
                 </div>
 
                 {/* Secondary row */}
-                <div className="text-sm text-(--text-subtle)">
-                    © {new Date().getFullYear()} <a href="https://lerrium.solutions" target="_blank" rel="noreferrer">Lerrium Solutions.</a>
-                    All rights reserved.
-                </div>
+                <Copyright />
 
                 {/* Tertiary row */}
-                <div className="text-xs text-(--text-faint) mt-3">
+                <div className="footer-meta">
                     Crafted with intellect in the Kingdom of Sweden
                 </div>
 

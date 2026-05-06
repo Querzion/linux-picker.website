@@ -1,0 +1,39 @@
+/* === Input === */
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.input-label {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.input {
+    background: var(--input-bg);
+    border: 1px solid var(--input-border);
+    color: var(--input-text);
+    padding: 10px 12px;
+    border-radius: 6px;
+    outline: none;
+    transition: border 0.2s ease;
+}
+
+.input:focus {
+    border-color: var(--input-focus-border);
+}
+
+.input::placeholder {
+    color: var(--input-placeholder);
+}
+
+/* === Error State === */
+.input-error {
+    border-color: var(--error);
+}
+
+.input-error-text {
+    font-size: 0.8rem;
+    color: var(--error);
+}

@@ -1,0 +1,62 @@
+/* === Base Button === */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+
+    padding: 10px 16px;
+    border-radius: 6px;
+    border: none;
+
+    font-size: 0.95rem;
+    font-weight: 500;
+
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn:active {
+    transform: scale(0.96);
+}
+
+/* === Primary === */
+.btn-primary {
+    background: var(--btn-primary-bg);
+    color: var(--btn-primary-text);
+}
+
+.btn-primary:hover {
+    background: var(--btn-primary-hover);
+}
+
+.btn-primary:active {
+    background: var(--btn-primary-active);
+}
+
+/* === Secondary === */
+.btn-secondary {
+    background: var(--btn-secondary-bg);
+    color: var(--btn-secondary-text);
+    border: 1px solid var(--border-default);
+}
+
+.btn-secondary:hover {
+    background: var(--btn-secondary-hover);
+}
+
+/* === Ghost === */
+.btn-ghost {
+    background: var(--btn-ghost-bg);
+    color: var(--btn-ghost-text);
+}
+
+.btn-ghost:hover {
+    background: var(--btn-ghost-hover);
+}
+
+/* === Disabled === */
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}

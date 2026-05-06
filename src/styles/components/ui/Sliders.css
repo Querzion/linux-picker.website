@@ -1,0 +1,28 @@
+/* === Slider Layout === */
+.slider-container {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.slider-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+/* === Slider Base === */
+.slider {
+    width: 100%;
+    height: 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    background: linear-gradient(
+        to right,
+        var(--slider-track-fill) 0%,
+        var(--slider-track-fill) var(--value, 50%),
+        var(--slider-track-bg) var(--value, 50%),
+        var(--slider-track-bg) 100%
+    );
+}

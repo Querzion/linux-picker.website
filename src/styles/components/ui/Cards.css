@@ -1,0 +1,39 @@
+/* === Card Base === */
+.card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 10px;
+
+    box-shadow: var(--card-shadow);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.card:active {
+    transform: scale(0.995);
+}
+
+/* === Sections === */
+.card-header {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border-default);
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.card-body {
+    padding: 16px;
+    color: var(--text-secondary);
+}
+
+.card-footer {
+    padding: 12px 16px;
+    border-top: 1px solid var(--border-default);
+}
+
+/* === Hover Elevation (optional) */
+.card:hover {
+    background: var(--bg-elevated);
+    transition: background 0.2s ease;
+}
