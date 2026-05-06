@@ -1,6 +1,5 @@
 import React from "react";
 import Button from "./ui/Button";
-import "../../styles/components/ActionNavBar.css"
 
 const ActionNavBar = () => {
     return (
