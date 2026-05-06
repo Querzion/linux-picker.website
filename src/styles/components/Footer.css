@@ -31,22 +31,23 @@
 }
 
 .footer-title {
-    font-size: 1.25rem;
-    font-family: serif;
+    font-size: var(--font-size-xl);
+    font-family: var(--font-sans);
+    font-weight: var(--font-weight-700);
     letter-spacing: 0.05em;
     color: var(--text-primary);
 }
 
 .footer-subtitle {
-    font-size: 0.875rem;
+    font-size: var(--font-size-sm);
     font-style: italic;
     color: var(--text-muted);
-    margin-top: 4px;
+    margin-top: var(--space-1);
 }
 
 /* === Copyright === */
 .footer-copyright {
-    font-size: 0.875rem;
+    font-size: var(--font-size-sm);
     color: var(--text-secondary);
 
     display: flex;
@@ -68,7 +69,7 @@
 
 /* === Meta line === */
 .footer-meta {
-    font-size: 0.75rem;
+    font-size: var(--font-size-xs);
     color: var(--text-muted);
     margin-top: 8px;
 }

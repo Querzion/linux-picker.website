@@ -15,8 +15,7 @@
 
 /* Ensure title doesn't break layout */
 .brand-group h1 {
-    font-size: var(--font-size-xl);
-    margin: 0;
+    margin: .5rem;
     letter-spacing: 0.05em;
 }
 

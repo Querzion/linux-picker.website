@@ -63,7 +63,7 @@
 }
 
 body {
-    font-family: var(--font-sans);
+    font-family: var(--font-mono);
 }
 
 code, pre, kbd {

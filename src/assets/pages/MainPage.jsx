@@ -1,8 +1,11 @@
 import React from 'react'
+import DistroPicker from '../components/DistroPicker'
 
 const MainPage = () => {
   return (
-    <div>MainPage</div>
+    <div>
+      <DistroPicker />
+    </div>
   )
 }
 
