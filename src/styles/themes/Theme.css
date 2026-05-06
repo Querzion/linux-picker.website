@@ -1,0 +1,98 @@
+
+/* =========================================================
+    CORE THEME ENTRY POINT
+    This file ONLY imports system layers
+========================================================= */
+
+/* 1. Design Tokens (your Penguin system) */
+@import "./Penguin.css";
+/* @import "./distros/AlmaLinux.css";
+@import "./distros/AlpineLinux.css";
+@import "./distros/Antix.css";
+@import "./distros/ArchLinux.css";
+@import "./distros/ArcoLinux.css";
+@import "./distros/Artix.css";
+@import "./distros/Bazzite.css";
+@import "./distros/Bluestar.css";
+@import "./distros/Bodhi.css";
+@import "./distros/BunsenLabsLinux.css";
+@import "./distros/CachyOS.css";
+@import "./distros/CentOS.css";
+@import "./distros/ClearLinux.css";
+@import "./distros/TinyCore.css";
+@import "./distros/KaOS.css";
+@import "./distros/Q4OS.css";
+@import "./distros/Feren.css";
+@import "./distros/NixOS.css";
+@import "./distros/Debian.css";
+@import "./distros/DeepinLinux.css";
+@import "./distros/UbuntuDeepin.css";
+@import "./distros/ElementaryOS.css";
+@import "./distros/EndevourOS.css";
+@import "./distros/EndlessOS.css";
+@import "./distros/Fedora.css";
+@import "./distros/Feren.css";
+@import "./distros/GarudaLinux.css";
+@import "./distros/Gentoo.css";
+@import "./distros/GnomeOS.css";
+@import "./distros/KaliLinux.css";
+@import "./distros/KDENeon.css";
+@import "./distros/Knoppix.css";
+@import "./distros/Kubuntu.css";
+@import "./distros/LinuxLite.css";
+@import "./distros/LinuxMint.css";
+@import "./distros/Lubuntu.css";
+@import "./distros/PcLinuxOS.css";
+@import "./distros/RosaLinux.css";
+@import "./distros/VoidLinux.css";
+@import "./distros/ClearLinux.css";
+@import "./distros/MaboxLinux.css";
+@import "./distros/PuppyLinux.css";
+@import "./distros/SeptorLinux.css";
+@import "./distros/NetrunnerLinux.css";
+@import "./distros/SlackwareLinux.css";
+@import "./distros/Nobara.css";
+@import "./distros/Xubuntu.css";
+@import "./distros/Manjaro.css";
+@import "./distros/MXLinux.css";
+@import "./distros/OpenMandriva.css";
+@import "./distros/LinuxMint.css";
+@import "./distros/UbuntuMate.css";
+@import "./distros/Omarchy.css";
+@import "./distros/PikaOS.css";
+@import "./distros/POP!_OS.css";
+@import "./distros/RaspiOS.css";
+@import "./distros/SteamOS.css";
+@import "./distros/VanillaOS.css";
+@import "./distros/EndlessOS.css";
+@import "./distros/Suse_OpenSuse.css";
+@import "./distros/RebornOS.css";
+@import "./distros/ElementaryOS.css";
+@import "./distros/EndevourOS.css"; */
+
+/* 2. Base Layer */
+@import "../base/Reset.css";
+@import "../base/Fonts.css";
+@import "../base/Spacing.css";
+@import "../base/Typography.css";
+
+/* 3. Layout System */
+@import "../layouts/Container.css";
+
+/* 4. Components - UI primitives */
+@import "../components/ui/Buttons.css";
+@import "../components/ui/Inputs.css";
+@import "../components/ui/Sliders.css";
+@import "../components/ui/Cards.css";
+@import "../components/ui/Forms.css";
+
+/* 5. Components - App-specific */
+@import "../components/Header.css";
+@import "../components/Logo.css";
+@import "../components/Title.css";
+@import "../components/ActionNavBar.css";
+@import "../components/Footer.css";
+
+
+/* 6. Utilities */
+@import "../utilities/Display.css";

@@ -1,0 +1,36 @@
+.action-nav {
+    display: flex;
+    align-items: center;
+    background: var(--bg-surface);
+    padding: var(--space-2);
+    border: 1px solid var(--border-default);
+    border-radius: var(--radius-lg);
+
+    /* spacing between buttons */
+    gap: var(--space-3);
+
+    /* ensures it stays on the right cleanly in header layouts */
+    justify-content: flex-end;
+}
+
+/* Optional: if buttons should feel more "toolbar-like" */
+.action-nav button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: var(--space-2) var(--space-3);
+    border-radius: var(--radius-md);
+
+    transition: background-color var(--transition-normal);
+}
+
+/* subtle hover consistency */
+.action-nav button:hover {
+    background: var(--hover-overlay);
+}
+
+/* active feedback */
+.action-nav button:active {
+    transform: scale(0.96);
+}

@@ -1,7 +1,6 @@
 import React from "react";
 import Copyright from "./Copyright";
 import DarkMode from "./DarkMode";
-import "../../styles/components/Footer.css";
 
 export default function Footer() {
     return (

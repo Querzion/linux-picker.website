@@ -47,15 +47,15 @@
     --font-weight-800: 800;
     --font-weight-900: 900;
 
-    --font-size-xs: 0.75rem;
-    --font-size-sm: 0.875rem;
-    --font-size-md: 1rem;
-    --font-size-lg: 1.125rem;
-    --font-size-xl: 1.25rem;
-    --font-size-2xl: 1.5rem;
-    --font-size-3xl: 1.875rem;
-    --font-size-4xl: 2.25rem;
-    --font-size-5xl: 3rem;
+    --font-size-xs: 0.75em;
+    --font-size-sm: 0.875em;
+    --font-size-md: 1em;
+    --font-size-lg: 1.125em;
+    --font-size-xl: 1.25em;
+    --font-size-2xl: 1.5em;
+    --font-size-3xl: 1.875em;
+    --font-size-4xl: 2.25em;
+    --font-size-5xl: 10em;
 
     --line-height-tight: 1.2;
     --line-height-normal: 1.5;
@@ -119,6 +119,32 @@
     --btn-ghost-bg: transparent;
     --btn-ghost-text: #f8d617;
     --btn-ghost-hover: rgba(248, 214, 23, 0.1);
+
+    --btn-transition: var(--transition-normal);
+
+    --btn-hover-overlay: rgba(255, 255, 255, 0.06);
+    --btn-active-overlay: rgba(255, 255, 255, 0.1);
+
+    /* =========================================================
+        SEMANTIC BUTTON COLORS
+    ========================================================= */
+
+    --btn-success-bg: #2e7d32;
+    --btn-success-text: #ffffff;
+    --btn-success-hover: #43a047;
+
+    --btn-warning-bg: #ef6c00;
+    --btn-warning-text: #ffffff;
+    --btn-warning-hover: #fb8c00;
+
+    --btn-danger-bg: #c62828;
+    --btn-danger-text: #ffffff;
+    --btn-danger-hover: #e53935;
+
+    --btn-outline-text: var(--color-accent);
+    --btn-outline-border: var(--color-accent);
+    --btn-outline-hover-bg: rgba(248, 214, 23, 0.08);
+    --btn-outline-hover-text: var(--color-accent);
 
     /* =========================================================
         INPUTS

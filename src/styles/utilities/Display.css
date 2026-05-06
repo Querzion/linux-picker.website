@@ -1,0 +1,89 @@
+
+/* =========================
+    DISPLAY UTILITIES
+========================= */
+
+.u-block {
+    display: block;
+}
+
+.u-inline {
+    display: inline;
+}
+
+.u-inline-block {
+    display: inline-block;
+}
+
+.u-hidden {
+    display: none;
+}
+
+/* =========================
+    FLEX UTILITIES
+========================= */
+
+.u-flex {
+    display: flex;
+}
+
+.u-flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.u-inline-flex {
+    display: inline-flex;
+}
+
+/* Direction */
+.u-flex-row {
+    flex-direction: row;
+}
+
+.u-flex-column {
+    flex-direction: column;
+}
+
+/* Alignment */
+.u-items-center {
+    align-items: center;
+}
+
+.u-items-start {
+    align-items: flex-start;
+}
+
+.u-items-end {
+    align-items: flex-end;
+}
+
+/* Justify */
+.u-justify-center {
+    justify-content: center;
+}
+
+.u-justify-between {
+    justify-content: space-between;
+}
+
+.u-justify-end {
+    justify-content: flex-end;
+}
+
+/* Gap (only if you REALLY need utility gaps) */
+.u-gap-1 { gap: var(--space-1); }
+.u-gap-2 { gap: var(--space-2); }
+.u-gap-3 { gap: var(--space-3); }
+.u-gap-4 { gap: var(--space-4); }
+
+/* =========================
+    CENTERING SHORTCUT
+========================= */
+
+.u-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,28 @@
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: var(--space-4) 0;
+}
+
+/* Logo + Title group */
+.brand-group {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+}
+
+/* Ensure title doesn't break layout */
+.brand-group h1 {
+    font-size: var(--font-size-xl);
+    margin: 0;
+    letter-spacing: 0.05em;
+}
+
+/* Action nav alignment */
+.action-nav {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+}

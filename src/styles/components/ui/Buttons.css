@@ -1,26 +1,112 @@
-/* === Base Button === */
+/* =========================================================
+    BASE BUTTON
+========================================================= */
+
 .btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 6px;
 
-    padding: 10px 16px;
-    border-radius: 6px;
-    border: none;
+    gap: var(--space-2);
+    padding: var(--space-2) var(--space-4);
 
-    font-size: 0.95rem;
-    font-weight: 500;
+    border-radius: var(--radius-md);
+    border: 1px solid transparent;
+
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-600);
 
     cursor: pointer;
-    transition: all 0.2s ease;
+    user-select: none;
+
+    transition: all var(--transition-normal);
+
+    color: var(--text-primary);
 }
 
+/* focus */
+.btn:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+}
+
+/* active feel */
 .btn:active {
-    transform: scale(0.96);
+    transform: scale(0.97);
 }
 
-/* === Primary === */
+/* disabled */
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+/* =========================================================
+    SIZE SYSTEM
+========================================================= */
+
+.btn-sm {
+    padding: var(--space-1) var(--space-3);
+    font-size: var(--font-size-xs);
+}
+
+.btn-md {
+    padding: var(--space-2) var(--space-4);
+    font-size: var(--font-size-sm);
+}
+
+.btn-lg {
+    padding: var(--space-3) var(--space-5);
+    font-size: var(--font-size-md);
+}
+
+/* =========================================================
+    ICON SYSTEM
+========================================================= */
+
+.btn-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* left icon */
+.btn-icon-start {
+    margin-right: var(--space-2);
+}
+
+/* right icon */
+.btn-icon-end {
+    margin-left: var(--space-2);
+}
+
+/* MUI / SVG icon normalization */
+.btn-icon svg {
+    width: 16px;
+    height: 16px;
+    color: currentColor;
+}
+
+/* =========================================================
+    LOADING STATE
+========================================================= */
+
+.btn-loading {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* prevent text jump when loading replaces content */
+.btn:disabled .btn-loading {
+    opacity: 1;
+}
+
+/* =========================================================
+    PRIMARY
+========================================================= */
+
 .btn-primary {
     background: var(--btn-primary-bg);
     color: var(--btn-primary-text);
@@ -30,11 +116,10 @@
     background: var(--btn-primary-hover);
 }
 
-.btn-primary:active {
-    background: var(--btn-primary-active);
-}
+/* =========================================================
+    SECONDARY
+========================================================= */
 
-/* === Secondary === */
 .btn-secondary {
     background: var(--btn-secondary-bg);
     color: var(--btn-secondary-text);
@@ -45,18 +130,70 @@
     background: var(--btn-secondary-hover);
 }
 
-/* === Ghost === */
+/* =========================================================
+    GHOST
+========================================================= */
+
 .btn-ghost {
-    background: var(--btn-ghost-bg);
-    color: var(--btn-ghost-text);
+    background: transparent;
+    color: var(--color-accent);
 }
 
 .btn-ghost:hover {
     background: var(--btn-ghost-hover);
+    color: var(--color-secondary);
 }
 
-/* === Disabled === */
-.btn:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
+/* =========================================================
+    OUTLINE
+========================================================= */
+
+.btn-outline {
+    background: transparent;
+    color: var(--btn-outline-text);
+    border: 1px solid var(--btn-outline-border);
+}
+
+.btn-outline:hover {
+    background: var(--btn-outline-hover-bg);
+    color: var(--btn-outline-hover-text);
+}
+
+/* =========================================================
+    SUCCESS
+========================================================= */
+
+.btn-success {
+    background: var(--btn-success-bg);
+    color: var(--btn-success-text);
+}
+
+.btn-success:hover {
+    background: var(--btn-success-hover);
+}
+
+/* =========================================================
+    WARNING
+========================================================= */
+
+.btn-warning {
+    background: var(--btn-warning-bg);
+    color: var(--btn-warning-text);
+}
+
+.btn-warning:hover {
+    background: var(--btn-warning-hover);
+}
+
+/* =========================================================
+    DANGER
+========================================================= */
+
+.btn-danger {
+    background: var(--btn-danger-bg);
+    color: var(--btn-danger-text);
+}
+
+.btn-danger:hover {
+    background: var(--btn-danger-hover);
 }
