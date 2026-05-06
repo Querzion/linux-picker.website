@@ -1,0 +1,175 @@
+:root {
+    /* =========================================================
+        CORE BRAND
+    ========================================================= */
+    --color-primary: #1f1f1f;
+    --color-secondary: #f5f5f5;
+    --color-accent: #f8d617;
+    --color-accent-alt: #e95420;
+
+    /* =========================================================
+        BACKGROUNDS (SURFACE LAYERS)
+    ========================================================= */
+    --bg-main: #121212;
+    --bg-surface: #1e1e1e;
+    --bg-elevated: #2a2a2a;
+    --bg-overlay: rgba(0, 0, 0, 0.7);
+
+    /* =========================================================
+        TEXT HIERARCHY
+    ========================================================= */
+    --text-primary: #ffffff;
+    --text-secondary: #b3b3b3;
+    --text-muted: #7a7a7a;
+    --text-disabled: #555555;
+    --text-on-accent: #000000;
+
+    /* =========================================================
+        BORDERS
+    ========================================================= */
+    --border-default: #2c2c2c;
+    --border-light: #3a3a3a;
+    --border-focus: var(--color-accent);
+
+    /* =========================================================
+        TYPOGRAPHY SCALE
+    ========================================================= */
+    --font-mono: "JetBrains Mono", monospace;
+    --font-sans: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial;
+
+    --font-weight-100: 100;
+    --font-weight-200: 200;
+    --font-weight-300: 300;
+    --font-weight-400: 400;
+    --font-weight-500: 500;
+    --font-weight-600: 600;
+    --font-weight-700: 700;
+    --font-weight-800: 800;
+    --font-weight-900: 900;
+
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.875rem;
+    --font-size-md: 1rem;
+    --font-size-lg: 1.125rem;
+    --font-size-xl: 1.25rem;
+    --font-size-2xl: 1.5rem;
+    --font-size-3xl: 1.875rem;
+    --font-size-4xl: 2.25rem;
+    --font-size-5xl: 3rem;
+
+    --line-height-tight: 1.2;
+    --line-height-normal: 1.5;
+    --line-height-relaxed: 1.75;
+
+    /* =========================================================
+        SPACING SCALE (CRITICAL FOR UI CONSISTENCY)
+    ========================================================= */
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-5: 20px;
+    --space-6: 24px;
+    --space-8: 32px;
+    --space-10: 40px;
+    --space-12: 48px;
+    --space-16: 64px;
+
+    /* =========================================================
+        RADIUS SYSTEM
+    ========================================================= */
+    --radius-sm: 4px;
+    --radius-md: 6px;
+    --radius-lg: 10px;
+    --radius-xl: 14px;
+    --radius-full: 999px;
+
+    /* =========================================================
+        ELEVATION / SHADOWS
+    ========================================================= */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.6);
+    --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.7);
+
+    /* =========================================================
+        ANIMATION SYSTEM
+    ========================================================= */
+    --transition-fast: 0.1s ease;
+    --transition-normal: 0.2s ease;
+    --transition-slow: 0.4s ease;
+
+    /* =========================================================
+        INTERACTION STATES
+    ========================================================= */
+    --hover-overlay: rgba(255, 255, 255, 0.05);
+    --active-overlay: rgba(255, 255, 255, 0.08);
+
+    /* =========================================================
+        BUTTONS
+    ========================================================= */
+    --btn-primary-bg: var(--color-accent);
+    --btn-primary-text: #000000;
+    --btn-primary-hover: #ffe347;
+    --btn-primary-active: #d4b90f;
+
+    --btn-secondary-bg: #2a2a2a;
+    --btn-secondary-text: #ffffff;
+    --btn-secondary-hover: #3a3a3a;
+
+    --btn-ghost-bg: transparent;
+    --btn-ghost-text: #f8d617;
+    --btn-ghost-hover: rgba(248, 214, 23, 0.1);
+
+    /* =========================================================
+        INPUTS
+    ========================================================= */
+    --input-bg: #1a1a1a;
+    --input-border: #333333;
+    --input-focus-border: var(--color-accent);
+    --input-text: #ffffff;
+    --input-placeholder: #777777;
+
+    /* =========================================================
+        CARDS
+    ========================================================= */
+    --card-bg: var(--bg-surface);
+    --card-border: var(--border-default);
+    --card-shadow: var(--shadow-md);
+
+    /* =========================================================
+        SLIDER
+    ========================================================= */
+    --slider-track-bg: #2a2a2a;
+    --slider-track-fill: var(--color-accent);
+    --slider-thumb-bg: var(--color-accent);
+    --slider-thumb-border: #1f1f1f;
+    --slider-thumb-hover: #ffe347;
+    --slider-thumb-active: #d4b90f;
+
+    /* =========================================================
+        STATUS COLORS
+    ========================================================= */
+    --success: #4caf50;
+    --warning: #ff9800;
+    --error: #f44336;
+    --info: #2196f3;
+
+    /* =========================================================
+        LINKS
+    ========================================================= */
+    --link-color: #4da3ff;
+    --link-hover: #82c4ff;
+
+    /* =========================================================
+        SCROLLBAR
+    ========================================================= */
+    --scrollbar-bg: #1e1e1e;
+    --scrollbar-thumb: #444444;
+    --scrollbar-thumb-hover: #666666;
+
+    /* =========================================================
+        LAYOUT
+    ========================================================= */
+    --container-width: 1200px;
+    --header-height: 64px;
+}
