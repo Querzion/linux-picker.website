@@ -1,26 +1,18 @@
-import { useNavigate, useLocation } from 'react-router-dom'
-import Header from '../components/Header.jsx'
-import Footer from '../components/Footer.jsx'
+import { Outlet } from "react-router-dom";
+import Header from "../components/Header.jsx";
+import Footer from "../components/Footer.jsx";
+import "../../styles/layouts/MainLayout.css"
 
-export default function MainLayout({ children, selectedDistro }) {
-    const navigate = useNavigate()
-    const location = useLocation()
-    const isAbout = location.pathname === '/about'
-
-    const handleNavToggle = () => {
-        if (isAbout) navigate('/')
-        else navigate('/about')
-    }
-
+export default function MainLayout() {
     return (
-        <div className={styles.layout}>
+        <div className="app-layout">
             <Header />
-            
-            <main className={styles.main}>
-                {children}
+
+            <main className="app-main">
+                <Outlet />
             </main>
-            
+
             <Footer />
         </div>
-    )
+    );
 }
