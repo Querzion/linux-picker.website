@@ -1,0 +1,28 @@
+[data-theme="VoidLinux"] {
+
+    --color-accent:         #478061;
+    --color-accent-alt:     #2d6040;
+
+    --bg-main:              #060c08;
+    --bg-surface:           #0d1410;
+    --bg-elevated:          #152018;
+
+    --text-primary:         #c0d8c8;
+    --text-secondary:       #487860;
+    --text-on-accent:       #060c08;
+
+    --btn-primary-bg:           #0d1410;
+    --btn-primary-text:          #478061;
+    --btn-primary-hover-bg:      #478061;
+    --btn-primary-hover-text:    #060c08;
+    --btn-primary-focus-border:  #478061;
+    --btn-primary-active-bg:     #2d6040;
+    --btn-primary-active-text:   #060c08;
+
+    --border-default:       #1a3020;
+    --input-focus-border:   #478061;
+    --slider-track-fill:    #478061;
+    --slider-thumb-bg:      #478061;
+    --link-color:           #5aaa7a;
+    
+}

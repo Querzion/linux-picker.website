@@ -1,0 +1,28 @@
+[data-theme="Kubuntu"] {
+
+    --color-accent:         #0073bb;
+    --color-accent-alt:     #004f8c;
+
+    --bg-main:              #060d16;
+    --bg-surface:           #0c1422;
+    --bg-elevated:          #14203a;
+
+    --text-primary:         #c8dcf0;
+    --text-secondary:       #4070a0;
+    --text-on-accent:       #ffffff;
+
+    --btn-primary-bg:           #0c1422;
+    --btn-primary-text:          #0073bb;
+    --btn-primary-hover-bg:      #0073bb;
+    --btn-primary-hover-text:    #ffffff;
+    --btn-primary-focus-border:  #0073bb;
+    --btn-primary-active-bg:     #004f8c;
+    --btn-primary-active-text:   #ffffff;
+
+    --border-default:       #1a3050;
+    --input-focus-border:   #0073bb;
+    --slider-track-fill:    #0073bb;
+    --slider-thumb-bg:      #0073bb;
+    --link-color:           #2090d0;
+    
+}

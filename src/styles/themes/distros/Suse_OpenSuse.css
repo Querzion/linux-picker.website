@@ -1,0 +1,28 @@
+[data-theme="Suse_OpenSuse"] {
+
+    --color-accent:         #73ba25;
+    --color-accent-alt:     #4e8a14;
+
+    --bg-main:              #080d05;
+    --bg-surface:           #0f160a;
+    --bg-elevated:          #172010;
+
+    --text-primary:         #d8f0c0;
+    --text-secondary:       #6aaa30;
+    --text-on-accent:       #080d05;
+
+    --btn-primary-bg:           #0f160a;
+    --btn-primary-text:          #73ba25;
+    --btn-primary-hover-bg:      #73ba25;
+    --btn-primary-hover-text:    #080d05;
+    --btn-primary-focus-border:  #73ba25;
+    --btn-primary-active-bg:     #4e8a14;
+    --btn-primary-active-text:   #080d05;
+
+    --border-default:       #1e3010;
+    --input-focus-border:   #73ba25;
+    --slider-track-fill:    #73ba25;
+    --slider-thumb-bg:      #73ba25;
+    --link-color:           #73ba25;
+    
+}

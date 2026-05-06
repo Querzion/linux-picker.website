@@ -1,0 +1,28 @@
+[data-theme="BunsenLabsLinux"] {
+
+    --color-accent:         #d3d7cf;
+    --color-accent-alt:     #aaaaaa;
+
+    --bg-main:              #0a0a0a;
+    --bg-surface:           #111111;
+    --bg-elevated:          #1c1c1c;
+
+    --text-primary:         #d3d7cf;
+    --text-secondary:       #888a85;
+    --text-on-accent:       #0a0a0a;
+
+    --btn-primary-bg:           #111111;
+    --btn-primary-text:          #d3d7cf;
+    --btn-primary-hover-bg:      #d3d7cf;
+    --btn-primary-hover-text:    #0a0a0a;
+    --btn-primary-focus-border:  #d3d7cf;
+    --btn-primary-active-bg:     #aaaaaa;
+    --btn-primary-active-text:   #0a0a0a;
+
+    --border-default:       #2a2a2a;
+    --input-focus-border:   #d3d7cf;
+    --slider-track-fill:    #d3d7cf;
+    --slider-thumb-bg:      #d3d7cf;
+    --link-color:           #aaaaaa;
+    
+}

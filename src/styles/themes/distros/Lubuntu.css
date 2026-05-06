@@ -1,0 +1,28 @@
+[data-theme="Lubuntu"] {
+
+    --color-accent:         #2c8ed6;
+    --color-accent-alt:     #1a6faa;
+
+    --bg-main:              #070d14;
+    --bg-surface:           #0e1520;
+    --bg-elevated:          #162030;
+
+    --text-primary:         #d0e8ff;
+    --text-secondary:       #4a80b4;
+    --text-on-accent:       #070d14;
+
+    --btn-primary-bg:           #0e1520;
+    --btn-primary-text:          #2c8ed6;
+    --btn-primary-hover-bg:      #2c8ed6;
+    --btn-primary-hover-text:    #070d14;
+    --btn-primary-focus-border:  #2c8ed6;
+    --btn-primary-active-bg:     #1a6faa;
+    --btn-primary-active-text:   #ffffff;
+
+    --border-default:       #1a3050;
+    --input-focus-border:   #2c8ed6;
+    --slider-track-fill:    #2c8ed6;
+    --slider-thumb-bg:      #2c8ed6;
+    --link-color:           #2c8ed6;
+    
+}

@@ -1,0 +1,28 @@
+[data-theme="UbuntuUnity"] {
+
+    --color-accent:         #e95420;
+    --color-accent-alt:     #dd4814;
+
+    --bg-main:              #0e0806;
+    --bg-surface:           #160d08;
+    --bg-elevated:          #22150e;
+
+    --text-primary:         #ffeee8;
+    --text-secondary:       #c06040;
+    --text-on-accent:       #ffffff;
+
+    --btn-primary-bg:           #160d08;
+    --btn-primary-text:          #e95420;
+    --btn-primary-hover-bg:      #e95420;
+    --btn-primary-hover-text:    #ffffff;
+    --btn-primary-focus-border:  #e95420;
+    --btn-primary-active-bg:     #dd4814;
+    --btn-primary-active-text:   #ffffff;
+
+    --border-default:       #3a180c;
+    --input-focus-border:   #e95420;
+    --slider-track-fill:    #e95420;
+    --slider-thumb-bg:      #e95420;
+    --link-color:           #ff7a50;
+    
+}

@@ -1,0 +1,28 @@
+[data-theme="VanillaOS"] {
+
+    --color-accent:         #f5c211;
+    --color-accent-alt:     #c89e00;
+
+    --bg-main:              #0d0c08;
+    --bg-surface:           #15130a;
+    --bg-elevated:          #211e10;
+
+    --text-primary:         #fff8d8;
+    --text-secondary:       #b09840;
+    --text-on-accent:       #0d0c08;
+
+    --btn-primary-bg:           #15130a;
+    --btn-primary-text:          #f5c211;
+    --btn-primary-hover-bg:      #f5c211;
+    --btn-primary-hover-text:    #0d0c08;
+    --btn-primary-focus-border:  #f5c211;
+    --btn-primary-active-bg:     #c89e00;
+    --btn-primary-active-text:   #0d0c08;
+
+    --border-default:       #302810;
+    --input-focus-border:   #f5c211;
+    --slider-track-fill:    #f5c211;
+    --slider-thumb-bg:      #f5c211;
+    --link-color:           #f5c211;
+    
+}

@@ -1,0 +1,28 @@
+[data-theme="RosaLinux"] {
+
+    --color-accent:         #e91e8c;
+    --color-accent-alt:     #b0006c;
+
+    --bg-main:              #0e0610;
+    --bg-surface:           #16091a;
+    --bg-elevated:          #200e26;
+
+    --text-primary:         #ffd0ee;
+    --text-secondary:       #c050a0;
+    --text-on-accent:       #ffffff;
+
+    --btn-primary-bg:           #16091a;
+    --btn-primary-text:          #e91e8c;
+    --btn-primary-hover-bg:      #e91e8c;
+    --btn-primary-hover-text:    #ffffff;
+    --btn-primary-focus-border:  #e91e8c;
+    --btn-primary-active-bg:     #b0006c;
+    --btn-primary-active-text:   #ffffff;
+
+    --border-default:       #3a1040;
+    --input-focus-border:   #e91e8c;
+    --slider-track-fill:    #e91e8c;
+    --slider-thumb-bg:      #e91e8c;
+    --link-color:           #e91e8c;
+    
+}

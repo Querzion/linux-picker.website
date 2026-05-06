@@ -1,0 +1,28 @@
+[data-theme="Solus"] {
+
+    --color-accent:         #5294e2;
+    --color-accent-alt:     #2a6fc4;
+
+    --bg-main:              #09111a;
+    --bg-surface:           #101c28;
+    --bg-elevated:          #18283a;
+
+    --text-primary:         #d0e4ff;
+    --text-secondary:       #4a80c0;
+    --text-on-accent:       #09111a;
+
+    --btn-primary-bg:           #101c28;
+    --btn-primary-text:          #5294e2;
+    --btn-primary-hover-bg:      #5294e2;
+    --btn-primary-hover-text:    #09111a;
+    --btn-primary-focus-border:  #5294e2;
+    --btn-primary-active-bg:     #2a6fc4;
+    --btn-primary-active-text:   #ffffff;
+
+    --border-default:       #1a3050;
+    --input-focus-border:   #5294e2;
+    --slider-track-fill:    #5294e2;
+    --slider-thumb-bg:      #5294e2;
+    --link-color:           #5294e2;
+    
+}

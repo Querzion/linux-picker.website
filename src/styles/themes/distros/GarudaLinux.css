@@ -1,0 +1,28 @@
+[data-theme="GarudaLinux"] {
+
+    --color-accent:         #f5a623;
+    --color-accent-alt:     #e8691a;
+
+    --bg-main:              #0e0a04;
+    --bg-surface:           #17110a;
+    --bg-elevated:          #241a10;
+
+    --text-primary:         #fff0d8;
+    --text-secondary:       #b08040;
+    --text-on-accent:       #0e0a04;
+
+    --btn-primary-bg:           #17110a;
+    --btn-primary-text:          #f5a623;
+    --btn-primary-hover-bg:      #f5a623;
+    --btn-primary-hover-text:    #0e0a04;
+    --btn-primary-focus-border:  #f5a623;
+    --btn-primary-active-bg:     #e8691a;
+    --btn-primary-active-text:   #0e0a04;
+
+    --border-default:       #3a2810;
+    --input-focus-border:   #f5a623;
+    --slider-track-fill:    #f5a623;
+    --slider-thumb-bg:      #e8691a;
+    --link-color:           #f5a623;
+    
+}

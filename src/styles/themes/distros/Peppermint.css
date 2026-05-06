@@ -1,0 +1,28 @@
+[data-theme="Peppermint"] {
+
+    --color-accent:         #e44040;
+    --color-accent-alt:     #b82020;
+
+    --bg-main:              #0e0808;
+    --bg-surface:           #160c0c;
+    --bg-elevated:          #200e0e;
+
+    --text-primary:         #ffd8d8;
+    --text-secondary:       #c05050;
+    --text-on-accent:       #ffffff;
+
+    --btn-primary-bg:           #160c0c;
+    --btn-primary-text:          #e44040;
+    --btn-primary-hover-bg:      #e44040;
+    --btn-primary-hover-text:    #ffffff;
+    --btn-primary-focus-border:  #e44040;
+    --btn-primary-active-bg:     #b82020;
+    --btn-primary-active-text:   #ffffff;
+
+    --border-default:       #3a1010;
+    --input-focus-border:   #e44040;
+    --slider-track-fill:    #e44040;
+    --slider-thumb-bg:      #e44040;
+    --link-color:           #e44040;
+    
+}

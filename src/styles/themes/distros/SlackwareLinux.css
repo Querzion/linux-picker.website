@@ -1,0 +1,28 @@
+[data-theme="SlackwareLinux"] {
+
+    --color-accent:         #4444aa;
+    --color-accent-alt:     #222288;
+
+    --bg-main:              #08080e;
+    --bg-surface:           #0e0e18;
+    --bg-elevated:          #161624;
+
+    --text-primary:         #c8c8f0;
+    --text-secondary:       #6060a0;
+    --text-on-accent:       #ffffff;
+
+    --btn-primary-bg:           #0e0e18;
+    --btn-primary-text:          #6868cc;
+    --btn-primary-hover-bg:      #6868cc;
+    --btn-primary-hover-text:    #ffffff;
+    --btn-primary-focus-border:  #6868cc;
+    --btn-primary-active-bg:     #4444aa;
+    --btn-primary-active-text:   #ffffff;
+
+    --border-default:       #202048;
+    --input-focus-border:   #6868cc;
+    --slider-track-fill:    #6868cc;
+    --slider-thumb-bg:      #6868cc;
+    --link-color:           #8888dd;
+    
+}

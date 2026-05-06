@@ -1,0 +1,28 @@
+[data-theme="Parrot"] {
+
+    --color-accent:         #05b8a2;
+    --color-accent-alt:     #028c7a;
+
+    --bg-main:              #060e0d;
+    --bg-surface:           #0c1614;
+    --bg-elevated:          #14201e;
+
+    --text-primary:         #c8f8f0;
+    --text-secondary:       #309898;
+    --text-on-accent:       #060e0d;
+
+    --btn-primary-bg:           #0c1614;
+    --btn-primary-text:          #05b8a2;
+    --btn-primary-hover-bg:      #05b8a2;
+    --btn-primary-hover-text:    #060e0d;
+    --btn-primary-focus-border:  #05b8a2;
+    --btn-primary-active-bg:     #028c7a;
+    --btn-primary-active-text:   #060e0d;
+
+    --border-default:       #1a3030;
+    --input-focus-border:   #05b8a2;
+    --slider-track-fill:    #05b8a2;
+    --slider-thumb-bg:      #05b8a2;
+    --link-color:           #05b8a2;
+    
+}

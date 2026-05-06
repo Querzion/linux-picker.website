@@ -1,0 +1,28 @@
+[data-theme="Bazzite"] {
+
+    --color-accent:         #a855f7;
+    --color-accent-alt:     #7c3aed;
+
+    --bg-main:              #0b0b14;
+    --bg-surface:           #12121e;
+    --bg-elevated:          #1a1a2e;
+
+    --text-primary:         #e8d9ff;
+    --text-secondary:       #9b8ec4;
+    --text-on-accent:       #0b0b14;
+
+    --btn-primary-bg:           #12121e;
+    --btn-primary-text:          #a855f7;
+    --btn-primary-hover-bg:      #a855f7;
+    --btn-primary-hover-text:    #0b0b14;
+    --btn-primary-focus-border:  #a855f7;
+    --btn-primary-active-bg:     #7c3aed;
+    --btn-primary-active-text:   #0b0b14;
+
+    --border-default:       #2a1a4a;
+    --input-focus-border:   #a855f7;
+    --slider-track-fill:    #a855f7;
+    --slider-thumb-bg:      #a855f7;
+    --link-color:           #a855f7;
+    
+}

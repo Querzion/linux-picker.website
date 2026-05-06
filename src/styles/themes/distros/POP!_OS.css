@@ -1,0 +1,28 @@
+[data-theme="POP!_OS"] {
+
+    --color-accent:         #faa41a;
+    --color-accent-alt:     #48b9c7;
+
+    --bg-main:              #0a0e0f;
+    --bg-surface:           #111618;
+    --bg-elevated:          #1a2024;
+
+    --text-primary:         #d8eff5;
+    --text-secondary:       #4a8090;
+    --text-on-accent:       #0a0e0f;
+
+    --btn-primary-bg:           #111618;
+    --btn-primary-text:          #faa41a;
+    --btn-primary-hover-bg:      #faa41a;
+    --btn-primary-hover-text:    #0a0e0f;
+    --btn-primary-focus-border:  #faa41a;
+    --btn-primary-active-bg:     #d98010;
+    --btn-primary-active-text:   #0a0e0f;
+
+    --border-default:       #1a2e38;
+    --input-focus-border:   #faa41a;
+    --slider-track-fill:    #faa41a;
+    --slider-thumb-bg:      #48b9c7;
+    --link-color:           #48b9c7;
+    
+}

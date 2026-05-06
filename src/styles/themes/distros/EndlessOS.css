@@ -1,0 +1,28 @@
+[data-theme="EndlessOS"] {
+
+    --color-accent:         #e95420;
+    --color-accent-alt:     #bf3c10;
+
+    --bg-main:              #0e0805;
+    --bg-surface:           #180d07;
+    --bg-elevated:          #24140c;
+
+    --text-primary:         #ffe8dc;
+    --text-secondary:       #c07060;
+    --text-on-accent:       #ffffff;
+
+    --btn-primary-bg:           #180d07;
+    --btn-primary-text:          #e95420;
+    --btn-primary-hover-bg:      #e95420;
+    --btn-primary-hover-text:    #ffffff;
+    --btn-primary-focus-border:  #e95420;
+    --btn-primary-active-bg:     #bf3c10;
+    --btn-primary-active-text:   #ffffff;
+
+    --border-default:       #3a1a08;
+    --input-focus-border:   #e95420;
+    --slider-track-fill:    #e95420;
+    --slider-thumb-bg:      #e95420;
+    --link-color:           #e95420;
+    
+}

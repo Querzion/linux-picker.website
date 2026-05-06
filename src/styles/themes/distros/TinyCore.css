@@ -1,0 +1,28 @@
+[data-theme="TinyCore"] {
+
+    --color-accent:         #00aaff;
+    --color-accent-alt:     #0077cc;
+
+    --bg-main:              #060a0f;
+    --bg-surface:           #0c1018;
+    --bg-elevated:          #141c28;
+
+    --text-primary:         #c8e8ff;
+    --text-secondary:       #3090c0;
+    --text-on-accent:       #060a0f;
+
+    --btn-primary-bg:           #0c1018;
+    --btn-primary-text:          #00aaff;
+    --btn-primary-hover-bg:      #00aaff;
+    --btn-primary-hover-text:    #060a0f;
+    --btn-primary-focus-border:  #00aaff;
+    --btn-primary-active-bg:     #0077cc;
+    --btn-primary-active-text:   #060a0f;
+
+    --border-default:       #1a3050;
+    --input-focus-border:   #00aaff;
+    --slider-track-fill:    #00aaff;
+    --slider-thumb-bg:      #00aaff;
+    --link-color:           #00aaff;
+    
+}

@@ -1,0 +1,28 @@
+[data-theme="CentOS"] {
+
+    --color-accent:         #932279;
+    --color-accent-alt:     #ef7d00;
+
+    --bg-main:              #0e080d;
+    --bg-surface:           #160d14;
+    --bg-elevated:          #201220;
+
+    --text-primary:         #f0d8ee;
+    --text-secondary:       #a06090;
+    --text-on-accent:       #ffffff;
+
+    --btn-primary-bg:           #160d14;
+    --btn-primary-text:          #932279;
+    --btn-primary-hover-bg:      #932279;
+    --btn-primary-hover-text:    #ffffff;
+    --btn-primary-focus-border:  #932279;
+    --btn-primary-active-bg:     #7a1c63;
+    --btn-primary-active-text:   #ffffff;
+
+    --border-default:       #2a1028;
+    --input-focus-border:   #932279;
+    --slider-track-fill:    #932279;
+    --slider-thumb-bg:      #ef7d00;
+    --link-color:           #ef7d00;
+    
+}

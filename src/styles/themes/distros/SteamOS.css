@@ -1,0 +1,28 @@
+[data-theme="SteamOS"] {
+
+    --color-accent:         #1a9fff;
+    --color-accent-alt:     #0070e0;
+
+    --bg-main:              #090e14;
+    --bg-surface:           #111820;
+    --bg-elevated:          #1a2430;
+
+    --text-primary:         #c8e4ff;
+    --text-secondary:       #4a80b4;
+    --text-on-accent:       #090e14;
+
+    --btn-primary-bg:           #111820;
+    --btn-primary-text:          #1a9fff;
+    --btn-primary-hover-bg:      #1a9fff;
+    --btn-primary-hover-text:    #090e14;
+    --btn-primary-focus-border:  #1a9fff;
+    --btn-primary-active-bg:     #0070e0;
+    --btn-primary-active-text:   #ffffff;
+
+    --border-default:       #1a3050;
+    --input-focus-border:   #1a9fff;
+    --slider-track-fill:    #1a9fff;
+    --slider-thumb-bg:      #1a9fff;
+    --link-color:           #1a9fff;
+    
+}

@@ -1,0 +1,28 @@
+[data-theme="RebornOS"] {
+
+    --color-accent:         #00bcd4;
+    --color-accent-alt:     #0097a7;
+
+    --bg-main:              #060d0e;
+    --bg-surface:           #0c1516;
+    --bg-elevated:          #142020;
+
+    --text-primary:         #c8f0f8;
+    --text-secondary:       #308090;
+    --text-on-accent:       #060d0e;
+
+    --btn-primary-bg:           #0c1516;
+    --btn-primary-text:          #00bcd4;
+    --btn-primary-hover-bg:      #00bcd4;
+    --btn-primary-hover-text:    #060d0e;
+    --btn-primary-focus-border:  #00bcd4;
+    --btn-primary-active-bg:     #0097a7;
+    --btn-primary-active-text:   #060d0e;
+
+    --border-default:       #1a3038;
+    --input-focus-border:   #00bcd4;
+    --slider-track-fill:    #00bcd4;
+    --slider-thumb-bg:      #00bcd4;
+    --link-color:           #00bcd4;
+    
+}

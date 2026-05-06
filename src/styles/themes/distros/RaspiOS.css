@@ -1,0 +1,28 @@
+[data-theme="RaspiOS"] {
+
+    --color-accent:         #c7143c;
+    --color-accent-alt:     #8a0025;
+
+    --bg-main:              #0e0507;
+    --bg-surface:           #160a0c;
+    --bg-elevated:          #200d10;
+
+    --text-primary:         #ffd0d8;
+    --text-secondary:       #c04060;
+    --text-on-accent:       #ffffff;
+
+    --btn-primary-bg:           #160a0c;
+    --btn-primary-text:          #c7143c;
+    --btn-primary-hover-bg:      #c7143c;
+    --btn-primary-hover-text:    #ffffff;
+    --btn-primary-focus-border:  #c7143c;
+    --btn-primary-active-bg:     #8a0025;
+    --btn-primary-active-text:   #ffffff;
+
+    --border-default:       #3a1018;
+    --input-focus-border:   #c7143c;
+    --slider-track-fill:    #c7143c;
+    --slider-thumb-bg:      #c7143c;
+    --link-color:           #e8405a;
+    
+}

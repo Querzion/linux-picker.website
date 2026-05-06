@@ -1,0 +1,28 @@
+[data-theme="Qubes"] {
+
+    --color-accent:         #3874d8;
+    --color-accent-alt:     #1e4fa8;
+
+    --bg-main:              #070b12;
+    --bg-surface:           #0d121c;
+    --bg-elevated:          #151c2c;
+
+    --text-primary:         #c8d8f0;
+    --text-secondary:       #4a70b0;
+    --text-on-accent:       #ffffff;
+
+    --btn-primary-bg:           #0d121c;
+    --btn-primary-text:          #3874d8;
+    --btn-primary-hover-bg:      #3874d8;
+    --btn-primary-hover-text:    #ffffff;
+    --btn-primary-focus-border:  #3874d8;
+    --btn-primary-active-bg:     #1e4fa8;
+    --btn-primary-active-text:   #ffffff;
+
+    --border-default:       #1a2e50;
+    --input-focus-border:   #3874d8;
+    --slider-track-fill:    #3874d8;
+    --slider-thumb-bg:      #3874d8;
+    --link-color:           #3874d8;
+    
+}

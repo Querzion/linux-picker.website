@@ -1,0 +1,28 @@
+[data-theme="Q4OS"] {
+
+    --color-accent:         #3c88c0;
+    --color-accent-alt:     #1f5e90;
+
+    --bg-main:              #07101a;
+    --bg-surface:           #0d1824;
+    --bg-elevated:          #152434;
+
+    --text-primary:         #c8dcf0;
+    --text-secondary:       #4a7aa0;
+    --text-on-accent:       #ffffff;
+
+    --btn-primary-bg:           #0d1824;
+    --btn-primary-text:          #3c88c0;
+    --btn-primary-hover-bg:      #3c88c0;
+    --btn-primary-hover-text:    #ffffff;
+    --btn-primary-focus-border:  #3c88c0;
+    --btn-primary-active-bg:     #1f5e90;
+    --btn-primary-active-text:   #ffffff;
+
+    --border-default:       #1a3050;
+    --input-focus-border:   #3c88c0;
+    --slider-track-fill:    #3c88c0;
+    --slider-thumb-bg:      #3c88c0;
+    --link-color:           #3c88c0;
+    
+}

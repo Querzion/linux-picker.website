@@ -1,0 +1,28 @@
+[data-theme="CachyOS"] {
+
+    --color-accent:         #89dceb;
+    --color-accent-alt:     #74c7ec;
+
+    --bg-main:              #11111b;
+    --bg-surface:           #1e1e2e;
+    --bg-elevated:          #313244;
+
+    --text-primary:         #cdd6f4;
+    --text-secondary:       #a6adc8;
+    --text-on-accent:       #11111b;
+
+    --btn-primary-bg:           #1e1e2e;
+    --btn-primary-text:          #89dceb;
+    --btn-primary-hover-bg:      #89dceb;
+    --btn-primary-hover-text:    #11111b;
+    --btn-primary-focus-border:  #89dceb;
+    --btn-primary-active-bg:     #74c7ec;
+    --btn-primary-active-text:   #11111b;
+
+    --border-default:       #313244;
+    --input-focus-border:   #89dceb;
+    --slider-track-fill:    #89dceb;
+    --slider-thumb-bg:      #89dceb;
+    --link-color:           #89dceb;
+    
+}

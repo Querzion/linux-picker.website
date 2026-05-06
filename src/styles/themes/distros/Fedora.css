@@ -1,0 +1,28 @@
+[data-theme="Fedora"] {
+
+    --color-accent:         #60a0d0;
+    --color-accent-alt:     #294172;
+
+    --bg-main:              #080d14;
+    --bg-surface:           #0e1520;
+    --bg-elevated:          #162030;
+
+    --text-primary:         #d0e4f8;
+    --text-secondary:       #5a85b0;
+    --text-on-accent:       #080d14;
+
+    --btn-primary-bg:           #0e1520;
+    --btn-primary-text:          #60a0d0;
+    --btn-primary-hover-bg:      #60a0d0;
+    --btn-primary-hover-text:    #080d14;
+    --btn-primary-focus-border:  #60a0d0;
+    --btn-primary-active-bg:     #294172;
+    --btn-primary-active-text:   #ffffff;
+
+    --border-default:       #1a2e48;
+    --input-focus-border:   #60a0d0;
+    --slider-track-fill:    #60a0d0;
+    --slider-thumb-bg:      #60a0d0;
+    --link-color:           #60a0d0;
+    
+}

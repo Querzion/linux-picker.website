@@ -1,0 +1,28 @@
+[data-theme="SeptorLinux"] {
+
+    --color-accent:         #4488cc;
+    --color-accent-alt:     #2266aa;
+
+    --bg-main:              #07101a;
+    --bg-surface:           #0d1824;
+    --bg-elevated:          #152434;
+
+    --text-primary:         #c8dcf0;
+    --text-secondary:       #4a80b4;
+    --text-on-accent:       #ffffff;
+
+    --btn-primary-bg:           #0d1824;
+    --btn-primary-text:          #4488cc;
+    --btn-primary-hover-bg:      #4488cc;
+    --btn-primary-hover-text:    #ffffff;
+    --btn-primary-focus-border:  #4488cc;
+    --btn-primary-active-bg:     #2266aa;
+    --btn-primary-active-text:   #ffffff;
+
+    --border-default:       #1a3050;
+    --input-focus-border:   #4488cc;
+    --slider-track-fill:    #4488cc;
+    --slider-thumb-bg:      #4488cc;
+    --link-color:           #4488cc;
+    
+}

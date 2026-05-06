@@ -1,0 +1,28 @@
+[data-theme="Xubuntu"] {
+
+    --color-accent:         #2d8fd6;
+    --color-accent-alt:     #1a6faa;
+
+    --bg-main:              #07101a;
+    --bg-surface:           #0e1824;
+    --bg-elevated:          #162535;
+
+    --text-primary:         #d0e8ff;
+    --text-secondary:       #4a80b0;
+    --text-on-accent:       #07101a;
+
+    --btn-primary-bg:           #0e1824;
+    --btn-primary-text:          #2d8fd6;
+    --btn-primary-hover-bg:      #2d8fd6;
+    --btn-primary-hover-text:    #07101a;
+    --btn-primary-focus-border:  #2d8fd6;
+    --btn-primary-active-bg:     #1a6faa;
+    --btn-primary-active-text:   #ffffff;
+
+    --border-default:       #1a3050;
+    --input-focus-border:   #2d8fd6;
+    --slider-track-fill:    #2d8fd6;
+    --slider-thumb-bg:      #2d8fd6;
+    --link-color:           #2d8fd6;
+    
+}

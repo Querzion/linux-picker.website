@@ -1,0 +1,28 @@
+[data-theme="PuppyLinux"] {
+
+    --color-accent:         #4a90d9;
+    --color-accent-alt:     #8b4513;
+
+    --bg-main:              #080c14;
+    --bg-surface:           #0e1420;
+    --bg-elevated:          #162030;
+
+    --text-primary:         #d0e8ff;
+    --text-secondary:       #5a80b0;
+    --text-on-accent:       #080c14;
+
+    --btn-primary-bg:           #0e1420;
+    --btn-primary-text:          #4a90d9;
+    --btn-primary-hover-bg:      #4a90d9;
+    --btn-primary-hover-text:    #080c14;
+    --btn-primary-focus-border:  #4a90d9;
+    --btn-primary-active-bg:     #2a6aaa;
+    --btn-primary-active-text:   #ffffff;
+
+    --border-default:       #1a3050;
+    --input-focus-border:   #4a90d9;
+    --slider-track-fill:    #4a90d9;
+    --slider-thumb-bg:      #4a90d9;
+    --link-color:           #4a90d9;
+    
+}

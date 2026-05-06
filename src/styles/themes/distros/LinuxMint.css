@@ -1,0 +1,28 @@
+[data-theme="LinuxMint"] {
+
+    --color-accent:         #87c057;
+    --color-accent-alt:     #5d9e2f;
+
+    --bg-main:              #080e08;
+    --bg-surface:           #0f1610;
+    --bg-elevated:          #182018;
+
+    --text-primary:         #d4eed4;
+    --text-secondary:       #6aaa5a;
+    --text-on-accent:       #080e08;
+
+    --btn-primary-bg:           #0f1610;
+    --btn-primary-text:          #87c057;
+    --btn-primary-hover-bg:      #87c057;
+    --btn-primary-hover-text:    #080e08;
+    --btn-primary-focus-border:  #87c057;
+    --btn-primary-active-bg:     #5d9e2f;
+    --btn-primary-active-text:   #080e08;
+
+    --border-default:       #1e3018;
+    --input-focus-border:   #87c057;
+    --slider-track-fill:    #87c057;
+    --slider-thumb-bg:      #87c057;
+    --link-color:           #87c057;
+    
+}

@@ -1,0 +1,28 @@
+[data-theme="EndevourOS"] {
+
+    --color-accent:         #7c4dff;
+    --color-accent-alt:     #ef4444;
+
+    --bg-main:              #0c0814;
+    --bg-surface:           #130e1e;
+    --bg-elevated:          #1d1630;
+
+    --text-primary:         #e8d8ff;
+    --text-secondary:       #9070c0;
+    --text-on-accent:       #ffffff;
+
+    --btn-primary-bg:           #130e1e;
+    --btn-primary-text:          #7c4dff;
+    --btn-primary-hover-bg:      #7c4dff;
+    --btn-primary-hover-text:    #ffffff;
+    --btn-primary-focus-border:  #7c4dff;
+    --btn-primary-active-bg:     #5f35e0;
+    --btn-primary-active-text:   #ffffff;
+
+    --border-default:       #271a44;
+    --input-focus-border:   #7c4dff;
+    --slider-track-fill:    #7c4dff;
+    --slider-thumb-bg:      #ef4444;
+    --link-color:           #7c4dff;
+    
+}

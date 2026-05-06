@@ -1,0 +1,28 @@
+[data-theme="ElementaryOS"] {
+
+    --color-accent:         #64baff;
+    --color-accent-alt:     #3689e6;
+
+    --bg-main:              #0a0f14;
+    --bg-surface:           #121820;
+    --bg-elevated:          #1a2530;
+
+    --text-primary:         #d0e8ff;
+    --text-secondary:       #6a9abf;
+    --text-on-accent:       #0a0f14;
+
+    --btn-primary-bg:           #121820;
+    --btn-primary-text:          #64baff;
+    --btn-primary-hover-bg:      #64baff;
+    --btn-primary-hover-text:    #0a0f14;
+    --btn-primary-focus-border:  #64baff;
+    --btn-primary-active-bg:     #3689e6;
+    --btn-primary-active-text:   #ffffff;
+
+    --border-default:       #1e3048;
+    --input-focus-border:   #64baff;
+    --slider-track-fill:    #64baff;
+    --slider-thumb-bg:      #64baff;
+    --link-color:           #64baff;
+    
+}

@@ -1,0 +1,28 @@
+[data-theme="Antix"] {
+
+    --color-accent:         #ee1c25;
+    --color-accent-alt:     #ffcc00;
+
+    --bg-main:              #0a0a0a;
+    --bg-surface:           #121212;
+    --bg-elevated:          #1a1a1a;
+
+    --text-primary:         #f0f0f0;
+    --text-secondary:       #aaaaaa;
+    --text-on-accent:       #ffffff;
+
+    --btn-primary-bg:           #121212;
+    --btn-primary-text:          #ee1c25;
+    --btn-primary-hover-bg:      #ee1c25;
+    --btn-primary-hover-text:    #ffffff;
+    --btn-primary-focus-border:  #ee1c25;
+    --btn-primary-active-bg:     #c8151d;
+    --btn-primary-active-text:   #ffffff;
+
+    --border-default:       #2a2a2a;
+    --input-focus-border:   #ee1c25;
+    --slider-track-fill:    #ee1c25;
+    --slider-thumb-bg:      #ee1c25;
+    --link-color:           #ee1c25;
+    
+}

@@ -1,0 +1,28 @@
+[data-theme="ClearLinux"] {
+
+    --color-accent:         #00a4e4;
+    --color-accent-alt:     #0076b8;
+
+    --bg-main:              #080f16;
+    --bg-surface:           #0f1820;
+    --bg-elevated:          #17232f;
+
+    --text-primary:         #d0ecff;
+    --text-secondary:       #6097bb;
+    --text-on-accent:       #080f16;
+
+    --btn-primary-bg:           #0f1820;
+    --btn-primary-text:          #00a4e4;
+    --btn-primary-hover-bg:      #00a4e4;
+    --btn-primary-hover-text:    #080f16;
+    --btn-primary-focus-border:  #00a4e4;
+    --btn-primary-active-bg:     #0076b8;
+    --btn-primary-active-text:   #ffffff;
+
+    --border-default:       #1a3040;
+    --input-focus-border:   #00a4e4;
+    --slider-track-fill:    #00a4e4;
+    --slider-thumb-bg:      #00a4e4;
+    --link-color:           #00a4e4;
+    
+}

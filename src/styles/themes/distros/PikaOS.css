@@ -1,0 +1,28 @@
+[data-theme="PikaOS"] {
+
+    --color-accent:         #f59e0b;
+    --color-accent-alt:     #d97706;
+
+    --bg-main:              #0c0904;
+    --bg-surface:           #140e06;
+    --bg-elevated:          #201808;
+
+    --text-primary:         #ffefc8;
+    --text-secondary:       #c09040;
+    --text-on-accent:       #0c0904;
+
+    --btn-primary-bg:           #140e06;
+    --btn-primary-text:          #f59e0b;
+    --btn-primary-hover-bg:      #f59e0b;
+    --btn-primary-hover-text:    #0c0904;
+    --btn-primary-focus-border:  #f59e0b;
+    --btn-primary-active-bg:     #d97706;
+    --btn-primary-active-text:   #0c0904;
+
+    --border-default:       #302010;
+    --input-focus-border:   #f59e0b;
+    --slider-track-fill:    #f59e0b;
+    --slider-thumb-bg:      #f59e0b;
+    --link-color:           #f59e0b;
+    
+}

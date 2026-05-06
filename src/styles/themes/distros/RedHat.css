@@ -1,0 +1,28 @@
+[data-theme="RedHat"] {
+
+    --color-accent:         #ee0000;
+    --color-accent-alt:     #cc0000;
+
+    --bg-main:              #0e0808;
+    --bg-surface:           #160c0c;
+    --bg-elevated:          #200e0e;
+
+    --text-primary:         #ffe0e0;
+    --text-secondary:       #c04040;
+    --text-on-accent:       #ffffff;
+
+    --btn-primary-bg:           #160c0c;
+    --btn-primary-text:          #ee0000;
+    --btn-primary-hover-bg:      #ee0000;
+    --btn-primary-hover-text:    #ffffff;
+    --btn-primary-focus-border:  #ee0000;
+    --btn-primary-active-bg:     #cc0000;
+    --btn-primary-active-text:   #ffffff;
+
+    --border-default:       #3a0808;
+    --input-focus-border:   #ee0000;
+    --slider-track-fill:    #ee0000;
+    --slider-thumb-bg:      #ee0000;
+    --link-color:           #ff4444;
+    
+}

@@ -1,0 +1,28 @@
+[data-theme="AlmaLinux"] {
+
+    --color-accent:         #94c2f3;
+    --color-accent-alt:     #ff4d4d;
+
+    --bg-main:              #0d1117;
+    --bg-surface:           #161b22;
+    --bg-elevated:          #21262d;
+
+    --text-primary:         #e6edf3;
+    --text-secondary:       #8b949e;
+    --text-on-accent:       #0d1117;
+
+    --btn-primary-bg:           #161b22;
+    --btn-primary-text:          #94c2f3;
+    --btn-primary-hover-bg:      #94c2f3;
+    --btn-primary-hover-text:    #0d1117;
+    --btn-primary-focus-border:  #94c2f3;
+    --btn-primary-active-bg:     #94c2f3;
+    --btn-primary-active-text:   #0d1117;
+
+    --border-default:       #30363d;
+    --input-focus-border:   #94c2f3;
+    --slider-track-fill:    #94c2f3;
+    --slider-thumb-bg:      #94c2f3;
+    --link-color:           #94c2f3;
+    
+}

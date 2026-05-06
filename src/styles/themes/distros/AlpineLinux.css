@@ -1,0 +1,28 @@
+[data-theme="AlpineLinux"] {
+
+    --color-accent:         #5e8ed6;
+    --color-accent-alt:     #4a90d9;
+
+    --bg-main:              #0e1422;
+    --bg-surface:           #161e30;
+    --bg-elevated:          #1e2942;
+
+    --text-primary:         #dce8f8;
+    --text-secondary:       #8ba8cc;
+    --text-on-accent:       #0e1422;
+
+    --btn-primary-bg:           #161e30;
+    --btn-primary-text:          #5e8ed6;
+    --btn-primary-hover-bg:      #5e8ed6;
+    --btn-primary-hover-text:    #0e1422;
+    --btn-primary-focus-border:  #5e8ed6;
+    --btn-primary-active-bg:     #5e8ed6;
+    --btn-primary-active-text:   #0e1422;
+
+    --border-default:       #243050;
+    --input-focus-border:   #5e8ed6;
+    --slider-track-fill:    #5e8ed6;
+    --slider-thumb-bg:      #5e8ed6;
+    --link-color:           #5e8ed6;
+    
+}

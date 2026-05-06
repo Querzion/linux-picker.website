@@ -1,0 +1,28 @@
+[data-theme="Nobara"] {
+
+    --color-accent:         #e84393;
+    --color-accent-alt:     #b51f6e;
+
+    --bg-main:              #0e0610;
+    --bg-surface:           #160a1a;
+    --bg-elevated:          #200f26;
+
+    --text-primary:         #ffd0ec;
+    --text-secondary:       #c060a0;
+    --text-on-accent:       #ffffff;
+
+    --btn-primary-bg:           #160a1a;
+    --btn-primary-text:          #e84393;
+    --btn-primary-hover-bg:      #e84393;
+    --btn-primary-hover-text:    #ffffff;
+    --btn-primary-focus-border:  #e84393;
+    --btn-primary-active-bg:     #b51f6e;
+    --btn-primary-active-text:   #ffffff;
+
+    --border-default:       #3a1040;
+    --input-focus-border:   #e84393;
+    --slider-track-fill:    #e84393;
+    --slider-thumb-bg:      #e84393;
+    --link-color:           #e84393;
+    
+}

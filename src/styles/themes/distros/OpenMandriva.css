@@ -1,0 +1,28 @@
+[data-theme="OpenMandriva"] {
+
+    --color-accent:         #2196f3;
+    --color-accent-alt:     #e53935;
+
+    --bg-main:              #070d14;
+    --bg-surface:           #0d1420;
+    --bg-elevated:          #152030;
+
+    --text-primary:         #d0e8ff;
+    --text-secondary:       #4a80b4;
+    --text-on-accent:       #070d14;
+
+    --btn-primary-bg:           #0d1420;
+    --btn-primary-text:          #2196f3;
+    --btn-primary-hover-bg:      #2196f3;
+    --btn-primary-hover-text:    #070d14;
+    --btn-primary-focus-border:  #2196f3;
+    --btn-primary-active-bg:     #1565c0;
+    --btn-primary-active-text:   #ffffff;
+
+    --border-default:       #1a3050;
+    --input-focus-border:   #2196f3;
+    --slider-track-fill:    #2196f3;
+    --slider-thumb-bg:      #e53935;
+    --link-color:           #2196f3;
+    
+}

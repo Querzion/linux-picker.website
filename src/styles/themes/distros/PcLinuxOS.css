@@ -1,0 +1,28 @@
+[data-theme="PcLinuxOS"] {
+
+    --color-accent:         #e84040;
+    --color-accent-alt:     #b82020;
+
+    --bg-main:              #0e0808;
+    --bg-surface:           #160c0c;
+    --bg-elevated:          #221010;
+
+    --text-primary:         #ffd4d4;
+    --text-secondary:       #c06060;
+    --text-on-accent:       #ffffff;
+
+    --btn-primary-bg:           #160c0c;
+    --btn-primary-text:          #e84040;
+    --btn-primary-hover-bg:      #e84040;
+    --btn-primary-hover-text:    #ffffff;
+    --btn-primary-focus-border:  #e84040;
+    --btn-primary-active-bg:     #b82020;
+    --btn-primary-active-text:   #ffffff;
+
+    --border-default:       #3a1010;
+    --input-focus-border:   #e84040;
+    --slider-track-fill:    #e84040;
+    --slider-thumb-bg:      #e84040;
+    --link-color:           #e84040;
+    
+}

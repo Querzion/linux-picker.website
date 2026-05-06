@@ -1,0 +1,28 @@
+[data-theme="NetrunnerLinux"] {
+
+    --color-accent:         #00d4ff;
+    --color-accent-alt:     #0099cc;
+
+    --bg-main:              #060c14;
+    --bg-surface:           #0c1420;
+    --bg-elevated:          #142030;
+
+    --text-primary:         #c8f0ff;
+    --text-secondary:       #3090b4;
+    --text-on-accent:       #060c14;
+
+    --btn-primary-bg:           #0c1420;
+    --btn-primary-text:          #00d4ff;
+    --btn-primary-hover-bg:      #00d4ff;
+    --btn-primary-hover-text:    #060c14;
+    --btn-primary-focus-border:  #00d4ff;
+    --btn-primary-active-bg:     #0099cc;
+    --btn-primary-active-text:   #060c14;
+
+    --border-default:       #1a3448;
+    --input-focus-border:   #00d4ff;
+    --slider-track-fill:    #00d4ff;
+    --slider-thumb-bg:      #00d4ff;
+    --link-color:           #00d4ff;
+    
+}

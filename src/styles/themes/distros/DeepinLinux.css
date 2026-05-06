@@ -1,0 +1,28 @@
+[data-theme="DeepinLinux"] {
+
+    --color-accent:         #2ca7f8;
+    --color-accent-alt:     #1d7fd4;
+
+    --bg-main:              #08121e;
+    --bg-surface:           #0f1c2e;
+    --bg-elevated:          #18283e;
+
+    --text-primary:         #d6eeff;
+    --text-secondary:       #6699cc;
+    --text-on-accent:       #08121e;
+
+    --btn-primary-bg:           #0f1c2e;
+    --btn-primary-text:          #2ca7f8;
+    --btn-primary-hover-bg:      #2ca7f8;
+    --btn-primary-hover-text:    #08121e;
+    --btn-primary-focus-border:  #2ca7f8;
+    --btn-primary-active-bg:     #1d7fd4;
+    --btn-primary-active-text:   #ffffff;
+
+    --border-default:       #1a3050;
+    --input-focus-border:   #2ca7f8;
+    --slider-track-fill:    #2ca7f8;
+    --slider-thumb-bg:      #2ca7f8;
+    --link-color:           #2ca7f8;
+    
+}

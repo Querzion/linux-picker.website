@@ -1,0 +1,28 @@
+[data-theme="Tails"] {
+
+    --color-accent:         #56347c;
+    --color-accent-alt:     #8966ad;
+
+    --bg-main:              #0a070e;
+    --bg-surface:           #110d18;
+    --bg-elevated:          #1a1428;
+
+    --text-primary:         #e0d0f8;
+    --text-secondary:       #8060b0;
+    --text-on-accent:       #ffffff;
+
+    --btn-primary-bg:           #110d18;
+    --btn-primary-text:          #8966ad;
+    --btn-primary-hover-bg:      #8966ad;
+    --btn-primary-hover-text:    #0a070e;
+    --btn-primary-focus-border:  #8966ad;
+    --btn-primary-active-bg:     #56347c;
+    --btn-primary-active-text:   #ffffff;
+
+    --border-default:       #2a1848;
+    --input-focus-border:   #8966ad;
+    --slider-track-fill:    #8966ad;
+    --slider-thumb-bg:      #8966ad;
+    --link-color:           #8966ad;
+    
+}

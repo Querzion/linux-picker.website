@@ -1,0 +1,28 @@
+[data-theme="Zorin"] {
+
+    --color-accent:         #15a6f0;
+    --color-accent-alt:     #0d80c0;
+
+    --bg-main:              #07101a;
+    --bg-surface:           #0d1824;
+    --bg-elevated:          #152434;
+
+    --text-primary:         #c8e4ff;
+    --text-secondary:       #3a80b0;
+    --text-on-accent:       #07101a;
+
+    --btn-primary-bg:           #0d1824;
+    --btn-primary-text:          #15a6f0;
+    --btn-primary-hover-bg:      #15a6f0;
+    --btn-primary-hover-text:    #07101a;
+    --btn-primary-focus-border:  #15a6f0;
+    --btn-primary-active-bg:     #0d80c0;
+    --btn-primary-active-text:   #ffffff;
+
+    --border-default:       #1a3050;
+    --input-focus-border:   #15a6f0;
+    --slider-track-fill:    #15a6f0;
+    --slider-thumb-bg:      #15a6f0;
+    --link-color:           #15a6f0;
+    
+}

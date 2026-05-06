@@ -1,0 +1,28 @@
+[data-theme="Manjaro"] {
+
+    --color-accent:         #35bf5c;
+    --color-accent-alt:     #16a34a;
+
+    --bg-main:              #070d09;
+    --bg-surface:           #0e160f;
+    --bg-elevated:          #172018;
+
+    --text-primary:         #c8f0d4;
+    --text-secondary:       #50a060;
+    --text-on-accent:       #070d09;
+
+    --btn-primary-bg:           #0e160f;
+    --btn-primary-text:          #35bf5c;
+    --btn-primary-hover-bg:      #35bf5c;
+    --btn-primary-hover-text:    #070d09;
+    --btn-primary-focus-border:  #35bf5c;
+    --btn-primary-active-bg:     #16a34a;
+    --btn-primary-active-text:   #070d09;
+
+    --border-default:       #1a3020;
+    --input-focus-border:   #35bf5c;
+    --slider-track-fill:    #35bf5c;
+    --slider-thumb-bg:      #35bf5c;
+    --link-color:           #35bf5c;
+    
+}

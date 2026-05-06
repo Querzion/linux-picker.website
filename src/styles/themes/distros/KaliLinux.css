@@ -1,0 +1,28 @@
+[data-theme="KaliLinux"] {
+
+    --color-accent:         #367bf0;
+    --color-accent-alt:     #2563eb;
+
+    --bg-main:              #080c10;
+    --bg-surface:           #0d1218;
+    --bg-elevated:          #141a24;
+
+    --text-primary:         #c8daec;
+    --text-secondary:       #5a7aa0;
+    --text-on-accent:       #ffffff;
+
+    --btn-primary-bg:           #0d1218;
+    --btn-primary-text:          #367bf0;
+    --btn-primary-hover-bg:      #367bf0;
+    --btn-primary-hover-text:    #ffffff;
+    --btn-primary-focus-border:  #367bf0;
+    --btn-primary-active-bg:     #2563eb;
+    --btn-primary-active-text:   #ffffff;
+
+    --border-default:       #1a2838;
+    --input-focus-border:   #367bf0;
+    --slider-track-fill:    #367bf0;
+    --slider-thumb-bg:      #367bf0;
+    --link-color:           #367bf0;
+    
+}

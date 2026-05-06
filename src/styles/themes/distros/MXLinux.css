@@ -1,0 +1,28 @@
+[data-theme="MXLinux"] {
+
+    --color-accent:         #4d88c4;
+    --color-accent-alt:     #2d5f96;
+
+    --bg-main:              #08100c;
+    --bg-surface:           #101c14;
+    --bg-elevated:          #18281e;
+
+    --text-primary:         #c8d8e0;
+    --text-secondary:       #507090;
+    --text-on-accent:       #ffffff;
+
+    --btn-primary-bg:           #101c14;
+    --btn-primary-text:          #4d88c4;
+    --btn-primary-hover-bg:      #4d88c4;
+    --btn-primary-hover-text:    #ffffff;
+    --btn-primary-focus-border:  #4d88c4;
+    --btn-primary-active-bg:     #2d5f96;
+    --btn-primary-active-text:   #ffffff;
+
+    --border-default:       #1a3028;
+    --input-focus-border:   #4d88c4;
+    --slider-track-fill:    #4d88c4;
+    --slider-thumb-bg:      #4d88c4;
+    --link-color:           #4d88c4;
+    
+}

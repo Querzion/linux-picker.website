@@ -1,0 +1,28 @@
+[data-theme="UbuntuMate"] {
+
+    --color-accent:         #87a556;
+    --color-accent-alt:     #5a7c28;
+
+    --bg-main:              #080d06;
+    --bg-surface:           #0e1509;
+    --bg-elevated:          #172010;
+
+    --text-primary:         #d8eec8;
+    --text-secondary:       #6a9048;
+    --text-on-accent:       #080d06;
+
+    --btn-primary-bg:           #0e1509;
+    --btn-primary-text:          #87a556;
+    --btn-primary-hover-bg:      #87a556;
+    --btn-primary-hover-text:    #080d06;
+    --btn-primary-focus-border:  #87a556;
+    --btn-primary-active-bg:     #5a7c28;
+    --btn-primary-active-text:   #080d06;
+
+    --border-default:       #1e3010;
+    --input-focus-border:   #87a556;
+    --slider-track-fill:    #87a556;
+    --slider-thumb-bg:      #87a556;
+    --link-color:           #87a556;
+    
+}

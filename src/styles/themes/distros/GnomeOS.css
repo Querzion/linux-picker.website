@@ -1,0 +1,28 @@
+[data-theme="GnomeOS"] {
+
+    --color-accent:         #4a86cf;
+    --color-accent-alt:     #1c71d8;
+
+    --bg-main:              #0c1018;
+    --bg-surface:           #141820;
+    --bg-elevated:          #1e2530;
+
+    --text-primary:         #d0deee;
+    --text-secondary:       #7090b8;
+    --text-on-accent:       #ffffff;
+
+    --btn-primary-bg:           #141820;
+    --btn-primary-text:          #4a86cf;
+    --btn-primary-hover-bg:      #4a86cf;
+    --btn-primary-hover-text:    #ffffff;
+    --btn-primary-focus-border:  #4a86cf;
+    --btn-primary-active-bg:     #1c71d8;
+    --btn-primary-active-text:   #ffffff;
+
+    --border-default:       #1e2e48;
+    --input-focus-border:   #4a86cf;
+    --slider-track-fill:    #4a86cf;
+    --slider-thumb-bg:      #4a86cf;
+    --link-color:           #4a86cf;
+    
+}

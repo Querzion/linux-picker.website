@@ -1,0 +1,28 @@
+[data-theme="NixOS"] {
+
+    --color-accent:         #7ebae4;
+    --color-accent-alt:     #5277c3;
+
+    --bg-main:              #0a0e16;
+    --bg-surface:           #111620;
+    --bg-elevated:          #19202e;
+
+    --text-primary:         #d0e4f8;
+    --text-secondary:       #5a80b0;
+    --text-on-accent:       #0a0e16;
+
+    --btn-primary-bg:           #111620;
+    --btn-primary-text:          #7ebae4;
+    --btn-primary-hover-bg:      #7ebae4;
+    --btn-primary-hover-text:    #0a0e16;
+    --btn-primary-focus-border:  #7ebae4;
+    --btn-primary-active-bg:     #5277c3;
+    --btn-primary-active-text:   #ffffff;
+
+    --border-default:       #1e2e48;
+    --input-focus-border:   #7ebae4;
+    --slider-track-fill:    #7ebae4;
+    --slider-thumb-bg:      #5277c3;
+    --link-color:           #7ebae4;
+    
+}

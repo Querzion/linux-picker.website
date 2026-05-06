@@ -1,0 +1,28 @@
+[data-theme="Knoppix"] {
+
+    --color-accent:         #3daee9;
+    --color-accent-alt:     #2980b9;
+
+    --bg-main:              #060b12;
+    --bg-surface:           #0c1220;
+    --bg-elevated:          #14203a;
+
+    --text-primary:         #d4eaff;
+    --text-secondary:       #5c90c0;
+    --text-on-accent:       #060b12;
+
+    --btn-primary-bg:           #0c1220;
+    --btn-primary-text:          #3daee9;
+    --btn-primary-hover-bg:      #3daee9;
+    --btn-primary-hover-text:    #060b12;
+    --btn-primary-focus-border:  #3daee9;
+    --btn-primary-active-bg:     #2980b9;
+    --btn-primary-active-text:   #ffffff;
+
+    --border-default:       #1a3050;
+    --input-focus-border:   #3daee9;
+    --slider-track-fill:    #3daee9;
+    --slider-thumb-bg:      #3daee9;
+    --link-color:           #3daee9;
+    
+}

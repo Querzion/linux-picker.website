@@ -1,0 +1,28 @@
+[data-theme="Omarchy"] {
+
+    --color-accent:         #c084fc;
+    --color-accent-alt:     #9333ea;
+
+    --bg-main:              #09060f;
+    --bg-surface:           #100c1a;
+    --bg-elevated:          #1a1428;
+
+    --text-primary:         #ecdaff;
+    --text-secondary:       #9060c0;
+    --text-on-accent:       #09060f;
+
+    --btn-primary-bg:           #100c1a;
+    --btn-primary-text:          #c084fc;
+    --btn-primary-hover-bg:      #c084fc;
+    --btn-primary-hover-text:    #09060f;
+    --btn-primary-focus-border:  #c084fc;
+    --btn-primary-active-bg:     #9333ea;
+    --btn-primary-active-text:   #ffffff;
+
+    --border-default:       #2a1848;
+    --input-focus-border:   #c084fc;
+    --slider-track-fill:    #c084fc;
+    --slider-thumb-bg:      #c084fc;
+    --link-color:           #c084fc;
+    
+}

@@ -1,0 +1,28 @@
+[data-theme="Gentoo"] {
+
+    --color-accent:         #54487a;
+    --color-accent-alt:     #9d8ec4;
+
+    --bg-main:              #0d0b14;
+    --bg-surface:           #14121f;
+    --bg-elevated:          #1e1a30;
+
+    --text-primary:         #d8d0f0;
+    --text-secondary:       #8878b8;
+    --text-on-accent:       #ffffff;
+
+    --btn-primary-bg:           #14121f;
+    --btn-primary-text:          #9d8ec4;
+    --btn-primary-hover-bg:      #9d8ec4;
+    --btn-primary-hover-text:    #0d0b14;
+    --btn-primary-focus-border:  #9d8ec4;
+    --btn-primary-active-bg:     #54487a;
+    --btn-primary-active-text:   #ffffff;
+
+    --border-default:       #2e2848;
+    --input-focus-border:   #9d8ec4;
+    --slider-track-fill:    #9d8ec4;
+    --slider-thumb-bg:      #9d8ec4;
+    --link-color:           #9d8ec4;
+    
+}

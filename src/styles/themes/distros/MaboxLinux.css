@@ -1,0 +1,28 @@
+[data-theme="MaboxLinux"] {
+
+    --color-accent:         #ff6600;
+    --color-accent-alt:     #cc4400;
+
+    --bg-main:              #0a0804;
+    --bg-surface:           #140e06;
+    --bg-elevated:          #201508;
+
+    --text-primary:         #ffe8d0;
+    --text-secondary:       #c07040;
+    --text-on-accent:       #0a0804;
+
+    --btn-primary-bg:           #140e06;
+    --btn-primary-text:          #ff6600;
+    --btn-primary-hover-bg:      #ff6600;
+    --btn-primary-hover-text:    #0a0804;
+    --btn-primary-focus-border:  #ff6600;
+    --btn-primary-active-bg:     #cc4400;
+    --btn-primary-active-text:   #0a0804;
+
+    --border-default:       #3a2010;
+    --input-focus-border:   #ff6600;
+    --slider-track-fill:    #ff6600;
+    --slider-thumb-bg:      #ff6600;
+    --link-color:           #ff6600;
+    
+}

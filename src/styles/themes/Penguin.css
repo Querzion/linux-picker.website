@@ -107,10 +107,15 @@
     /* =========================================================
         BUTTONS
     ========================================================= */
-    --btn-primary-bg: var(--color-accent);
-    --btn-primary-text: #000000;
-    --btn-primary-hover: #ffe347;
-    --btn-primary-active: #d4b90f;
+    --btn-primary-bg: var(--color-primary);
+    --btn-primary-text: var(--color-accent);
+    --btn-primary-active-text: var(--color-primary);
+    --btn-primary-active-bg: var(--color-accent);
+    --btn-primary-hover-bg: var(--color-accent);
+    --btn-primary-hover-text: var(--color-primary);
+    --btn-primary-focus-text: var(--color-accent);
+    --btn-primary-focus-bg: var(--color-primary);
+    --btn-primary-focus-ring: var(--color-accent);
 
     --btn-secondary-bg: #2a2a2a;
     --btn-secondary-text: #ffffff;

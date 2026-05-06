@@ -1,0 +1,28 @@
+[data-theme="KDENeon"] {
+
+    --color-accent:         #1d99f3;
+    --color-accent-alt:     #1a6db5;
+
+    --bg-main:              #080e16;
+    --bg-surface:           #0f1622;
+    --bg-elevated:          #172034;
+
+    --text-primary:         #d0eaff;
+    --text-secondary:       #4a80b4;
+    --text-on-accent:       #080e16;
+
+    --btn-primary-bg:           #0f1622;
+    --btn-primary-text:          #1d99f3;
+    --btn-primary-hover-bg:      #1d99f3;
+    --btn-primary-hover-text:    #080e16;
+    --btn-primary-focus-border:  #1d99f3;
+    --btn-primary-active-bg:     #1a6db5;
+    --btn-primary-active-text:   #ffffff;
+
+    --border-default:       #1a3050;
+    --input-focus-border:   #1d99f3;
+    --slider-track-fill:    #1d99f3;
+    --slider-thumb-bg:      #1d99f3;
+    --link-color:           #1d99f3;
+    
+}

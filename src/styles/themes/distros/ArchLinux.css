@@ -1,0 +1,28 @@
+[data-theme="ArchLinux"] {
+
+    --color-accent:         #1793d1;
+    --color-accent-alt:     #0a76b5;
+
+    --bg-main:              #0a0e12;
+    --bg-surface:           #111519;
+    --bg-elevated:          #1a1f26;
+
+    --text-primary:         #d0d8e4;
+    --text-secondary:       #7a8fa8;
+    --text-on-accent:       #ffffff;
+
+    --btn-primary-bg:           #111519;
+    --btn-primary-text:          #1793d1;
+    --btn-primary-hover-bg:      #1793d1;
+    --btn-primary-hover-text:    #ffffff;
+    --btn-primary-focus-border:  #1793d1;
+    --btn-primary-active-bg:     #0f7ab5;
+    --btn-primary-active-text:   #ffffff;
+
+    --border-default:       #1e2530;
+    --input-focus-border:   #1793d1;
+    --slider-track-fill:    #1793d1;
+    --slider-thumb-bg:      #1793d1;
+    --link-color:           #1793d1;
+    
+}

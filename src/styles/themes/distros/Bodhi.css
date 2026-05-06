@@ -1,0 +1,28 @@
+[data-theme="Bodhi"] {
+
+    --color-accent:         #d4a017;
+    --color-accent-alt:     #8b5e00;
+
+    --bg-main:              #0f0c07;
+    --bg-surface:           #1a1408;
+    --bg-elevated:          #261d0e;
+
+    --text-primary:         #f0e6c8;
+    --text-secondary:       #b09060;
+    --text-on-accent:       #0f0c07;
+
+    --btn-primary-bg:           #1a1408;
+    --btn-primary-text:          #d4a017;
+    --btn-primary-hover-bg:      #d4a017;
+    --btn-primary-hover-text:    #0f0c07;
+    --btn-primary-focus-border:  #d4a017;
+    --btn-primary-active-bg:     #b8890f;
+    --btn-primary-active-text:   #0f0c07;
+
+    --border-default:       #30240a;
+    --input-focus-border:   #d4a017;
+    --slider-track-fill:    #d4a017;
+    --slider-thumb-bg:      #d4a017;
+    --link-color:           #d4a017;
+    
+}

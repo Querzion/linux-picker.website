@@ -1,0 +1,28 @@
+[data-theme="Artix"] {
+
+    --color-accent:         #10b981;
+    --color-accent-alt:     #059669;
+
+    --bg-main:              #080e12;
+    --bg-surface:           #0f1a20;
+    --bg-elevated:          #182630;
+
+    --text-primary:         #c8eee0;
+    --text-secondary:       #6aaf94;
+    --text-on-accent:       #080e12;
+
+    --btn-primary-bg:           #0f1a20;
+    --btn-primary-text:          #10b981;
+    --btn-primary-hover-bg:      #10b981;
+    --btn-primary-hover-text:    #080e12;
+    --btn-primary-focus-border:  #10b981;
+    --btn-primary-active-bg:     #059669;
+    --btn-primary-active-text:   #080e12;
+
+    --border-default:       #1a3028;
+    --input-focus-border:   #10b981;
+    --slider-track-fill:    #10b981;
+    --slider-thumb-bg:      #10b981;
+    --link-color:           #10b981;
+    
+}

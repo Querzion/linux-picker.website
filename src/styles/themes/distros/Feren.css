@@ -1,0 +1,28 @@
+[data-theme="Feren"] {
+
+    --color-accent:         #39a9dc;
+    --color-accent-alt:     #1b6ca8;
+
+    --bg-main:              #0a1018;
+    --bg-surface:           #101825;
+    --bg-elevated:          #182435;
+
+    --text-primary:         #d0eaff;
+    --text-secondary:       #5a90c0;
+    --text-on-accent:       #0a1018;
+
+    --btn-primary-bg:           #101825;
+    --btn-primary-text:          #39a9dc;
+    --btn-primary-hover-bg:      #39a9dc;
+    --btn-primary-hover-text:    #0a1018;
+    --btn-primary-focus-border:  #39a9dc;
+    --btn-primary-active-bg:     #1b6ca8;
+    --btn-primary-active-text:   #ffffff;
+
+    --border-default:       #1a3050;
+    --input-focus-border:   #39a9dc;
+    --slider-track-fill:    #39a9dc;
+    --slider-thumb-bg:      #39a9dc;
+    --link-color:           #39a9dc;
+    
+}

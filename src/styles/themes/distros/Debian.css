@@ -1,0 +1,28 @@
+[data-theme="Debian"] {
+
+    --color-accent:         #d70a53;
+    --color-accent-alt:     #a00038;
+
+    --bg-main:              #0d0509;
+    --bg-surface:           #150810;
+    --bg-elevated:          #1e0d18;
+
+    --text-primary:         #f5d5e0;
+    --text-secondary:       #cc6688;
+    --text-on-accent:       #ffffff;
+
+    --btn-primary-bg:           #150810;
+    --btn-primary-text:          #d70a53;
+    --btn-primary-hover-bg:      #d70a53;
+    --btn-primary-hover-text:    #ffffff;
+    --btn-primary-focus-border:  #d70a53;
+    --btn-primary-active-bg:     #a00038;
+    --btn-primary-active-text:   #ffffff;
+
+    --border-default:       #2e0a18;
+    --input-focus-border:   #d70a53;
+    --slider-track-fill:    #d70a53;
+    --slider-thumb-bg:      #d70a53;
+    --link-color:           #e56b8b;
+    
+}

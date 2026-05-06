@@ -1,0 +1,28 @@
+[data-theme="ArcoLinux"] {
+
+    --color-accent:         #88bef5;
+    --color-accent-alt:     #5584c1;
+
+    --bg-main:              #0d1b2e;
+    --bg-surface:           #132338;
+    --bg-elevated:          #1a2f4a;
+
+    --text-primary:         #ddeeff;
+    --text-secondary:       #7aaad0;
+    --text-on-accent:       #0d1b2e;
+
+    --btn-primary-bg:           #132338;
+    --btn-primary-text:          #88bef5;
+    --btn-primary-hover-bg:      #88bef5;
+    --btn-primary-hover-text:    #0d1b2e;
+    --btn-primary-focus-border:  #88bef5;
+    --btn-primary-active-bg:     #88bef5;
+    --btn-primary-active-text:   #0d1b2e;
+
+    --border-default:       #1e3550;
+    --input-focus-border:   #88bef5;
+    --slider-track-fill:    #88bef5;
+    --slider-thumb-bg:      #88bef5;
+    --link-color:           #88bef5;
+    
+}
