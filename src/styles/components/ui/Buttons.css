@@ -8,6 +8,7 @@
     justify-content: center;
 
     gap: var(--space-2);
+
     padding: var(--space-2) var(--space-4);
 
     border-radius: var(--radius-md);
@@ -19,23 +20,39 @@
     cursor: pointer;
     user-select: none;
 
-    transition: all var(--transition-normal);
+    white-space: nowrap;
+
+    transition:
+        background var(--btn-transition),
+        color var(--btn-transition),
+        border-color var(--btn-transition),
+        transform var(--transition-fast),
+        box-shadow var(--btn-transition);
 
     color: var(--text-primary);
 }
 
-/* focus */
+/* =========================================================
+    FOCUS
+========================================================= */
+
 .btn:focus-visible {
-    outline: 2px solid var(--color-accent);
-    outline-offset: 2px;
+    outline: none;
 }
 
-/* active feel */
+/* =========================================================
+    ACTIVE
+========================================================= */
+
 .btn:active {
     transform: scale(0.97);
+    transition-duration: 0.05s;
 }
 
-/* disabled */
+/* =========================================================
+    DISABLED
+========================================================= */
+
 .btn:disabled {
     opacity: 0.5;
     cursor: not-allowed;
@@ -62,6 +79,64 @@
 }
 
 /* =========================================================
+    FULL WIDTH
+========================================================= */
+
+.btn-full {
+    width: 100%;
+}
+
+/* =========================================================
+    ELEVATED
+========================================================= */
+
+.btn-elevated {
+    box-shadow: var(--shadow-md);
+}
+
+.btn-elevated:hover {
+    box-shadow: var(--shadow-lg);
+}
+
+/* =========================================================
+    ICON ONLY
+========================================================= */
+
+.btn-icon-only {
+    padding: var(--space-2);
+
+    width: 40px;
+    height: 40px;
+
+    flex-shrink: 0;
+}
+
+.btn-icon-only.btn-sm {
+    width: 32px;
+    height: 32px;
+}
+
+.btn-icon-only.btn-md {
+    width: 40px;
+    height: 40px;
+}
+
+.btn-icon-only.btn-lg {
+    width: 48px;
+    height: 48px;
+}
+
+/* =========================================================
+    CONTENT
+========================================================= */
+
+.btn-content {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* =========================================================
     ICON SYSTEM
 ========================================================= */
 
@@ -69,22 +144,22 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+
+    flex-shrink: 0;
 }
 
-/* left icon */
 .btn-icon-start {
     margin-right: var(--space-2);
 }
 
-/* right icon */
 .btn-icon-end {
     margin-left: var(--space-2);
 }
 
-/* MUI / SVG icon normalization */
 .btn-icon svg {
     width: 16px;
     height: 16px;
+
     color: currentColor;
 }
 
@@ -96,9 +171,15 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+
+    min-width: 16px;
+    min-height: 16px;
 }
 
-/* prevent text jump when loading replaces content */
+.btn-is-loading {
+    pointer-events: none;
+}
+
 .btn:disabled .btn-loading {
     opacity: 1;
 }
@@ -113,7 +194,17 @@
 }
 
 .btn-primary:hover {
-    background: var(--btn-primary-hover);
+    background: var(--btn-primary-hover-bg);
+    color: var(--btn-primary-hover-text);
+}
+
+.btn-primary:active {
+    background: var(--btn-primary-active-bg);
+    color: var(--btn-primary-active-text);
+}
+
+.btn-primary:focus-visible {
+    box-shadow: 0 0 0 3px var(--btn-primary-focus-ring);
 }
 
 /* =========================================================
@@ -123,11 +214,22 @@
 .btn-secondary {
     background: var(--btn-secondary-bg);
     color: var(--btn-secondary-text);
-    border: 1px solid var(--border-default);
+
+    border: 1px solid var(--btn-secondary-border);
 }
 
 .btn-secondary:hover {
-    background: var(--btn-secondary-hover);
+    background: var(--btn-secondary-hover-bg);
+    color: var(--btn-secondary-hover-text);
+}
+
+.btn-secondary:active {
+    background: var(--btn-secondary-active-bg);
+    color: var(--btn-secondary-active-text);
+}
+
+.btn-secondary:focus-visible {
+    box-shadow: 0 0 0 3px var(--btn-secondary-focus-ring);
 }
 
 /* =========================================================
@@ -135,13 +237,22 @@
 ========================================================= */
 
 .btn-ghost {
-    background: transparent;
-    color: var(--color-accent);
+    background: var(--btn-ghost-bg);
+    color: var(--btn-ghost-text);
 }
 
 .btn-ghost:hover {
-    background: var(--btn-ghost-hover);
-    color: var(--color-secondary);
+    background: var(--btn-ghost-hover-bg);
+    color: var(--btn-ghost-hover-text);
+}
+
+.btn-ghost:active {
+    background: var(--btn-ghost-active-bg);
+    color: var(--btn-ghost-active-text);
+}
+
+.btn-ghost:focus-visible {
+    box-shadow: 0 0 0 3px var(--btn-ghost-focus-ring);
 }
 
 /* =========================================================
@@ -150,7 +261,9 @@
 
 .btn-outline {
     background: transparent;
+
     color: var(--btn-outline-text);
+
     border: 1px solid var(--btn-outline-border);
 }
 
@@ -196,4 +309,27 @@
 
 .btn-danger:hover {
     background: var(--btn-danger-hover);
+}
+
+/* =========================================================
+    BUTTON GROUP
+========================================================= */
+
+.btn-group {
+    display: inline-flex;
+    align-items: center;
+}
+
+.btn-group .btn {
+    border-radius: 0;
+}
+
+.btn-group .btn:first-child {
+    border-top-left-radius: var(--radius-md);
+    border-bottom-left-radius: var(--radius-md);
+}
+
+.btn-group .btn:last-child {
+    border-top-right-radius: var(--radius-md);
+    border-bottom-right-radius: var(--radius-md);
 }

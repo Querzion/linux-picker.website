@@ -1,33 +1,55 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import CircularProgress from "@mui/material/CircularProgress";
+
 import "../../../styles/components/ui/Buttons.css";
 
-const Button = ({
+const Button = forwardRef(({
     children,
 
-    /* variants */
+    /* =====================================================
+        VARIANTS
+    ===================================================== */
     variant = "primary",
 
-    /* sizing */
-    size = "md", // sm | md | lg
+    /* =====================================================
+        SIZING
+    ===================================================== */
+    size = "md",
 
-    /* behavior */
+    /* =====================================================
+        BEHAVIOR
+    ===================================================== */
     type = "button",
     onClick,
+
     disabled = false,
     loading = false,
 
-    /* icons */
+    fullWidth = false,
+
+    /* =====================================================
+        ICONS
+    ===================================================== */
     startIcon,
     endIcon,
+
+    iconOnly = false,
     external = false,
 
-    /* accessibility */
+    /* =====================================================
+        ACCESSIBILITY
+    ===================================================== */
     title,
+    ariaLabel,
 
+    /* =====================================================
+        STYLING
+    ===================================================== */
+    elevated = false,
     className = "",
+
     ...props
-}) => {
+}, ref) => {
 
     const validVariants = [
         "primary",
@@ -39,7 +61,11 @@ const Button = ({
         "danger"
     ];
 
-    const validSizes = ["sm", "md", "lg"];
+    const validSizes = [
+        "sm",
+        "md",
+        "lg"
+    ];
 
     const safeVariant = validVariants.includes(variant)
         ? variant
@@ -51,19 +77,41 @@ const Button = ({
 
     const isDisabled = disabled || loading;
 
+    const classes = [
+        "btn",
+        `btn-${safeVariant}`,
+        `btn-${safeSize}`,
+
+        fullWidth && "btn-full",
+        elevated && "btn-elevated",
+        iconOnly && "btn-icon-only",
+
+        loading && "btn-is-loading",
+
+        className
+    ]
+        .filter(Boolean)
+        .join(" ");
+
     return (
         <button
-            type={type}
+            ref={ref}
+            type={loading ? "button" : type}
             onClick={onClick}
             disabled={isDisabled}
             title={title}
-            className={`btn btn-${safeVariant} btn-${safeSize} ${className}`}
+            aria-label={ariaLabel || title}
+            aria-busy={loading}
+            className={classes}
             {...props}
         >
-            {/* Loading state overrides content */}
             {loading ? (
                 <span className="btn-loading">
-                    <CircularProgress size={16} />
+                    <CircularProgress
+                        size={16}
+                        thickness={5}
+                        color="inherit"
+                    />
                 </span>
             ) : (
                 <>
@@ -73,22 +121,27 @@ const Button = ({
                         </span>
                     )}
 
-                    <span className="btn-content">
-                        {children}
-                    </span>
+                    {!iconOnly && (
+                        <span className="btn-content">
+                            {children}
+                        </span>
+                    )}
 
                     {(endIcon || external) && (
                         <span className="btn-icon btn-icon-end">
                             {external ? (
-                                // lightweight inline external icon fallback (no extra import needed)
                                 <svg
                                     width="16"
                                     height="16"
                                     viewBox="0 0 24 24"
-                                    fill="currentColor"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    strokeWidth="2"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
                                 >
-                                    <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3z"/>
-                                    <path d="M5 5h6v2H7v10h10v-4h2v6H5V5z"/>
+                                    <path d="M7 17L17 7" />
+                                    <path d="M7 7h10v10" />
                                 </svg>
                             ) : (
                                 endIcon
@@ -99,6 +152,8 @@ const Button = ({
             )}
         </button>
     );
-};
+});
+
+Button.displayName = "Button";
 
 export default Button;

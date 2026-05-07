@@ -35,7 +35,8 @@
         TYPOGRAPHY SCALE
     ========================================================= */
     --font-mono: "JetBrains Mono", monospace;
-    --font-sans: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial;
+    --font-sans: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu,
+        Cantarell, "Helvetica Neue", Arial;
 
     --font-weight-100: 100;
     --font-weight-200: 200;
@@ -62,7 +63,7 @@
     --line-height-relaxed: 1.75;
 
     /* =========================================================
-        SPACING SCALE (CRITICAL FOR UI CONSISTENCY)
+        SPACING SCALE
     ========================================================= */
     --space-1: 4px;
     --space-2: 8px;
@@ -107,23 +108,57 @@
     /* =========================================================
         BUTTONS
     ========================================================= */
-    --btn-primary-bg: var(--color-primary);
-    --btn-primary-text: var(--color-accent);
-    --btn-primary-active-text: var(--color-primary);
-    --btn-primary-active-bg: var(--color-accent);
-    --btn-primary-hover-bg: var(--color-accent);
-    --btn-primary-hover-text: var(--color-primary);
-    --btn-primary-focus-text: var(--color-accent);
-    --btn-primary-focus-bg: var(--color-primary);
-    --btn-primary-focus-ring: var(--color-accent);
 
-    --btn-secondary-bg: #2a2a2a;
-    --btn-secondary-text: #ffffff;
-    --btn-secondary-hover: #3a3a3a;
+    /* PRIMARY */
+
+    --btn-primary-bg: var(--color-accent);
+    --btn-primary-text: var(--color-primary);
+
+    --btn-primary-hover-bg: #ffe347;
+    --btn-primary-hover-text: var(--color-primary);
+
+    --btn-primary-active-bg: #d4b90f;
+    --btn-primary-active-text: var(--color-primary);
+
+    --btn-primary-focus-ring: rgba(248, 214, 23, 0.4);
+
+    /* SECONDARY */
+
+    --btn-secondary-bg: var(--color-primary);
+    --btn-secondary-text: var(--color-accent);
+
+    --btn-secondary-border: #3a3a3a;
+
+    --btn-secondary-hover-bg: #2b2b2b;
+    --btn-secondary-hover-text: #ffe347;
+
+    --btn-secondary-active-bg: #111111;
+    --btn-secondary-active-text: var(--color-accent);
+
+    --btn-secondary-focus-ring: rgba(248, 214, 23, 0.35);
+
+    /* GHOST */
 
     --btn-ghost-bg: transparent;
-    --btn-ghost-text: #f8d617;
-    --btn-ghost-hover: rgba(248, 214, 23, 0.1);
+    --btn-ghost-text: var(--color-accent);
+
+    --btn-ghost-hover-bg: rgba(248, 214, 23, 0.08);
+    --btn-ghost-hover-text: #ffe347;
+
+    --btn-ghost-active-bg: rgba(248, 214, 23, 0.14);
+    --btn-ghost-active-text: var(--color-accent);
+
+    --btn-ghost-focus-ring: rgba(248, 214, 23, 0.3);
+
+    /* OUTLINE */
+
+    --btn-outline-text: var(--color-accent);
+    --btn-outline-border: var(--color-accent);
+
+    --btn-outline-hover-bg: rgba(248, 214, 23, 0.08);
+    --btn-outline-hover-text: #ffe347;
+
+    /* SHARED */
 
     --btn-transition: var(--transition-normal);
 
@@ -145,11 +180,6 @@
     --btn-danger-bg: #c62828;
     --btn-danger-text: #ffffff;
     --btn-danger-hover: #e53935;
-
-    --btn-outline-text: var(--color-accent);
-    --btn-outline-border: var(--color-accent);
-    --btn-outline-hover-bg: rgba(248, 214, 23, 0.08);
-    --btn-outline-hover-text: var(--color-accent);
 
     /* =========================================================
         INPUTS
