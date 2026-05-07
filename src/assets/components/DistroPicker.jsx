@@ -1,95 +1,65 @@
 import React from "react";
 import distros from "/public/distros.json";
 import { useDistroFilter } from "../../js/hooks/useDistoFilter";
+import Filter from "./ui/Filter";
+import Button from "./ui/Button";
+import DistroCard from "./DistroCard";
 
 const DistroPicker = () => {
     const {
-        ENVIRONMENTS,
-        protocol,
-        setProtocol,
-        environment,
-        setEnvironment,
-        search,
-        setSearch,
-        filtered
+        filtered,
+        stabilityIndex, setStabilityIndex,
+        useCase,        setUseCase,
+        environment,    setEnvironment,
+        protocol,       setProtocol,
+        search,         setSearch,
     } = useDistroFilter(distros);
 
     return (
-        <div className="distro-card">
+        <div className="distro-picker">
 
-            {/* TOP BAR */}
-            <div className="distro-picker-top">
+            {/* =====================================================
+                PROTOCOL TOGGLE
+            ===================================================== */}
+            <div className="protocol-toggle">
+                <Button
+                    variant={protocol === "wayland" ? "primary" : "ghost"}
+                    size="sm"
+                    onClick={() => setProtocol("wayland")}
+                >
+                    Wayland
+                </Button>
 
-                <div className="protocol-toggle">
-                    <button
-                        className={protocol === "wayland" ? "active" : ""}
-                        onClick={() => setProtocol("wayland")}
-                    >
-                        Wayland
-                    </button>
-                    <button
-                        className={protocol === "x11" ? "active" : ""}
-                        onClick={() => setProtocol("x11")}
-                    >
-                        X11
-                    </button>
-                </div>
-
-                <input
-                    className="distro-search"
-                    placeholder="Search distro..."
-                    value={search}
-                    onChange={(e) => setSearch(e.target.value)}
-                />
+                <Button
+                    variant={protocol === "x11" ? "primary" : "ghost"}
+                    size="sm"
+                    onClick={() => setProtocol("x11")}
+                >
+                    X11
+                </Button>
             </div>
 
-            {/* ENVIRONMENTS */}
-            <div className="slider-group">
-                <label>Environments</label>
+            {/* =====================================================
+                FILTERS
+            ===================================================== */}
+            <Filter
+                stabilityIndex={stabilityIndex}
+                setStabilityIndex={setStabilityIndex}
+                useCase={useCase}
+                setUseCase={setUseCase}
+                environment={environment}
+                setEnvironment={setEnvironment}
+                protocol={protocol}
+                search={search}
+                setSearch={setSearch}
+            />
 
-                <div className="slider-options scroll-x">
-                    {ENVIRONMENTS.map((env) => {
-                        const disabled =
-                            protocol === "wayland" && !env.wayland
-                                ? true
-                                : protocol === "x11" && !env.x11
-                                ? true
-                                : false;
-
-                        return (
-                            <button
-                                key={env.id}
-                                className={environment === env.id ? "active" : ""}
-                                onClick={() => setEnvironment(env.id)}
-                                disabled={disabled}
-                            >
-                                {env.label.toUpperCase()}
-                            </button>
-                        );
-                    })}
-                </div>
-            </div>
-
-            {/* RESULTS */}
+            {/* =====================================================
+                RESULTS
+            ===================================================== */}
             <div className="distro-grid">
                 {filtered.map((distro) => (
-                    <div
-                        key={distro.id}
-                        className="distro-card-item"
-                        style={{
-                            borderColor: distro.accentColor,
-                            background: distro.bgColor
-                        }}
-                    >
-                        <img src={distro.logo} alt={distro.name} />
-
-                        <h3>
-                            <strong>{distro.name.split(" ")[0]}</strong>{" "}
-                            <span>{distro.name.split(" ").slice(1).join(" ")}</span>
-                        </h3>
-
-                        <p>{distro.description}</p>
-                    </div>
+                    <DistroCard key={distro.id} distro={distro} />
                 ))}
             </div>
 

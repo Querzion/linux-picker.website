@@ -92,6 +92,8 @@
 @import "../components/Title.css";
 @import "../components/ActionNavBar.css";
 @import "../components/Footer.css";
+@import "../components/DistroCard.css";
+@import "../components/DistroPicker.css";
 
 
 /* 6. Utilities */

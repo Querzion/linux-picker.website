@@ -1,0 +1,25 @@
+.distro-card-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.distro-card-item img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.distro-card-item h3 {
+    margin: 0;
+    font-size: 0.95rem;
+    color: var(--text-primary);
+}
+
+.distro-card-item p {
+    margin: 0;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
