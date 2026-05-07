@@ -1,5 +1,5 @@
 import React from "react";
-import distros from "/public/distros.json";
+import distros from "../../distros.json";
 import { useDistroFilter } from "../../js/hooks/useDistoFilter";
 import Filter from "./ui/Filter";
 import Button from "./ui/Button";
