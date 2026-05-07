@@ -12,12 +12,13 @@ const DistroCard = ({ distro }) => {
         >
             <img src={distro.logo} alt={distro.name} />
 
-            <h3>
-                <strong>{distro.name.split(" ")[0]}</strong>{" "}
-                <span>{distro.name.split(" ").slice(1).join(" ")}</span>
-            </h3>
-
-            <p>{distro.description}</p>
+            <div className="text-block">
+                <h3>
+                    <strong>{distro.name.split(" ")[0]}</strong>{" "}
+                    <span>{distro.name.split(" ").slice(1).join(" ")}</span>
+                </h3>
+                <p>{distro.description}</p>
+            </div>
         </Card>
     );
 };
