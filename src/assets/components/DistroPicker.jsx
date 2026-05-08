@@ -1,11 +1,14 @@
-import React, { useRef } from "react";
+import React from "react";
 import distros from "../../distros.json";
 import { useDistroFilter } from "../../js/hooks/useDistoFilter";
+import { useDistro } from "./contexts/DistroContext";
 
 import DistroFilter from "./DistroFilter";
 import DistroCard from "./DistroCard";
 
 const DistroPicker = () => {
+    const { selectedDistro } = useDistro();
+
     const {
         filtered,
 
@@ -80,9 +83,11 @@ const DistroPicker = () => {
             />
 
             <div className="distro-grid">
-                {filtered.map((distro) => (
-                    <DistroCard key={distro.id} distro={distro} />
-                ))}
+                {filtered
+                    .filter((distro) => distro.id !== selectedDistro?.id)
+                    .map((distro) => (
+                        <DistroCard key={distro.id} distro={distro} />
+                    ))}
             </div>
 
         </div>

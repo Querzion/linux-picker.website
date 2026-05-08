@@ -3,6 +3,7 @@
     flex-direction: column;
     min-height: 340px;
     padding: 2px;
+    transition: transform var(--transition-normal), opacity var(--transition-normal);
 }
 
 .card-top {
@@ -17,7 +18,6 @@
     gap: 10px;
 }
 
-
 .distro-card-item img {
     width: 64px;
     height: 64px;
@@ -27,7 +27,8 @@
 }
 
 .distro-card-selected {
-    box-shadow: 0 0 0 2px currentColor, var(--card-shadow);
+    transform: translateY(-8px);
+    opacity: 0;
 }
 
 .title-block h3 {
@@ -62,12 +63,13 @@
     padding: 3px 8px;
     border-radius: 999px;
     white-space: nowrap;
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid var(--border-light);
+    background: var(--hover-overlay);
     color: var(--text-primary);
     opacity: 0.75;
 }
 
 .tag-chip:hover {
-    background: rgba(255, 255, 255, 0.12);
+    background: var(--active-overlay);
+    opacity: 1;
 }

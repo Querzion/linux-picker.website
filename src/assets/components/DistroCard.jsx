@@ -3,11 +3,9 @@ import Card from "./ui/Card";
 import { useDistro } from "./contexts/DistroContext";
 
 const DistroCard = ({ distro }) => {
-    const { selectedDistro, setSelectedDistro } = useDistro();
+    const { selectedDistro, setSelectedDistro, themeMode } = useDistro();
 
     const isSelected = selectedDistro?.id === distro.id;
-
-    const themeMode = "dark"; // replace with real theme state
     const theme = distro.themes?.[themeMode] ?? {};
 
     const handleClick = () => {
@@ -23,9 +21,6 @@ const DistroCard = ({ distro }) => {
                 backgroundColor: theme.bgColor || distro.bgColor,
                 border: `1px solid ${theme.borderColor || distro.accentColor}`,
                 color: theme.textColor || "#fff",
-                boxShadow: isSelected
-                    ? `0 0 0 2px ${theme.accentColor || distro.accentColor}`
-                    : "none",
             }}
         >
             <div className="card-top">
@@ -33,7 +28,6 @@ const DistroCard = ({ distro }) => {
                     <img src={distro.logo} alt={distro.name} />
                     <div className="title-block">
                         <h3 style={{ color: theme.textColor }}>{distro.name}</h3>
-
                         <span
                             className={`stability ${distro.stability}`}
                             style={{ color: theme.accentColor }}

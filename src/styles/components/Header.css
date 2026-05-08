@@ -185,6 +185,10 @@
     .brand-title-block .brand-title {
         font-size: var(--font-size-3xl);
     }
+
+    .brand-title-size {
+        font-size: var(--font-size-4xl);
+    }
 }
 
 /* =========================================================
@@ -202,5 +206,9 @@
     .brand-title-block .brand-title {
         font-size: var(--font-size-4xl);
         margin: -1rem 0 -1rem .5rem;
+    }
+
+    .brand-title-size {
+        font-size: var(--font-size-5xl);
     }
 }
