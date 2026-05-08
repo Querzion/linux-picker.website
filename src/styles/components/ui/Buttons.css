@@ -19,7 +19,6 @@
 
     cursor: pointer;
     user-select: none;
-
     white-space: nowrap;
 
     transition:
@@ -104,36 +103,9 @@
 
 .btn-icon-only {
     padding: var(--space-2);
-
     width: 40px;
     height: 40px;
-
     flex-shrink: 0;
-}
-
-.btn-icon-only.btn-sm {
-    width: 32px;
-    height: 32px;
-}
-
-.btn-icon-only.btn-md {
-    width: 40px;
-    height: 40px;
-}
-
-.btn-icon-only.btn-lg {
-    width: 48px;
-    height: 48px;
-}
-
-/* =========================================================
-    CONTENT
-========================================================= */
-
-.btn-content {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
 }
 
 /* =========================================================
@@ -144,7 +116,6 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-
     flex-shrink: 0;
 }
 
@@ -159,29 +130,9 @@
 .btn-icon svg {
     width: 16px;
     height: 16px;
-
     color: currentColor;
-}
-
-/* =========================================================
-    LOADING STATE
-========================================================= */
-
-.btn-loading {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-
-    min-width: 16px;
-    min-height: 16px;
-}
-
-.btn-is-loading {
-    pointer-events: none;
-}
-
-.btn:disabled .btn-loading {
-    opacity: 1;
+    fill: currentColor !important;
+    stroke: currentColor !important;
 }
 
 /* =========================================================
@@ -191,16 +142,19 @@
 .btn-primary {
     background: var(--btn-primary-bg);
     color: var(--btn-primary-text);
+    border: 1px solid var(--btn-primary-border);
 }
 
 .btn-primary:hover {
     background: var(--btn-primary-hover-bg);
     color: var(--btn-primary-hover-text);
+    border-color: var(--btn-primary-hover-border);
 }
 
 .btn-primary:active {
     background: var(--btn-primary-active-bg);
     color: var(--btn-primary-active-text);
+    border-color: var(--btn-primary-active-border);
 }
 
 .btn-primary:focus-visible {
@@ -214,18 +168,19 @@
 .btn-secondary {
     background: var(--btn-secondary-bg);
     color: var(--btn-secondary-text);
-
     border: 1px solid var(--btn-secondary-border);
 }
 
 .btn-secondary:hover {
     background: var(--btn-secondary-hover-bg);
     color: var(--btn-secondary-hover-text);
+    border-color: var(--btn-secondary-hover-border);
 }
 
 .btn-secondary:active {
     background: var(--btn-secondary-active-bg);
     color: var(--btn-secondary-active-text);
+    border-color: var(--btn-secondary-active-border);
 }
 
 .btn-secondary:focus-visible {
@@ -239,6 +194,7 @@
 .btn-ghost {
     background: var(--btn-ghost-bg);
     color: var(--btn-ghost-text);
+    border: 1px solid transparent;
 }
 
 .btn-ghost:hover {
@@ -251,19 +207,13 @@
     color: var(--btn-ghost-active-text);
 }
 
-.btn-ghost:focus-visible {
-    box-shadow: 0 0 0 3px var(--btn-ghost-focus-ring);
-}
-
 /* =========================================================
     OUTLINE
 ========================================================= */
 
 .btn-outline {
     background: transparent;
-
     color: var(--btn-outline-text);
-
     border: 1px solid var(--btn-outline-border);
 }
 
@@ -273,7 +223,7 @@
 }
 
 /* =========================================================
-    SUCCESS
+    SEMANTIC
 ========================================================= */
 
 .btn-success {
@@ -281,55 +231,12 @@
     color: var(--btn-success-text);
 }
 
-.btn-success:hover {
-    background: var(--btn-success-hover);
-}
-
-/* =========================================================
-    WARNING
-========================================================= */
-
 .btn-warning {
     background: var(--btn-warning-bg);
     color: var(--btn-warning-text);
 }
 
-.btn-warning:hover {
-    background: var(--btn-warning-hover);
-}
-
-/* =========================================================
-    DANGER
-========================================================= */
-
 .btn-danger {
     background: var(--btn-danger-bg);
     color: var(--btn-danger-text);
-}
-
-.btn-danger:hover {
-    background: var(--btn-danger-hover);
-}
-
-/* =========================================================
-    BUTTON GROUP
-========================================================= */
-
-.btn-group {
-    display: inline-flex;
-    align-items: center;
-}
-
-.btn-group .btn {
-    border-radius: 0;
-}
-
-.btn-group .btn:first-child {
-    border-top-left-radius: var(--radius-md);
-    border-bottom-left-radius: var(--radius-md);
-}
-
-.btn-group .btn:last-child {
-    border-top-right-radius: var(--radius-md);
-    border-bottom-right-radius: var(--radius-md);
 }

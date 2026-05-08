@@ -28,6 +28,11 @@ const Button = forwardRef(({
     fullWidth = false,
 
     /* =====================================================
+        WIDTH CONTROL (NEW)
+    ===================================================== */
+    width,
+
+    /* =====================================================
         ICONS
     ===================================================== */
     startIcon,
@@ -61,11 +66,7 @@ const Button = forwardRef(({
         "danger"
     ];
 
-    const validSizes = [
-        "sm",
-        "md",
-        "lg"
-    ];
+    const validSizes = ["sm", "md", "lg"];
 
     const safeVariant = validVariants.includes(variant)
         ? variant
@@ -103,15 +104,14 @@ const Button = forwardRef(({
             aria-label={ariaLabel || title}
             aria-busy={loading}
             className={classes}
+            style={{
+                width: width || undefined
+            }}
             {...props}
         >
             {loading ? (
                 <span className="btn-loading">
-                    <CircularProgress
-                        size={16}
-                        thickness={5}
-                        color="inherit"
-                    />
+                    <CircularProgress size={16} thickness={5} color="inherit" />
                 </span>
             ) : (
                 <>

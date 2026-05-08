@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from "react";
+import Button from "./ui/Button";
 
 import LightModeIcon from "@mui/icons-material/LightMode";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 
-import "../../styles/components/ui/ThemeToggle.css";
-
 const DarkMode = () => {
     const [theme, setTheme] = useState(() => {
-        return localStorage.getItem("theme") || "light";
+        return localStorage.getItem("theme") || "penguin-dark";
     });
 
     useEffect(() => {
@@ -16,22 +15,25 @@ const DarkMode = () => {
     }, [theme]);
 
     const toggleTheme = () => {
-        setTheme((prev) => (prev === "light" ? "dark" : "light"));
+        setTheme((prev) =>
+            prev === "penguin-dark" ? "penguin-light" : "penguin-dark"
+        );
     };
 
     return (
-        <button
+        <Button
+            variant="secondary"
+            size="md"
+            iconOnly
+            ariaLabel="Toggle theme"
             onClick={toggleTheme}
-            className="theme-toggle"
-            aria-label="Toggle dark mode"
-            type="button"
         >
-            {theme === "light" ? (
-                <DarkModeIcon fontSize="small" />
-            ) : (
+            {theme === "penguin-dark" ? (
                 <LightModeIcon fontSize="small" />
+            ) : (
+                <DarkModeIcon fontSize="small" />
             )}
-        </button>
+        </Button>
     );
 };
 

@@ -1,18 +1,23 @@
 import { Routes, Route } from "react-router-dom";
 import MainLayout from "./assets/layouts/MainLayout";
 
-import MainPage from "./assets/pages/MainPage";
-import AboutPage from "./assets/pages/AboutPage";
+import Welcome from "./assets/components/Welcome";
+import About from "./assets/components/About";
+import DistroPicker from "./assets/components/DistroPicker";
 
 import "./App.css";
 
 function App() {
     return (
         <Routes>
-            {/* Layout route */}
             <Route element={<MainLayout />}>
-                <Route path="/" element={<MainPage />} />
-                <Route path="/about" element={<AboutPage />} />
+                
+                <Route index element={<Welcome />} />
+
+                <Route path="picker" element={<DistroPicker />} />
+
+                <Route path="about" element={<About />} />
+
             </Route>
         </Routes>
     );

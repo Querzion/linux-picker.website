@@ -1,62 +1,62 @@
 import React from "react";
 import distros from "../../distros.json";
 import { useDistroFilter } from "../../js/hooks/useDistoFilter";
-import Filter from "./ui/Filter";
-import Button from "./ui/Button";
+
+import DistroFilter from "./DistroFilter";
 import DistroCard from "./DistroCard";
 
 const DistroPicker = () => {
     const {
         filtered,
-        stabilityIndex, setStabilityIndex,
-        useCase,        setUseCase,
-        environment,    setEnvironment,
-        protocol,       setProtocol,
-        search,         setSearch,
+
+        stabilityIndex,
+        setStabilityIndex,
+
+        useCaseIndex,
+        setUseCaseIndex,
+
+        environmentIndex,
+        setEnvironmentIndex,
+
+        difficultyIndex,
+        setDifficultyIndex,
+
+        packageManagerIndex,
+        setPackageManagerIndex,
+
+        protocol,
+        setProtocol,
+
+        search,
+        setSearch,
     } = useDistroFilter(distros);
 
     return (
         <div className="distro-picker">
 
-            {/* =====================================================
-                PROTOCOL TOGGLE
-            ===================================================== */}
-            <div className="protocol-toggle">
-                <Button
-                    variant={protocol === "wayland" ? "primary" : "ghost"}
-                    size="sm"
-                    onClick={() => setProtocol("wayland")}
-                >
-                    Wayland
-                </Button>
+            <DistroFilter
+                protocol={protocol}
+                setProtocol={setProtocol}
 
-                <Button
-                    variant={protocol === "x11" ? "primary" : "ghost"}
-                    size="sm"
-                    onClick={() => setProtocol("x11")}
-                >
-                    X11
-                </Button>
-            </div>
-
-            {/* =====================================================
-                FILTERS
-            ===================================================== */}
-            <Filter
                 stabilityIndex={stabilityIndex}
                 setStabilityIndex={setStabilityIndex}
-                useCase={useCase}
-                setUseCase={setUseCase}
-                environment={environment}
-                setEnvironment={setEnvironment}
-                protocol={protocol}
+
+                useCaseIndex={useCaseIndex}
+                setUseCaseIndex={setUseCaseIndex}
+
+                environmentIndex={environmentIndex}
+                setEnvironmentIndex={setEnvironmentIndex}
+
+                difficultyIndex={difficultyIndex}
+                setDifficultyIndex={setDifficultyIndex}
+
+                packageManagerIndex={packageManagerIndex}
+                setPackageManagerIndex={setPackageManagerIndex}
+
                 search={search}
                 setSearch={setSearch}
             />
 
-            {/* =====================================================
-                RESULTS
-            ===================================================== */}
             <div className="distro-grid">
                 {filtered.map((distro) => (
                     <DistroCard key={distro.id} distro={distro} />

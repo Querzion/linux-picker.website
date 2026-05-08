@@ -1,28 +1,15 @@
-[data-theme="Ubuntu"] {
+:root[data-theme="ubuntu"] {
 
-    --color-accent:         #e95420;
-    --color-accent-alt:     #c7420f;
+    --color-accent: #e95420;
 
-    --bg-main:              #0e0806;
-    --bg-surface:           #160d08;
-    --bg-elevated:          #22150e;
+    --bg-main: #111111;
+    --bg-surface: #1b1b1b;
+    --bg-elevated: #262626;
 
-    --text-primary:         #ffeee8;
-    --text-secondary:       #c07060;
-    --text-on-accent:       #ffffff;
+    --text-primary: #ffffff;
+    --text-secondary: #c9c9c9;
 
-    --btn-primary-bg:           #160d08;
-    --btn-primary-text:          #e95420;
-    --btn-primary-hover-bg:      #e95420;
-    --btn-primary-hover-text:    #ffffff;
-    --btn-primary-focus-border:  #e95420;
-    --btn-primary-active-bg:     #c7420f;
-    --btn-primary-active-text:   #ffffff;
+    --border-default: #333333;
 
-    --border-default:       #3a180c;
-    --input-focus-border:   #e95420;
-    --slider-track-fill:    #e95420;
-    --slider-thumb-bg:      #e95420;
-    --link-color:           #ff7a50;
-    
+    --link-color: #e95420;
 }

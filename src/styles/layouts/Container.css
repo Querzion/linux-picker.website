@@ -10,7 +10,7 @@
 }
 
 /* Optional responsive padding */
-@media (min-width: 768px) {
+@media (min-width: 920px) {
     .container {
         padding-left: var(--space-6);
         padding-right: var(--space-6);

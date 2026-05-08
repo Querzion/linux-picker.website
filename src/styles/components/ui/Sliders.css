@@ -3,6 +3,8 @@
     display: flex;
     flex-direction: column;
     gap: 6px;
+    margin-bottom: 1.5rem;
+    
 }
 
 .slider-header {
@@ -14,15 +16,55 @@
 
 /* === Slider Base === */
 .slider {
+    appearance: none;
     width: 100%;
     height: 6px;
-    border-radius: 4px;
-    cursor: pointer;
+    border-radius: var(--radius-full);
     background: linear-gradient(
         to right,
-        var(--slider-track-fill) 0%,
         var(--slider-track-fill) var(--value, 50%),
-        var(--slider-track-bg) var(--value, 50%),
-        var(--slider-track-bg) 100%
+        var(--slider-track-bg) var(--value, 50%)
     );
+    outline: none;
+    transition: background 0.1s ease;
+}
+
+/* TRACK (Firefox fallback) */
+.slider::-moz-range-track {
+    height: 6px;
+    border-radius: var(--radius-full);
+    background: var(--slider-track-bg);
+}
+
+/* THUMB */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--slider-thumb-bg);
+    border: 2px solid var(--slider-thumb-border);
+    cursor: pointer;
+    transition: background var(--transition-fast), transform var(--transition-fast);
+    /* margin-top: -5px; */
+}
+
+.slider::-webkit-slider-thumb:hover {
+    background: var(--slider-thumb-hover);
+    transform: scale(1.1);
+}
+
+.slider::-webkit-slider-thumb:active {
+    background: var(--slider-thumb-active);
+    transform: scale(0.95);
+}
+
+/* FIREFOX THUMB */
+.slider::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--slider-thumb-bg);
+    border: 2px solid var(--slider-thumb-border);
+    cursor: pointer;
 }

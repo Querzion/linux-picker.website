@@ -1,0 +1,39 @@
+.protocol-card {
+    position: relative;
+    margin-bottom: 1rem;
+    margin-top: -1.5rem;
+}
+
+.protocol-toggle {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    z-index: 10;
+    margin-bottom: 1rem;
+}
+
+.slider-position {
+    margin-top: 1.5rem;
+}
+
+.filter-panel {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    position: relative;
+}
+
+/* pushes search to bottom */
+.filter-search {
+    margin-top: 1.5rem;
+    width: 100%;
+}
+
+/* ensures input stretches full width */
+.filter-search .input-container {
+    width: 100%;
+}
+
+.filter-search .input {
+    width: 100%;
+}

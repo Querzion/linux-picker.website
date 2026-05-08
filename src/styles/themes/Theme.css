@@ -5,7 +5,9 @@
 ========================================================= */
 
 /* 1. Design Tokens (your Penguin system) */
-@import "./Penguin.css";
+@import "./PenguinBase.css";
+@import "./PenguinLight.css";
+@import "./PenguinDark.css";
 /* @import "./distros/AlmaLinux.css";
 @import "./distros/AlpineLinux.css";
 @import "./distros/Antix.css";
@@ -69,32 +71,3 @@
 @import "./distros/RebornOS.css";
 @import "./distros/ElementaryOS.css";
 @import "./distros/EndevourOS.css"; */
-
-/* 2. Base Layer */
-@import "../base/Reset.css";
-@import "../base/Fonts.css";
-@import "../base/Spacing.css";
-@import "../base/Typography.css";
-
-/* 3. Layout System */
-@import "../layouts/Container.css";
-
-/* 4. Components - UI primitives */
-@import "../components/ui/Buttons.css";
-@import "../components/ui/Inputs.css";
-@import "../components/ui/Sliders.css";
-@import "../components/ui/Cards.css";
-@import "../components/ui/Forms.css";
-
-/* 5. Components - App-specific */
-@import "../components/Header.css";
-@import "../components/Logo.css";
-@import "../components/Title.css";
-@import "../components/ActionNavBar.css";
-@import "../components/Footer.css";
-@import "../components/DistroCard.css";
-@import "../components/DistroPicker.css";
-
-
-/* 6. Utilities */
-@import "../utilities/Display.css";

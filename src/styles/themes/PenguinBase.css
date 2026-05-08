@@ -1,14 +1,16 @@
 :root {
+
     /* =========================================================
-        CORE BRAND
+        CORE BRAND CONTRACT
     ========================================================= */
     --color-primary: #1f1f1f;
     --color-secondary: #f5f5f5;
-    --color-accent: #f8d617;
+    /* --color-accent: #f8d617; */
+    --color-accent: #039c8f;
     --color-accent-alt: #e95420;
 
     /* =========================================================
-        BACKGROUNDS (SURFACE LAYERS)
+        BACKGROUNDS
     ========================================================= */
     --bg-main: #121212;
     --bg-surface: #1e1e1e;
@@ -16,7 +18,7 @@
     --bg-overlay: rgba(0, 0, 0, 0.7);
 
     /* =========================================================
-        TEXT HIERARCHY
+        TEXT SYSTEM
     ========================================================= */
     --text-primary: #ffffff;
     --text-secondary: #b3b3b3;
@@ -32,7 +34,7 @@
     --border-focus: var(--color-accent);
 
     /* =========================================================
-        TYPOGRAPHY SCALE
+        TYPOGRAPHY
     ========================================================= */
     --font-mono: "JetBrains Mono", monospace;
     --font-sans: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu,
@@ -63,7 +65,7 @@
     --line-height-relaxed: 1.75;
 
     /* =========================================================
-        SPACING SCALE
+        SPACING
     ========================================================= */
     --space-1: 4px;
     --space-2: 8px;
@@ -77,7 +79,7 @@
     --space-16: 64px;
 
     /* =========================================================
-        RADIUS SYSTEM
+        RADIUS
     ========================================================= */
     --radius-sm: 4px;
     --radius-md: 6px;
@@ -86,79 +88,64 @@
     --radius-full: 999px;
 
     /* =========================================================
-        ELEVATION / SHADOWS
-    ========================================================= */
-    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
-    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.6);
-    --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.7);
-
-    /* =========================================================
-        ANIMATION SYSTEM
+        MOTION
     ========================================================= */
     --transition-fast: 0.1s ease;
     --transition-normal: 0.2s ease;
     --transition-slow: 0.4s ease;
 
     /* =========================================================
-        INTERACTION STATES
+        LAYOUT
+    ========================================================= */
+    --container-width: 1200px;
+    --header-height: 64px;
+
+    /* =========================================================
+        INTERACTIONS
     ========================================================= */
     --hover-overlay: rgba(255, 255, 255, 0.05);
     --active-overlay: rgba(255, 255, 255, 0.08);
 
     /* =========================================================
-        BUTTONS
+        SHADOWS
     ========================================================= */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.6);
+    --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.7);
 
-    /* PRIMARY */
+    /* =========================================================
+        COMPONENT SYSTEM (BUTTON CONTRACT)
+    ========================================================= */
 
     --btn-primary-bg: var(--color-accent);
     --btn-primary-text: var(--color-primary);
+    --btn-primary-border: transparent;
 
-    --btn-primary-hover-bg: #ffe347;
-    --btn-primary-hover-text: var(--color-primary);
+    --btn-primary-hover-bg: var(--color-primary);
+    --btn-primary-hover-text: var(--color-accent);
+    --btn-primary-hover-border: var(--color-accent);
 
     --btn-primary-active-bg: #d4b90f;
     --btn-primary-active-text: var(--color-primary);
 
     --btn-primary-focus-ring: rgba(248, 214, 23, 0.4);
 
-    /* SECONDARY */
-
     --btn-secondary-bg: var(--color-primary);
     --btn-secondary-text: var(--color-accent);
+    --btn-secondary-border: var(--color-accent);
 
-    --btn-secondary-border: #3a3a3a;
+    --btn-secondary-hover-bg: var(--color-accent);
+    --btn-secondary-hover-text: var(--color-primary);
 
-    --btn-secondary-hover-bg: #2b2b2b;
-    --btn-secondary-hover-text: #ffe347;
-
-    --btn-secondary-active-bg: #111111;
-    --btn-secondary-active-text: var(--color-accent);
+    --btn-secondary-active-bg: #d4b90f;
 
     --btn-secondary-focus-ring: rgba(248, 214, 23, 0.35);
-
-    /* GHOST */
 
     --btn-ghost-bg: transparent;
     --btn-ghost-text: var(--color-accent);
 
-    --btn-ghost-hover-bg: rgba(248, 214, 23, 0.08);
-    --btn-ghost-hover-text: #ffe347;
-
-    --btn-ghost-active-bg: rgba(248, 214, 23, 0.14);
-    --btn-ghost-active-text: var(--color-accent);
-
-    --btn-ghost-focus-ring: rgba(248, 214, 23, 0.3);
-
-    /* OUTLINE */
-
     --btn-outline-text: var(--color-accent);
     --btn-outline-border: var(--color-accent);
-
-    --btn-outline-hover-bg: rgba(248, 214, 23, 0.08);
-    --btn-outline-hover-text: #ffe347;
-
-    /* SHARED */
 
     --btn-transition: var(--transition-normal);
 
@@ -166,29 +153,21 @@
     --btn-active-overlay: rgba(255, 255, 255, 0.1);
 
     /* =========================================================
-        SEMANTIC BUTTON COLORS
+        SEMANTIC STATES
     ========================================================= */
-
-    --btn-success-bg: #2e7d32;
-    --btn-success-text: #ffffff;
-    --btn-success-hover: #43a047;
-
-    --btn-warning-bg: #ef6c00;
-    --btn-warning-text: #ffffff;
-    --btn-warning-hover: #fb8c00;
-
-    --btn-danger-bg: #c62828;
-    --btn-danger-text: #ffffff;
-    --btn-danger-hover: #e53935;
+    --success: #4caf50;
+    --warning: #ff9800;
+    --error: #f44336;
+    --info: #2196f3;
 
     /* =========================================================
         INPUTS
     ========================================================= */
-    --input-bg: #1a1a1a;
+    --input-bg: var(--bg-surface);
     --input-border: #333333;
-    --input-focus-border: var(--color-accent);
     --input-text: #ffffff;
     --input-placeholder: #777777;
+    --input-focus-border: var(--color-accent);
 
     /* =========================================================
         CARDS
@@ -208,14 +187,6 @@
     --slider-thumb-active: #d4b90f;
 
     /* =========================================================
-        STATUS COLORS
-    ========================================================= */
-    --success: #4caf50;
-    --warning: #ff9800;
-    --error: #f44336;
-    --info: #2196f3;
-
-    /* =========================================================
         LINKS
     ========================================================= */
     --link-color: #4da3ff;
@@ -227,10 +198,4 @@
     --scrollbar-bg: #1e1e1e;
     --scrollbar-thumb: #444444;
     --scrollbar-thumb-hover: #666666;
-
-    /* =========================================================
-        LAYOUT
-    ========================================================= */
-    --container-width: 1200px;
-    --header-height: 64px;
 }

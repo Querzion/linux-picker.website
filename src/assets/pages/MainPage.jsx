@@ -1,11 +1,12 @@
 import React from 'react'
 import DistroPicker from '../components/DistroPicker'
+import Container from '../components/ui/Container'
 
 const MainPage = () => {
   return (
-    <div>
+    <Container>
       <DistroPicker />
-    </div>
+    </Container>
   )
 }
 

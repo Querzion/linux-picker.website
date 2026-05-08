@@ -1,8 +1,0 @@
-.title {
-    font-size: var(--font-size-5xl);
-    font-weight: var(--font-weight-800);
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-
-    color: var(--text-primary);
-}

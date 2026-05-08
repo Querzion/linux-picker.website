@@ -1,75 +1,206 @@
-/* === Footer Base === */
-.footer {
-    display: none; /* replaces hidden md:block */
-    border-top: 1px solid var(--border-default);
-    background: var(--bg-surface);
-    padding: 32px 0;
-}
+@media (max-width: 919px) {
 
-/* If you want "md:block" behavior */
-@media (min-width: 768px) {
     .footer {
-        display: block;
+        border-top: 1px solid var(--border-default);
+        background: var(--bg-surface);
+        padding: 24px 0;
+        margin-bottom: 1rem;
+    }
+
+    /* MAIN WRAPPER (same pattern as desktop) */
+    .footer-container {
+        max-width: 1120px;
+        margin: 0 auto;
+        padding: 0 16px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    /* =========================================================
+        TOP ROW LAYOUT (mobile version of desktop)
+    ========================================================= */
+
+    .footer-top {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    /* LEFT SIDE (DarkMode button) */
+    .footer-left {
+        display: flex;
+        align-items: center;
+        margin-top: -4rem;
+    }
+
+    /* CENTER CONTENT BLOCK */
+    .footer-center {
+        flex: 1;
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    /* =========================================================
+        TEXT STYLES (same as desktop, no scaling changes)
+    ========================================================= */
+
+    .footer-title {
+        font-size: var(--font-size-xl);
+        font-weight: var(--font-weight-700);
+        color: var(--text-primary);
+    }
+
+    .footer-subtitle {
+        font-size: var(--font-size-sm);
+        font-style: italic;
+        color: var(--text-muted);
+    }
+
+    .footer-meta {
+        font-size: var(--font-size-xs);
+        color: var(--text-muted);
+    }
+
+    /* =========================================================
+        COPYRIGHT ROW
+    ========================================================= */
+
+    .footer-copyright {
+        font-size: var(--font-size-sm);
+        color: var(--text-secondary);
+
+        display: flex;
+        justify-content: center;
+        gap: 4px;
+    }
+
+    /* LINKS */
+    .footer-link {
+        color: var(--link-color);
+        text-decoration: none;
+    }
+
+    .footer-link:hover {
+        color: var(--link-hover);
+        text-decoration: underline;
+    }
+
+    /* =========================================================
+        ONLY VISIBILITY RULES (no layout hacks)
+    ========================================================= */
+
+    .footer-subtitle {
+        display: none;
+    }
+
+    .footer-meta {
+        display: none;
+    }
+
+    .footer-copyright span:last-child {
+        display: none;
     }
 }
 
-/* === Layout === */
-.footer-container {
-    max-width: 1120px;
-    margin: 0 auto;
-    padding: 0 24px;
-    text-align: center;
+@media (min-width: 920px) {
+    .footer {
+        border-top: 1px solid var(--border-default);
+        background: var(--bg-surface);
+        padding: 32px 0;
+        margin-bottom: 1rem;
+    }
 
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
+    /* MAIN WRAPPER (you were missing this in JSX before) */
+    .footer-container {
+        max-width: 1120px;
+        margin: 0 auto;
+        padding: 0 24px;
 
-/* === Main Section === */
-.footer-main {
-    margin-bottom: 8px;
-}
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
 
-.footer-title {
-    font-size: var(--font-size-xl);
-    font-family: var(--font-sans);
-    font-weight: var(--font-weight-700);
-    letter-spacing: 0.05em;
-    color: var(--text-primary);
-}
+    /* =========================================================
+        TOP ROW LAYOUT
+    ========================================================= */
 
-.footer-subtitle {
-    font-size: var(--font-size-sm);
-    font-style: italic;
-    color: var(--text-muted);
-    margin-top: var(--space-1);
-}
+    .footer-top {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
 
-/* === Copyright === */
-.footer-copyright {
-    font-size: var(--font-size-sm);
-    color: var(--text-secondary);
+    /* LEFT SIDE (DarkMode button) */
+    .footer-left {
+        display: flex;
+        align-items: flex-start;
+        margin-top: -2rem;
+    }
 
-    display: flex;
-    flex-direction: row;
-    align-self: center;
-    gap: 4px;
-}
+    /* CENTER CONTENT BLOCK */
+    .footer-center {
+        flex: 1;
+        text-align: center;
 
-/* === Links === */
-.footer-link {
-    color: var(--link-color);
-    text-decoration: none;
-}
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-left: -1rem;
+    }
 
-.footer-link:hover {
-    color: var(--link-hover);
-    text-decoration: underline;
-}
+    /* =========================================================
+        TEXT STYLES
+    ========================================================= */
 
-/* === Meta line === */
-.footer-meta {
-    font-size: var(--font-size-xs);
-    color: var(--text-muted);
-    margin-top: 8px;
+    .footer-title {
+        font-size: var(--font-size-xl);
+        font-weight: var(--font-weight-700);
+        color: var(--text-primary);
+    }
+
+    .footer-subtitle {
+        font-size: var(--font-size-sm);
+        font-style: italic;
+        color: var(--text-muted);
+    }
+
+    /* =========================================================
+        COPYRIGHT ROW
+    ========================================================= */
+
+    .footer-copyright {
+        font-size: var(--font-size-sm);
+        color: var(--text-secondary);
+
+        display: flex;
+        justify-content: center;
+        gap: 4px;
+    }
+
+    /* LINKS */
+    .footer-link {
+        color: var(--link-color);
+        text-decoration: none;
+    }
+
+    .footer-link:hover {
+        color: var(--link-hover);
+        text-decoration: underline;
+    }
+
+    /* =========================================================
+        META LINE
+    ========================================================= */
+
+    .footer-meta {
+        font-size: var(--font-size-xs);
+        color: var(--text-muted);
+    }
 }

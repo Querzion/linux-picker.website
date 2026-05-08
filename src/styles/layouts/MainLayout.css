@@ -4,6 +4,9 @@
 
     min-height: 100vh;
 
+    max-width: 100%;
+    overflow-x: hidden;
+
     background: var(--bg-main);
     color: var(--text-primary);
 }
