@@ -156,20 +156,19 @@ export function useDistroFilter(distros = []) {
             .filter((distro) => {
 
                 /* =========================
-                    SEARCH (EXPANDED)
+                    SEARCH OVERRIDES ALL
                 ========================= */
                 if (search.trim()) {
                     const q = search.toLowerCase().trim().replace(/[-_]/g, " ");
 
-                    const match =
+                    return (
                         distro.name?.toLowerCase().includes(q) ||
                         distro.id?.toLowerCase().includes(q) ||
                         distro.family?.toLowerCase().includes(q) ||
                         distro.type?.toLowerCase().includes(q) ||
                         distro.tags?.some(t => t.toLowerCase().includes(q)) ||
-                        distro.description?.toLowerCase().includes(q);
-
-                    if (!match) return false;
+                        distro.description?.toLowerCase().includes(q)
+                    );
                 }
 
                 /* =========================
@@ -229,17 +228,17 @@ export function useDistroFilter(distros = []) {
                 ) return false;
 
                 /* =========================
-                    FAMILY (NEW)
+                    FAMILY
                 ========================= */
                 if (family !== "any" && distro.family !== family) return false;
 
                 /* =========================
-                    ORIGIN (NEW)
+                    ORIGIN
                 ========================= */
                 if (origin !== "any" && distro.origin !== origin) return false;
 
                 /* =========================
-                    DESKTOP RICHNESS (NEW)
+                    DESKTOP RICHNESS
                 ========================= */
                 if (desktop !== "any") {
                     const envCount = distro.displayEnvironments?.length || 0;
