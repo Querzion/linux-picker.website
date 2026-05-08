@@ -1032,7 +1032,7 @@
                 "bgColor": "#ffe0ea",
                 "accentColor": "#A80030",
                 "borderColor": "#A80030",
-                "textColor": "#ffffff"
+                "textColor": "#000000"
             }
         }
     },
