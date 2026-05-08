@@ -74,11 +74,6 @@
     margin-left: .8rem;
 }
 
-.brand-title {
-    font-size: var(--font-size-3xl);
-    margin-left: .8rem;
-}
-
 /* =========================================================
     BRAND TITLE BLOCK (distro selected state)
 ========================================================= */
@@ -92,7 +87,7 @@
 
 .brand-title-block .brand-title {
     margin: 0;
-    font-size: var(--font-size-3xl);
+    font-size: var(--font-size-2xl);
 }
 
 .brand-title-block .stability {
@@ -100,7 +95,6 @@
     color: var(--color-accent);
     text-transform: lowercase;
     opacity: 1;
-    margin: -.5rem 0 0 1rem;
 }
 
 /* =========================================================
@@ -189,6 +183,10 @@
     .brand-title-size {
         font-size: var(--font-size-4xl);
     }
+
+    .brand-title-block .stability {
+        margin: -.5rem 0 0 0;
+    }
 }
 
 /* =========================================================
@@ -210,5 +208,9 @@
 
     .brand-title-size {
         font-size: var(--font-size-5xl);
+    }
+
+    .brand-title-block .stability {
+        margin: 0 0 0 .5rem;
     }
 }
