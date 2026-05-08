@@ -29,7 +29,7 @@
             "wayland",
             "x11"
         ],
-        "logo": "/src/assets/images/logos/ubuntu.png",
+        "logo": "./assets/images/logos/ubuntu.png",
         "logoColor": "#E95420",
         "accentColor": "#E95420",
         "bgColor": "#1a0a00",
@@ -74,7 +74,7 @@
             "wayland",
             "x11"
         ],
-        "logo": "/src/assets/images/logos/kubuntu.png",
+        "logo": "/assets/images/logos/kubuntu.png",
         "logoColor": "#3DAEE9",
         "accentColor": "#3DAEE9",
         "bgColor": "#1B1E23",
@@ -118,7 +118,7 @@
             "wayland",
             "x11"
         ],
-        "logo": "/src/assets/images/logos/xubuntu.png",
+        "logo": "/assets/images/logos/xubuntu.png",
         "logoColor": "#0044AA",
         "accentColor": "#0044AA",
         "bgColor": "#00101a",
@@ -163,7 +163,7 @@
             "wayland",
             "x11"
         ],
-        "logo": "/src/assets/images/logos/lubuntu.png",
+        "logo": "/assets/images/logos/lubuntu.png",
         "logoColor": "#0066CC",
         "accentColor": "#0066CC",
         "bgColor": "#000a14",
@@ -208,7 +208,7 @@
             "wayland",
             "x11"
         ],
-        "logo": "/src/assets/images/logos/ubuntustudio.png",
+        "logo": "/assets/images/logos/ubuntustudio.png",
         "logoColor": "#6A1B9A",
         "accentColor": "#6A1B9A",
         "bgColor": "#0a0014",
@@ -254,7 +254,7 @@
             "wayland",
             "x11"
         ],
-        "logo": "/src/assets/images/logos/ubuntu_cinnamon.png",
+        "logo": "/assets/images/logos/ubuntu_cinnamon.png",
         "logoColor": "#8BC34A",
         "accentColor": "#8BC34A",
         "bgColor": "#0a1400",
@@ -299,7 +299,7 @@
             "wayland",
             "x11"
         ],
-        "logo": "/src/assets/images/logos/ubuntu_mate.png",
+        "logo": "/assets/images/logos/ubuntu_mate.png",
         "logoColor": "#66BB6A",
         "accentColor": "#66BB6A",
         "bgColor": "#001a0a",
@@ -343,7 +343,7 @@
         "displayProtocol": [
             "x11"
         ],
-        "logo": "/src/assets/images/logos/ubuntu_unity_newcolor.png",
+        "logo": "/assets/images/logos/ubuntu_unity_newcolor.png",
         "logoColor": "#E95420",
         "accentColor": "#E95420",
         "bgColor": "#1a0a00",
@@ -387,7 +387,7 @@
         "displayProtocol": [
             "x11"
         ],
-        "logo": "/src/assets/images/logos/ubuntu_dde.png",
+        "logo": "/assets/images/logos/ubuntu_dde.png",
         "logoColor": "#00897B",
         "accentColor": "#00897B",
         "bgColor": "#001a14",
@@ -433,7 +433,7 @@
             "wayland",
             "x11"
         ],
-        "logo": "/src/assets/images/logos/kdeneon.png",
+        "logo": "/assets/images/logos/kdeneon.png",
         "logoColor": "#3C6EB4",
         "accentColor": "#3C6EB4",
         "bgColor": "#00101a",
@@ -477,7 +477,7 @@
         "displayProtocol": [
             "x11"
         ],
-        "logo": "/src/assets/images/logos/linuxlite.png",
+        "logo": "/assets/images/logos/linuxlite.png",
         "logoColor": "#FDD835",
         "accentColor": "#FDD835",
         "bgColor": "#1a1400",
@@ -529,7 +529,7 @@
             "x11",
             "wayland"
         ],
-        "logo": "/src/assets/images/logos/linuxmint.png",
+        "logo": "/assets/images/logos/linuxmint.png",
         "logoColor": "#86BE43",
         "accentColor": "#86BE43",
         "bgColor": "#091200",
@@ -573,7 +573,7 @@
         "displayProtocol": [
             "x11"
         ],
-        "logo": "/src/assets/images/logos/bodhi.png",
+        "logo": "/assets/images/logos/bodhi.png",
         "logoColor": "#43A047",
         "accentColor": "#43A047",
         "bgColor": "#001a0a",
@@ -617,7 +617,7 @@
         "displayProtocol": [
             "wayland"
         ],
-        "logo": "/src/assets/images/logos/pureos.png",
+        "logo": "/assets/images/logos/pureos.png",
         "logoColor": "#5C6BC0",
         "accentColor": "#5C6BC0",
         "bgColor": "#000a1a",
@@ -666,7 +666,7 @@
             "x11",
             "wayland"
         ],
-        "logo": "/src/assets/images/logos/arcolinux.png",
+        "logo": "/assets/images/logos/arcolinux.png",
         "logoColor": "#00BCD4",
         "accentColor": "#00BCD4",
         "bgColor": "#001a1a",
@@ -715,7 +715,7 @@
             "x11",
             "wayland"
         ],
-        "logo": "/src/assets/images/logos/rebornos.png",
+        "logo": "/assets/images/logos/rebornos.png",
         "logoColor": "#9C27B0",
         "accentColor": "#9C27B0",
         "bgColor": "#14001a",
@@ -757,7 +757,7 @@
         "displayProtocol": [
             "x11"
         ],
-        "logo": "/src/assets/images/logos/blackarchlinux.png",
+        "logo": "/assets/images/logos/blackarchlinux.png",
         "logoColor": "#CC0000",
         "accentColor": "#CC0000",
         "bgColor": "#1a0000",
@@ -801,7 +801,7 @@
         "displayProtocol": [
             "x11"
         ],
-        "logo": "/src/assets/images/logos/backbox.png",
+        "logo": "/assets/images/logos/backbox.png",
         "logoColor": "#1976D2",
         "accentColor": "#1976D2",
         "bgColor": "#00101a",
@@ -847,7 +847,7 @@
         "displayProtocol": [
             "x11"
         ],
-        "logo": "/src/assets/images/logos/antix.png",
+        "logo": "/assets/images/logos/antix.png",
         "logoColor": "#FF6F00",
         "accentColor": "#FF6F00",
         "bgColor": "#1a0a00",
@@ -892,7 +892,7 @@
             "x11",
             "wayland"
         ],
-        "logo": "/src/assets/images/logos/linuxmint_debian.png",
+        "logo": "/assets/images/logos/linuxmint_debian.png",
         "logoColor": "#86BE43",
         "accentColor": "#86BE43",
         "bgColor": "#091200",
@@ -938,7 +938,7 @@
             "x11",
             "wayland"
         ],
-        "logo": "/src/assets/images/logos/guix.png",
+        "logo": "/assets/images/logos/guix.png",
         "logoColor": "#FFB300",
         "accentColor": "#FFB300",
         "bgColor": "#1a1200",
@@ -1004,7 +1004,7 @@
             "x11",
             "wayland"
         ],
-        "logo": "/src/assets/images/logos/debian.png",
+        "logo": "/assets/images/logos/debian.png",
         "logoColor": "#A80030",
         "accentColor": "#A80030",
         "bgColor": "#1a0007",
@@ -1063,7 +1063,7 @@
             "wayland",
             "x11"
         ],
-        "logo": "/src/assets/images/logos/fedora_newlogo_newcolor.png",
+        "logo": "/assets/images/logos/fedora_newlogo_newcolor.png",
         "logoColor": "#3C6EB4",
         "accentColor": "#3C6EB4",
         "bgColor": "#000d1a",
@@ -1118,7 +1118,7 @@
             "wayland",
             "x11"
         ],
-        "logo": "/src/assets/images/logos/popos.png",
+        "logo": "/assets/images/logos/popos.png",
         "logoColor": "#48B9C7",
         "accentColor": "#48B9C7",
         "bgColor": "#00121a",
@@ -1175,7 +1175,7 @@
             "wayland",
             "x11"
         ],
-        "logo": "/src/assets/images/logos/nixos.png",
+        "logo": "/assets/images/logos/nixos.png",
         "logoColor": "#5277C3",
         "accentColor": "#7EB5E0",
         "bgColor": "#00091a",
@@ -1233,7 +1233,7 @@
             "wayland",
             "x11"
         ],
-        "logo": "/src/assets/images/logos/suse.png",
+        "logo": "/assets/images/logos/suse.png",
         "logoColor": "#73BA25",
         "accentColor": "#73BA25",
         "bgColor": "#0a1500",
@@ -1289,7 +1289,7 @@
             "wayland",
             "x11"
         ],
-        "logo": "/src/assets/images/logos/manjaro.png",
+        "logo": "/assets/images/logos/manjaro.png",
         "logoColor": "#35BF5C",
         "accentColor": "#35BF5C",
         "bgColor": "#00140a",
@@ -1352,7 +1352,7 @@
             "wayland",
             "x11"
         ],
-        "logo": "/src/assets/images/logos/archlinux.png",
+        "logo": "/assets/images/logos/archlinux.png",
         "logoColor": "#1793D1",
         "accentColor": "#1793D1",
         "bgColor": "#00111a",
@@ -1410,7 +1410,7 @@
             "wayland",
             "x11"
         ],
-        "logo": "/src/assets/images/logos/endeavour.png",
+        "logo": "/assets/images/logos/endeavour.png",
         "logoColor": "#7B5EA7",
         "accentColor": "#9B6DC5",
         "bgColor": "#0a0014",
@@ -1465,7 +1465,7 @@
             "wayland",
             "x11"
         ],
-        "logo": "/src/assets/images/logos/garuda_orange.png",
+        "logo": "/assets/images/logos/garuda_orange.png",
         "logoColor": "#EF3939",
         "accentColor": "#FF6B35",
         "bgColor": "#1a0000",
@@ -1509,7 +1509,7 @@
             "wayland",
             "x11"
         ],
-        "logo": "/src/assets/images/logos/ubuntu.png",
+        "logo": "/assets/images/logos/ubuntu.png",
         "logoColor": "#E95420",
         "accentColor": "#E95420",
         "bgColor": "#1a0a00",
@@ -1552,7 +1552,7 @@
             "wayland",
             "x11"
         ],
-        "logo": "/src/assets/images/logos/fedora_newlogo_oldcolor.png",
+        "logo": "/assets/images/logos/fedora_newlogo_oldcolor.png",
         "logoColor": "#3C6EB4",
         "accentColor": "#3C6EB4",
         "bgColor": "#000d1a",
@@ -1595,7 +1595,7 @@
             "wayland",
             "x11"
         ],
-        "logo": "/src/assets/images/logos/suse.png",
+        "logo": "/assets/images/logos/suse.png",
         "logoColor": "#73BA25",
         "accentColor": "#73BA25",
         "bgColor": "#0a1500",
@@ -1638,7 +1638,7 @@
             "wayland",
             "x11"
         ],
-        "logo": "/src/assets/images/logos/_defaultlinuxlogo.png",
+        "logo": "/assets/images/logos/_defaultlinuxlogo.png",
         "logoColor": "#10B981",
         "accentColor": "#10B981",
         "bgColor": "#001a0d",
@@ -1681,7 +1681,7 @@
             "wayland",
             "x11"
         ],
-        "logo": "/src/assets/images/logos/redhat.png",
+        "logo": "/assets/images/logos/redhat.png",
         "logoColor": "#EE0000",
         "accentColor": "#EE0000",
         "bgColor": "#1a0000",
@@ -1724,7 +1724,7 @@
             "wayland",
             "x11"
         ],
-        "logo": "/src/assets/images/logos/centos_green.png",
+        "logo": "/assets/images/logos/centos_green.png",
         "logoColor": "#262577",
         "accentColor": "#262577",
         "bgColor": "#00001a",
@@ -1768,7 +1768,7 @@
         "displayProtocol": [
             "wayland"
         ],
-        "logo": "/src/assets/images/logos/steam.png",
+        "logo": "/assets/images/logos/steam.png",
         "logoColor": "#1A9FFF",
         "accentColor": "#1A9FFF",
         "bgColor": "#000a1a",
@@ -1820,7 +1820,7 @@
             "wayland",
             "x11"
         ],
-        "logo": "/src/assets/images/logos/artix.png",
+        "logo": "/assets/images/logos/artix.png",
         "logoColor": "#10B981",
         "accentColor": "#10B981",
         "bgColor": "#001a0a",
@@ -1868,7 +1868,7 @@
             "wayland",
             "x11"
         ],
-        "logo": "/src/assets/images/logos/solus.png",
+        "logo": "/assets/images/logos/solus.png",
         "logoColor": "#5294E2",
         "accentColor": "#5294E2",
         "bgColor": "#00091a",
@@ -1911,7 +1911,7 @@
             "wayland",
             "x11"
         ],
-        "logo": "/src/assets/images/logos/clearlinux.png",
+        "logo": "/assets/images/logos/clearlinux.png",
         "logoColor": "#00AEEF",
         "accentColor": "#00AEEF",
         "bgColor": "#00101a",
@@ -1960,7 +1960,7 @@
             "wayland",
             "x11"
         ],
-        "logo": "/src/assets/images/logos/pikaos-simple-nv.png",
+        "logo": "/assets/images/logos/pikaos-simple-nv.png",
         "logoColor": "#F5A623",
         "accentColor": "#F5A623",
         "bgColor": "#1a1000",
@@ -2019,7 +2019,7 @@
             "wayland",
             "x11"
         ],
-        "logo": "/src/assets/images/logos/gentoo.png",
+        "logo": "/assets/images/logos/gentoo.png",
         "logoColor": "#54487A",
         "accentColor": "#9B8FC0",
         "bgColor": "#08001a",
@@ -2070,7 +2070,7 @@
             "x11",
             "wayland"
         ],
-        "logo": "/src/assets/images/logos/slackware.png",
+        "logo": "/assets/images/logos/slackware.png",
         "logoColor": "#808080",
         "accentColor": "#AAAAAA",
         "bgColor": "#0f0f0f",
@@ -2127,7 +2127,7 @@
             "wayland",
             "x11"
         ],
-        "logo": "/src/assets/images/logos/voidlinux.png",
+        "logo": "/assets/images/logos/voidlinux.png",
         "logoColor": "#478061",
         "accentColor": "#5FAD80",
         "bgColor": "#001a0d",
@@ -2174,7 +2174,7 @@
             "wayland",
             "x11"
         ],
-        "logo": "/src/assets/images/logos/suse.png",
+        "logo": "/assets/images/logos/suse.png",
         "logoColor": "#73BA25",
         "accentColor": "#73BA25",
         "bgColor": "#0a1500",
@@ -2219,7 +2219,7 @@
             "wayland",
             "x11"
         ],
-        "logo": "/src/assets/images/logos/fedora_newlogo_newcolor.png",
+        "logo": "/assets/images/logos/fedora_newlogo_newcolor.png",
         "logoColor": "#3C6EB4",
         "accentColor": "#3C6EB4",
         "bgColor": "#000d1a",
@@ -2266,7 +2266,7 @@
             "wayland",
             "x11"
         ],
-        "logo": "/src/assets/images/logos/zorin.png",
+        "logo": "/assets/images/logos/zorin.png",
         "logoColor": "#15A6F0",
         "accentColor": "#15A6F0",
         "bgColor": "#00101a",
@@ -2311,7 +2311,7 @@
             "wayland",
             "x11"
         ],
-        "logo": "/src/assets/images/logos/elementary.png",
+        "logo": "/assets/images/logos/elementary.png",
         "logoColor": "#64BAFF",
         "accentColor": "#64BAFF",
         "bgColor": "#00091a",
@@ -2360,7 +2360,7 @@
             "x11",
             "wayland"
         ],
-        "logo": "/src/assets/images/logos/mxlinux.png",
+        "logo": "/assets/images/logos/mxlinux.png",
         "logoColor": "#ffffff",
         "accentColor": "#dddddd",
         "bgColor": "#111111",
@@ -2410,7 +2410,7 @@
             "wayland",
             "x11"
         ],
-        "logo": "/src/assets/images/logos/kalilinux.png",
+        "logo": "/assets/images/logos/kalilinux.png",
         "logoColor": "#2F7CF6",
         "accentColor": "#2F7CF6",
         "bgColor": "#00051a",
@@ -2454,7 +2454,7 @@
             "wayland",
             "x11"
         ],
-        "logo": "/src/assets/images/logos/alpine.png",
+        "logo": "/assets/images/logos/alpine.png",
         "logoColor": "#0D597F",
         "accentColor": "#0D8DBF",
         "bgColor": "#00101a",
@@ -2498,7 +2498,7 @@
             "wayland",
             "x11"
         ],
-        "logo": "/src/assets/images/logos/alma_darkblue.png",
+        "logo": "/assets/images/logos/alma_darkblue.png",
         "logoColor": "#0066CC",
         "accentColor": "#0066CC",
         "bgColor": "#00001a",
@@ -2543,7 +2543,7 @@
             "x11",
             "wayland"
         ],
-        "logo": "/src/assets/images/logos/tails.png",
+        "logo": "/assets/images/logos/tails.png",
         "logoColor": "#56347C",
         "accentColor": "#7B4FAF",
         "bgColor": "#0a0014",
@@ -2588,7 +2588,7 @@
         "displayProtocol": [
             "x11"
         ],
-        "logo": "/src/assets/images/logos/qubes.png",
+        "logo": "/assets/images/logos/qubes.png",
         "logoColor": "#3874D8",
         "accentColor": "#3874D8",
         "bgColor": "#00001a",
@@ -2642,7 +2642,7 @@
             "wayland",
             "x11"
         ],
-        "logo": "/src/assets/images/logos/cachyos.png",
+        "logo": "/assets/images/logos/cachyos.png",
         "logoColor": "#00BFFF",
         "accentColor": "#00BFFF",
         "bgColor": "#00101a",
@@ -2689,7 +2689,7 @@
             "wayland",
             "x11"
         ],
-        "logo": "/src/assets/images/logos/bazzite.svg",
+        "logo": "/assets/images/logos/bazzite.svg",
         "logoColor": "#7B52AB",
         "accentColor": "#9B72CB",
         "bgColor": "#0a0014",
@@ -2735,7 +2735,7 @@
         "displayProtocol": [
             "wayland"
         ],
-        "logo": "/src/assets/images/logos/suse.png",
+        "logo": "/assets/images/logos/suse.png",
         "logoColor": "#73BA25",
         "accentColor": "#73BA25",
         "bgColor": "#0a1500",
@@ -2780,7 +2780,7 @@
             "wayland",
             "x11"
         ],
-        "logo": "/src/assets/images/logos/kaos.png",
+        "logo": "/assets/images/logos/kaos.png",
         "logoColor": "#1E88E5",
         "accentColor": "#1E88E5",
         "bgColor": "#000a14",
@@ -2825,7 +2825,7 @@
             "x11",
             "wayland"
         ],
-        "logo": "/src/assets/images/logos/q4os_orange.png",
+        "logo": "/assets/images/logos/q4os_orange.png",
         "logoColor": "#2E7D32",
         "accentColor": "#2E7D32",
         "bgColor": "#00140a",
@@ -2869,7 +2869,7 @@
         "displayProtocol": [
             "x11"
         ],
-        "logo": "/src/assets/images/logos/puppy_brown.png",
+        "logo": "/assets/images/logos/puppy_brown.png",
         "logoColor": "#F9A825",
         "accentColor": "#F9A825",
         "bgColor": "#1a1200",
@@ -2914,7 +2914,7 @@
             "x11",
             "wayland"
         ],
-        "logo": "/src/assets/images/logos/peppermint.png",
+        "logo": "/assets/images/logos/peppermint.png",
         "logoColor": "#D32F2F",
         "accentColor": "#D32F2F",
         "bgColor": "#1a0000",
@@ -2959,7 +2959,7 @@
         "displayProtocol": [
             "x11"
         ],
-        "logo": "/src/assets/images/logos/pclinuxos.png",
+        "logo": "/assets/images/logos/pclinuxos.png",
         "logoColor": "#1565C0",
         "accentColor": "#1565C0",
         "bgColor": "#000a1a",
@@ -3003,7 +3003,7 @@
             "wayland",
             "x11"
         ],
-        "logo": "/src/assets/images/logos/openmandriva.png",
+        "logo": "/assets/images/logos/openmandriva.png",
         "logoColor": "#7E57C2",
         "accentColor": "#7E57C2",
         "bgColor": "#0a001a",
@@ -3047,7 +3047,7 @@
             "x11",
             "wayland"
         ],
-        "logo": "/src/assets/images/logos/netrunnerlinux.png",
+        "logo": "/assets/images/logos/netrunnerlinux.png",
         "logoColor": "#3949AB",
         "accentColor": "#3949AB",
         "bgColor": "#00091a",
@@ -3093,7 +3093,7 @@
             "x11",
             "wayland"
         ],
-        "logo": "/src/assets/images/logos/mageia.png",
+        "logo": "/assets/images/logos/mageia.png",
         "logoColor": "#2196F3",
         "accentColor": "#2196F3",
         "bgColor": "#00101a",
@@ -3136,7 +3136,7 @@
         "displayProtocol": [
             "x11"
         ],
-        "logo": "/src/assets/images/logos/maboxlinux_v01.png",
+        "logo": "/assets/images/logos/maboxlinux_v01.png",
         "logoColor": "#FF7043",
         "accentColor": "#FF7043",
         "bgColor": "#1a0a00",
@@ -3180,7 +3180,7 @@
         "displayProtocol": [
             "x11"
         ],
-        "logo": "/src/assets/images/logos/knoppix.png",
+        "logo": "/assets/images/logos/knoppix.png",
         "logoColor": "#FFB300",
         "accentColor": "#FFB300",
         "bgColor": "#1a1200",
@@ -3226,7 +3226,7 @@
             "x11",
             "wayland"
         ],
-        "logo": "/src/assets/images/logos/parrot.png",
+        "logo": "/assets/images/logos/parrot.png",
         "logoColor": "#00C853",
         "accentColor": "#00C853",
         "bgColor": "#001a0a",
@@ -3271,7 +3271,7 @@
         "displayProtocol": [
             "x11"
         ],
-        "logo": "/src/assets/images/logos/tinycore.png",
+        "logo": "/assets/images/logos/tinycore.png",
         "logoColor": "#FFCC00",
         "accentColor": "#FFCC00",
         "bgColor": "#1a1a00",
