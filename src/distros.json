@@ -1967,7 +1967,7 @@
         "website": "https://pika-os.com/",
         "downloadPage": "https://pika-os.com/",
         "isoUrl": "https://pika-os.com/",
-        "description": "Ubuntu-based but with a bleeding-edge gaming focus. PikaOS ships a patched kernel, up-to-date Mesa, and Wayland-first defaults \u2014 a gamer's shortcut to a working rig.",
+        "description": "Debian-based but with a bleeding-edge gaming focus. PikaOS ships a patched kernel, up-to-date Mesa, and Wayland-first defaults \u2014 a gamer's shortcut to a working rig.",
         "tags": [
             "gaming",
             "debian-based",
