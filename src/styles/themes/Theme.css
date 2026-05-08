@@ -5,13 +5,13 @@
 ========================================================= */
 
 /* 1. Design Tokens (your Penguin system) */
-@import "./PenguinBase.css";
-@import "./PenguinLight.css";
-@import "./PenguinDark.css";
-/* @import "./distros/AlmaLinux.css";
+@import "./Penguin.css";
+@import "./distros/ArchLinux.css";
+
+/* NOT FIXED YET
+@import "./distros/AlmaLinux.css";
 @import "./distros/AlpineLinux.css";
 @import "./distros/Antix.css";
-@import "./distros/ArchLinux.css";
 @import "./distros/ArcoLinux.css";
 @import "./distros/Artix.css";
 @import "./distros/Bazzite.css";
@@ -70,4 +70,5 @@
 @import "./distros/Suse_OpenSuse.css";
 @import "./distros/RebornOS.css";
 @import "./distros/ElementaryOS.css";
-@import "./distros/EndevourOS.css"; */
+@import "./distros/EndevourOS.css"; 
+*/

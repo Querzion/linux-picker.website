@@ -6,12 +6,11 @@ import Card from "./ui/Card";
 import Button from "./ui/Button";
 import Brand from "./Brand";
 
+import { useDistro } from "../components/contexts/DistroContext";
+
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import Drawer from "@mui/material/Drawer";
-import List from "@mui/material/List";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemText from "@mui/material/ListItemText";
 
 const Header = () => {
     const navigate = useNavigate();
@@ -21,6 +20,7 @@ const Header = () => {
     const isAbout = location.pathname === "/about";
 
     const [open, setOpen] = useState(false);
+    const { selectedDistro } = useDistro();
 
     const go = (path) => {
         navigate(path);
@@ -32,7 +32,23 @@ const Header = () => {
             <Card className="header-card" bare>
 
                 <div className="brand">
-                    <Brand />
+                    {selectedDistro ? (
+                        <>
+                            <img
+                                className="brand-logo"
+                                src={selectedDistro.logo}
+                                alt={selectedDistro.name}
+                            />
+                            <span
+                                className="brand-title"
+                                style={{ color: selectedDistro.accentColor }}
+                            >
+                                {selectedDistro.name.toUpperCase()}
+                            </span>
+                        </>
+                    ) : (
+                        <Brand />
+                    )}
                 </div>
 
                 <div className="mobile-menu">
@@ -42,21 +58,43 @@ const Header = () => {
                 </div>
 
                 <div className="header-nav">
-                    <Button
-                        variant="secondary"
-                        width="120px"
-                        onClick={() => navigate(isPicker ? "/" : "/picker")}
-                    >
-                        {isPicker ? "Home" : "ISO Picker"}
-                    </Button>
-
-                    <Button
-                        variant="secondary"
-                        width="120px"
-                        onClick={() => navigate(isAbout ? "/" : "/about")}
-                    >
-                        {isAbout ? "Home" : "About"}
-                    </Button>
+                    {selectedDistro ? (
+                        <>
+                            <Button
+                                variant="secondary"
+                                width="160px"
+                                external
+                                onClick={() => window.open(selectedDistro.website, "_blank")}
+                            >
+                                Visit Site
+                            </Button>
+                            <Button
+                                variant="primary"
+                                width="160px"
+                                external
+                                onClick={() => window.open(selectedDistro.downloadPage, "_blank")}
+                            >
+                                Download ISO
+                            </Button>
+                        </>
+                    ) : (
+                        <>
+                            <Button
+                                variant="secondary"
+                                width="160px"
+                                onClick={() => navigate(isPicker ? "/" : "/picker")}
+                            >
+                                {isPicker ? "Home" : "ISO Picker"}
+                            </Button>
+                            <Button
+                                variant="secondary"
+                                width="160px"
+                                onClick={() => navigate(isAbout ? "/" : "/about")}
+                            >
+                                {isAbout ? "Home" : "About"}
+                            </Button>
+                        </>
+                    )}
                 </div>
 
                 <Drawer
@@ -66,23 +104,41 @@ const Header = () => {
                     className="mobile-drawer"
                 >
                     <div className="drawer-menu">
-
-                        <Button
-                            variant="secondary"
-                            fullWidth
-                            onClick={() => go(isPicker ? "/" : "/picker")}
-                        >
-                            {isPicker ? "Home" : "ISO Picker"}
-                        </Button>
-
-                        <Button
-                            variant="secondary"
-                            fullWidth
-                            onClick={() => go(isAbout ? "/" : "/about")}
-                        >
-                            {isAbout ? "Home" : "About"}
-                        </Button>
-
+                        {selectedDistro ? (
+                            <>
+                                <Button
+                                    variant="secondary"
+                                    fullWidth
+                                    onClick={() => { window.open(selectedDistro.website, "_blank"); setOpen(false); }}
+                                >
+                                    Visit Site
+                                </Button>
+                                <Button
+                                    variant="primary"
+                                    fullWidth
+                                    onClick={() => { window.open(selectedDistro.downloadPage, "_blank"); setOpen(false); }}
+                                >
+                                    Download ISO
+                                </Button>
+                            </>
+                        ) : (
+                            <>
+                                <Button
+                                    variant="secondary"
+                                    fullWidth
+                                    onClick={() => go(isPicker ? "/" : "/picker")}
+                                >
+                                    {isPicker ? "Home" : "ISO Picker"}
+                                </Button>
+                                <Button
+                                    variant="secondary"
+                                    fullWidth
+                                    onClick={() => go(isAbout ? "/" : "/about")}
+                                >
+                                    {isAbout ? "Home" : "About"}
+                                </Button>
+                            </>
+                        )}
                     </div>
                 </Drawer>
 

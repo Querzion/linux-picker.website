@@ -17,12 +17,17 @@
     gap: 10px;
 }
 
+
 .distro-card-item img {
     width: 64px;
     height: 64px;
     object-fit: contain;
     margin-left: -0.5rem;
     margin-right: 0.4rem;
+}
+
+.distro-card-selected {
+    box-shadow: 0 0 0 2px currentColor, var(--card-shadow);
 }
 
 .title-block h3 {
