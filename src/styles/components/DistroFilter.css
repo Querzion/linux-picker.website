@@ -4,14 +4,6 @@
     margin-top: -1.5rem;
 }
 
-.protocol-toggle {
-    position: absolute;
-    top: 12px;
-    right: 12px;
-    z-index: 10;
-    margin-bottom: 1rem;
-}
-
 .slider-position {
     margin-top: 1.5rem;
 }
@@ -36,4 +28,37 @@
 
 .filter-search .input {
     width: 100%;
+}
+
+.filter-header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    position: relative;
+}
+
+/* keeps layout stable while hiding */
+.protocol-toggle {
+    display: flex;
+    align-items: center;
+    transition: all 0.25s ease;
+}
+
+/* hidden state = collapses smoothly without breaking layout */
+.protocol-toggle.hidden {
+    opacity: 0;
+    transform: translateX(8px);
+    pointer-events: none;
+    width: 0;
+    overflow: hidden;
+}
+
+/* visible state */
+.protocol-toggle.visible {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+    width: auto;
 }

@@ -19,7 +19,9 @@
     max-width: 1200px;
 
     margin: 0 auto;
-    padding: 24px;
+    margin-top: .5rem;
+
+    padding: 16px;
 }
 
 /* Optional: ensure header/footer behave consistently */

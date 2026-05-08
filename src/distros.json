@@ -31,9 +31,9 @@
         "displayEnvironments": ["kde-plasma"],
         "displayProtocol": ["wayland", "x11"],
         "logo": "/src/assets/images/logos/kubuntu.png",
-        "logoColor": "#E95420",
-        "accentColor": "#E95420",
-        "bgColor": "#1a0a00",
+        "logoColor": "#3DAEE9",
+        "accentColor": "#3DAEE9",
+        "bgColor": "#1B1E23",
         "website": "https://kubuntu.org/",
         "downloadPage": "https://kubuntu.org/getkubuntu/",
         "isoUrl": "https://kubuntu.org/getkubuntu/",
@@ -287,7 +287,7 @@
     },
     {
         "id": "arcolinux",
-        "name": "ArcoLinux",
+        "name": "Arco Linux",
         "stability": "less-stable",
         "serverFocused": false,
         "displayEnvironments": ["xfce", "i3", "openbox", "kde-plasma", "gnome"],
@@ -446,7 +446,7 @@
         "isoUrl": "https://www.debian.org/distrib/",
         "description": "The universal operating system. Debian's legendary stability comes from an exhaustive testing process — packages are glacially slow to update, but never break.",
         "tags": ["super-stable", "universal", "community", "apt"],
-        "family": "debian-based",
+        "family": "independent",
         "type": "desktop",
         "origin": "official"
     },
@@ -574,7 +574,7 @@
         "displayEnvironments": [
             "gnome", "kde-plasma", "xfce", "i3", "sway", "hyprland", "niri",
             "bspwm", "dwm", "awesome", "openbox", "fluxbox", "herbstluftwm",
-            "blackbox", "river", "cosmic", "wayfire", "qtile"
+            "blackbox", "river", "cosmic", "wayfire", "qtile", "mangowc"
         ],
         "displayProtocol": ["wayland", "x11"],
         "logo": "/src/assets/images/logos/archlinux.png",
@@ -586,7 +586,7 @@
         "isoUrl": "https://archlinux.org/download/",
         "description": "You build it, you own it. Arch is a blank canvas — install exactly what you need. Rolling release, AUR access, and the legendary Arch Wiki as your guide.",
         "tags": ["rolling", "advanced", "aur", "diy", "bleeding-edge", "pacman"],
-        "family": "arch-based",
+        "family": "independent",
         "type": "desktop",
         "origin": "official"
     },
@@ -844,7 +844,7 @@
         "stability": "less-stable",
         "serverFocused": false,
         "displayEnvironments": [
-            "gnome", "kde-plasma", "niri", "hyprland"
+            "gnome", "kde-plasma", "niri", "hyprland", "cosmic"
         ],
         "displayProtocol": ["wayland", "x11"],
         "logo": "/src/assets/images/logos/pikaos-simple-nv.png",
@@ -855,8 +855,8 @@
         "downloadPage": "https://pika-os.com/",
         "isoUrl": "https://pika-os.com/",
         "description": "Ubuntu-based but with a bleeding-edge gaming focus. PikaOS ships a patched kernel, up-to-date Mesa, and Wayland-first defaults — a gamer's shortcut to a working rig.",
-        "tags": ["gaming", "ubuntu-based", "bleeding-edge", "apt", "performance"],
-        "family": "ubuntu-based",
+        "tags": ["gaming", "debian-based", "bleeding-edge", "apt", "performance"],
+        "family": "debian-based",
         "type": "gaming",
         "origin": "community"
     },
@@ -1078,7 +1078,7 @@
     },
     {
         "id": "alma-linux",
-        "name": "AlmaLinux",
+        "name": "Alma Linux",
         "stability": "super-stable",
         "serverFocused": true,
         "displayEnvironments": [],

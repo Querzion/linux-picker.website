@@ -128,11 +128,19 @@
 }
 
 .btn-icon svg {
-    width: 16px;
-    height: 16px;
+    display: block;
+    width: 1em;
+    height: 1em;
     color: currentColor;
     fill: currentColor !important;
-    stroke: currentColor !important;
+}
+
+.btn-icon-only .btn-icon-start,
+.btn-icon-only .btn-icon-end {
+    margin: 0;
+}
+.btn-icon-only .btn-icon * {
+    pointer-events: none;
 }
 
 /* =========================================================

@@ -1,3 +1,116 @@
+/* =========================================================
+    ABOUT PAGE
+========================================================= */
+
 .About {
+    width: 100%;
     margin-top: -1.5rem;
+}
+
+.About .page-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+/* =========================================================
+    TITLE
+========================================================= */
+
+.About h2 {
+    margin: 0;
+
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    font-weight: 700;
+    line-height: 1.2;
+
+    color: var(--color-text-primary);
+}
+
+/* =========================================================
+    TEXT
+========================================================= */
+
+.About p {
+    margin: 0;
+
+    max-width: 900px;
+
+    font-size: 1rem;
+    line-height: 1.85;
+
+    color: var(--color-text-secondary);
+}
+
+/* =========================================================
+    DATE
+========================================================= */
+
+.About p:first-of-type {
+    display: inline-flex;
+    align-items: center;
+
+    width: fit-content;
+
+    padding: 0.45rem 0.85rem;
+
+    border-radius: var(--radius-md);
+
+    background: var(--color-surface-secondary);
+    border: 1px solid var(--color-border);
+
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+
+    color: var(--accent-color);
+}
+
+/* =========================================================
+    HIGHLIGHTED TEXT
+========================================================= */
+
+.About strong {
+    color: var(--color-text-primary);
+    font-weight: 700;
+}
+
+/* =========================================================
+    LAST PARAGRAPH / QUOTE
+========================================================= */
+
+.About p:last-of-type {
+    margin-top: 0.5rem;
+
+    font-style: italic;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+
+    color: var(--accent-color);
+}
+
+/* =========================================================
+    MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .About .page-section {
+        gap: 1rem;
+    }
+
+    .About h2 {
+        font-size: 1.6rem;
+    }
+
+    .About p {
+        font-size: 0.95rem;
+        line-height: 1.75;
+    }
+
+    .About p:first-of-type {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.75rem;
+    }
+
 }

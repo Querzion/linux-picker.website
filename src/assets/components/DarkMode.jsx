@@ -20,20 +20,19 @@ const DarkMode = () => {
         );
     };
 
+    const icon = theme === "penguin-dark"
+        ? <LightModeIcon fontSize="small" />
+        : <DarkModeIcon fontSize="small" />;
+
     return (
         <Button
             variant="secondary"
-            size="md"
+            size="lg"
             iconOnly
             ariaLabel="Toggle theme"
             onClick={toggleTheme}
-        >
-            {theme === "penguin-dark" ? (
-                <LightModeIcon fontSize="small" />
-            ) : (
-                <DarkModeIcon fontSize="small" />
-            )}
-        </Button>
+            startIcon={icon}
+        />
     );
 };
 

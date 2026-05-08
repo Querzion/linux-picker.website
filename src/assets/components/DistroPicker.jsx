@@ -24,6 +24,15 @@ const DistroPicker = () => {
         packageManagerIndex,
         setPackageManagerIndex,
 
+        familyIndex,
+        setFamilyIndex,
+
+        originIndex,
+        setOriginIndex,
+
+        desktopIndex,
+        setDesktopIndex,
+
         protocol,
         setProtocol,
 
@@ -52,6 +61,15 @@ const DistroPicker = () => {
 
                 packageManagerIndex={packageManagerIndex}
                 setPackageManagerIndex={setPackageManagerIndex}
+
+                familyIndex={familyIndex}
+                setFamilyIndex={setFamilyIndex}
+
+                originIndex={originIndex}
+                setOriginIndex={setOriginIndex}
+
+                desktopIndex={desktopIndex}
+                setDesktopIndex={setDesktopIndex}
 
                 search={search}
                 setSearch={setSearch}

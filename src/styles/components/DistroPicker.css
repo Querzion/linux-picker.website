@@ -7,11 +7,27 @@
     width: 100%;
 }
 
+/* DEFAULT = MOBILE (1 card) */
 .distro-grid .distro-card-item {
-    flex: 0 0 calc(33% - 1rem);
+    flex: 0 0 100%;
     scroll-snap-align: start;
 }
 
+/* TABLET = 2 cards */
+@media (min-width: 768px) {
+    .distro-grid .distro-card-item {
+        flex: 0 0 calc(50% - 0.75rem);
+    }
+}
+
+/* DESKTOP = 3 cards */
+@media (min-width: 1200px) {
+    .distro-grid .distro-card-item {
+        flex: 0 0 calc(33% - 1rem);
+    }
+}
+
+/* scrollbar */
 .distro-grid::-webkit-scrollbar {
     height: 8px;
 }

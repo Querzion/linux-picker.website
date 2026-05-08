@@ -53,17 +53,6 @@ select {
     color: inherit;
 }
 
-/* Remove default button styles */
-button {
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
-button:active {
-    transform: scale(0.97);
-}
-
 /* =========================
     6. LIST RESET
 ========================= */

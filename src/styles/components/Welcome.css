@@ -1,3 +1,126 @@
+/* =========================================================
+    WELCOME PAGE
+========================================================= */
+
 .Welcome {
+    width: 100%;
     margin-top: -1.5rem;
+}
+
+.Welcome .page-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+/* =========================================================
+    TITLE
+========================================================= */
+
+.Welcome h2 {
+    margin: 0;
+
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    font-weight: 700;
+    line-height: 1.2;
+
+    color: var(--color-text-primary);
+}
+
+/* =========================================================
+    TEXT
+========================================================= */
+
+.Welcome p {
+    margin-top: 1rem;
+
+    font-size: 1rem;
+    line-height: 1.8;
+
+    color: var(--color-text-secondary);
+
+    max-width: 850px;
+}
+
+/* =========================================================
+    LIST
+========================================================= */
+
+.Welcome ul {
+    margin: 0;
+    padding-left: 1.25rem;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 0.75rem 1rem;
+
+    list-style: none;
+}
+
+.Welcome li {
+    position: relative;
+
+    padding: 0.85rem 1rem 0.85rem 2.5rem;
+
+    border-radius: var(--radius-md);
+
+    background: var(--color-surface-secondary);
+    border: 1px solid var(--color-border);
+
+    color: var(--color-text-primary);
+
+    font-size: 0.95rem;
+    font-weight: 500;
+
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        background 0.2s ease;
+}
+
+.Welcome li::before {
+    content: "•";
+
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    font-size: 1.2rem;
+    font-weight: 700;
+
+    color: var(--accent-color);
+}
+
+.Welcome li:hover {
+    transform: translateY(-2px);
+
+    border-color: var(--accent-color);
+    background: var(--color-surface-hover);
+}
+
+/* =========================================================
+    MOBILE
+========================================================= */
+
+@media (max-width: 920px) {
+
+    .Welcome .page-section {
+        gap: 1rem;
+    }
+
+    .Welcome h2 {
+        font-size: 1.6rem;
+    }
+
+    .Welcome p {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+    .Welcome ul {
+        grid-template-columns: 1fr;
+    }
+
 }
