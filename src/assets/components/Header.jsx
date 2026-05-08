@@ -29,23 +29,27 @@ const Header = () => {
 
     return (
         <Container>
-            <Card className="header-card" bare>
+            <Card className={`header-card ${selectedDistro ? "distro-selected" : ""}`} bare>
 
                 {/* =====================================================
                     BRAND
                 ===================================================== */}
                 <div className="brand">
-                    {selectedDistro ? (
+                    {selectedDistro ? ( 
                         <>
                             <img
                                 className="brand-logo"
                                 src={selectedDistro.logo}
                                 alt={selectedDistro.name}
                             />
-
-                            <span className="brand-title distro-active">
-                                {selectedDistro.name.toUpperCase()}
-                            </span>
+                            <div className="brand-title-block">
+                                <span className="brand-title distro-active">
+                                    {selectedDistro.name.toUpperCase()}
+                                </span>
+                                <span className={`stability ${selectedDistro.stability}`}>
+                                    {selectedDistro.stability}
+                                </span>
+                            </div>
                         </>
                     ) : (
                         <Brand />
@@ -109,6 +113,43 @@ const Header = () => {
                         </>
                     )}
                 </div>
+
+                {/* =====================================================
+                    DIVIDER (only when selected)
+                ===================================================== */}
+                {selectedDistro && (
+                    <hr className="header-distro-divider" />
+                )}
+
+                {/* =====================================================
+                    DISTRO DESCRIPTION (only when selected)
+                ===================================================== */}
+                {selectedDistro && (
+                    <p className="brand-distro-description">
+                        {selectedDistro.description}
+                    </p>
+                )}
+
+                {/* =====================================================
+                    DISTRO TAGS (only when selected)
+                ===================================================== */}
+                {selectedDistro && (
+                    <div className="header-distro-tags tag-row">
+                        <span className="tag-chip">{selectedDistro.family}</span>
+                        <span className="tag-chip">
+                            {selectedDistro.serverFocused ? "server" : "desktop"}
+                        </span>
+                        {selectedDistro.displayProtocol?.map((p) => (
+                            <span key={p} className="tag-chip">{p}</span>
+                        ))}
+                        {selectedDistro.displayEnvironments?.slice(0, 4).map((e) => (
+                            <span key={e} className="tag-chip">{e}</span>
+                        ))}
+                        {selectedDistro.tags?.slice(0, 5).map((tag) => (
+                            <span key={tag} className="tag-chip">{tag}</span>
+                        ))}
+                    </div>
+                )}
 
                 {/* =====================================================
                     MOBILE DRAWER
