@@ -45,6 +45,8 @@ const DistroFilter = ({
 
     search,
     setSearch,
+
+    reset,
 }) => {
     const [showAdvanced, setShowAdvanced] = useState(false);
 
@@ -190,6 +192,13 @@ const DistroFilter = ({
                     value={search}
                     onChange={(e) => setSearch(e.target.value)}
                 />
+                <Button
+                    variant="ghost"
+                    size="md"
+                    onClick={reset}
+                >
+                    Reset
+                </Button>
             </div>
 
         </Card>

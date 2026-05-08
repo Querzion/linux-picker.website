@@ -38,6 +38,8 @@ const DistroPicker = () => {
 
         search,
         setSearch,
+
+        reset,
     } = useDistroFilter(distros);
 
     return (
@@ -73,6 +75,8 @@ const DistroPicker = () => {
 
                 search={search}
                 setSearch={setSearch}
+
+                reset={reset}
             />
 
             <div className="distro-grid">

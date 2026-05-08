@@ -20,6 +20,11 @@
     margin-top: 1.5rem;
     width: 100%;
 }
+.filter-search {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+}
 
 /* ensures input stretches full width */
 .filter-search .input-container {

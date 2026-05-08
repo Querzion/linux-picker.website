@@ -114,7 +114,7 @@ export const STABILITY_ORDER = Object.fromEntries(
 ========================= */
 export function useDistroFilter(distros = []) {
 
-    const [stabilityIndex, setStabilityIndex] = useState(1);
+    const [stabilityIndex, setStabilityIndex] = useState(0);
     const [systemTypeIndex, setSystemTypeIndex] = useState(0);
     const [environmentIndex, setEnvironmentIndex] = useState(0);
     const [difficultyIndex, setDifficultyIndex] = useState(0);
@@ -137,6 +137,19 @@ export function useDistroFilter(distros = []) {
     const family = FAMILY_LEVELS[familyIndex].id;
     const origin = ORIGIN_LEVELS[originIndex].id;
     const desktop = DESKTOP_RICHNESS[desktopIndex].id;
+
+    const reset = () => {
+        setStabilityIndex(0);
+        setSystemTypeIndex(0);
+        setEnvironmentIndex(0);
+        setDifficultyIndex(0);
+        setPackageManagerIndex(0);
+        setFamilyIndex(0);
+        setOriginIndex(0);
+        setDesktopIndex(0);
+        setProtocol("wayland");
+        setSearch("");
+    };
 
     const filtered = useMemo(() => {
         return distros
@@ -288,5 +301,7 @@ export function useDistroFilter(distros = []) {
 
         search,
         setSearch,
+        
+        reset,
     };
 }
