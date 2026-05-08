@@ -10,7 +10,7 @@ const Brand = () => {
                 className="brand-logo"
             />
 
-            <h1 className="brand-title">
+            <h1 className="brand-title brand-title-size">
                 THE LINUX PICKER
             </h1>
         </div>
