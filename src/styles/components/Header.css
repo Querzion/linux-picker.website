@@ -90,6 +90,10 @@
     font-size: var(--font-size-2xl);
 }
 
+.brand-title-size {
+    font-size: var(--font-size-3xl);
+}
+
 .brand-title-block .stability {
     font-size: var(--font-size-xs);
     color: var(--color-accent);
