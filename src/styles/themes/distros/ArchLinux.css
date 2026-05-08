@@ -1,15 +1,34 @@
-:root[data-theme="archlinux"] {
+:root[data-theme="archlinux-dark"] {
+    --color-accent: #1793D1;
+    --bg-surface: #00111a;
+    --card-bg: #00111a;
+    --card-border: #1793D1;
+    --border-focus: #1793D1;
+    --input-focus-border: #1793D1;
+    --slider-track-fill: #1793D1;
+    --slider-thumb-bg: #1793D1;
+    --btn-primary-bg: #1793D1;
+    --btn-secondary-text: #1793D1;
+    --btn-secondary-border: #1793D1;
+    --btn-ghost-text: #1793D1;
+    --btn-outline-text: #1793D1;
+    --btn-outline-border: #1793D1;
+}
 
-    --color-accent: #1793d1;
-
-    --bg-main: #0f1419;
-    --bg-surface: #151b23;
-    --bg-elevated: #1c2430;
-
-    --text-primary: #e6e6e6;
-    --text-secondary: #aab2bf;
-
-    --border-default: #2a3441;
-
-    --link-color: #1793d1;
+:root[data-theme="archlinux-light"] {
+    --color-accent: #1793D1;
+    --bg-surface: #00111a;
+    --card-bg: #00111a;
+    --card-border: #1793D1;
+    --border-focus: #1793D1;
+    --input-focus-border: #1793D1;
+    --slider-track-fill: #1793D1;
+    --slider-thumb-bg: #1793D1;
+    --btn-primary-bg: #1793D1;
+    --btn-secondary-text: #1793D1;
+    --btn-secondary-border: #1793D1;
+    --btn-ghost-text: #1793D1;
+    --btn-outline-text: #1793D1;
+    --btn-outline-border: #1793D1;
+    --text-primary: #ffffff;
 }
