@@ -10,7 +10,7 @@ const About = () => {
                 <h2>About The Linux Picker</h2>
 
                 <p>
-                    <strong>[07 MAY 2025]</strong>
+                    <strong>[07 MAY 2026]</strong>
                 </p>
 
                 <p>
