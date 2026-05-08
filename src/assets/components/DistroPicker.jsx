@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import distros from "../../distros.json";
 import { useDistroFilter } from "../../js/hooks/useDistoFilter";
 

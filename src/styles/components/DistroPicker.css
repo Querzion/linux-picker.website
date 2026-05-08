@@ -13,6 +13,36 @@
     scroll-snap-align: start;
 }
 
+.distro-grid::-webkit-scrollbar {
+    height: 14px;
+    transition: height var(--transition-fast);
+}
+
+.distro-grid:hover::-webkit-scrollbar {
+    height: 22px;
+}
+
+.distro-grid::-webkit-scrollbar-track {
+    background: var(--slider-track-bg);
+    border-radius: var(--radius-full);
+    margin: 0 4px;
+}
+
+.distro-grid::-webkit-scrollbar-thumb {
+    background: var(--slider-thumb-bg);
+    border-radius: var(--radius-lg);
+    border: 2px solid var(--slider-thumb-border);
+}
+
+.distro-grid:hover::-webkit-scrollbar-thumb {
+    background: var(--slider-thumb-hover);
+    border-radius: var(--radius-lg);
+}
+
+.distro-grid::-webkit-scrollbar-thumb:active {
+    background: var(--slider-thumb-active);
+}
+
 /* TABLET = 2 cards */
 @media (min-width: 768px) {
     .distro-grid .distro-card-item {
@@ -25,14 +55,4 @@
     .distro-grid .distro-card-item {
         flex: 0 0 calc(33% - 1rem);
     }
-}
-
-/* scrollbar */
-.distro-grid::-webkit-scrollbar {
-    height: 8px;
-}
-
-.distro-grid::-webkit-scrollbar-thumb {
-    background: var(--accent-color, #888);
-    border-radius: 999px;
 }
