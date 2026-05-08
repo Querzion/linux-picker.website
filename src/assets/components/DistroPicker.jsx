@@ -12,8 +12,8 @@ const DistroPicker = () => {
         stabilityIndex,
         setStabilityIndex,
 
-        useCaseIndex,
-        setUseCaseIndex,
+        systemTypeIndex,
+        setSystemTypeIndex,
 
         environmentIndex,
         setEnvironmentIndex,
@@ -41,8 +41,8 @@ const DistroPicker = () => {
                 stabilityIndex={stabilityIndex}
                 setStabilityIndex={setStabilityIndex}
 
-                useCaseIndex={useCaseIndex}
-                setUseCaseIndex={setUseCaseIndex}
+                systemTypeIndex={systemTypeIndex}
+                setSystemTypeIndex={setSystemTypeIndex}
 
                 environmentIndex={environmentIndex}
                 setEnvironmentIndex={setEnvironmentIndex}
