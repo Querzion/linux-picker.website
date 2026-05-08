@@ -1,24 +1,22 @@
-
 /* =========================================================
-    HEADER (GRID - EXPLICIT AREAS)
+    HEADER (GRID - CLEAN VERSION)
 ========================================================= */
 
 .header-card {
     display: grid;
     grid-template-columns: 1fr auto auto;
-    grid-template-areas: "brand nav menu";
+
     align-items: center;
+
     margin: 1rem 0;
     padding: var(--space-4);
 }
 
 /* =========================================================
-    BRAND (LEFT)
+    BRAND
 ========================================================= */
 
 .brand {
-    grid-area: brand;
-
     display: flex;
     align-items: center;
     gap: var(--space-2);
@@ -27,33 +25,31 @@
 .brand-logo {
     width: 80px;
     height: 80px;
+    margin-left: .8rem;
 }
 
 .brand-title {
     font-size: var(--font-size-3xl);
+    margin-left: .8rem;
 }
 
 /* =========================================================
-    NAV (RIGHT - DESKTOP)
+    NAV (DESKTOP)
 ========================================================= */
 
 .header-nav {
-    grid-area: nav;
-
     justify-self: end;
-    display: none;
 
+    display: none;
     align-items: center;
     gap: var(--space-2);
 }
 
 /* =========================================================
-    MOBILE MENU (RIGHT)
+    MOBILE MENU
 ========================================================= */
 
 .mobile-menu {
-    grid-area: menu;
-
     justify-self: end;
 }
 
@@ -61,8 +57,13 @@
     color: var(--color-accent);
 }
 
+/* =========================================================
+    DRAWER
+========================================================= */
+
 .mobile-drawer .MuiDrawer-paper {
     width: 250px;
+
     background: var(--bg-main);
     border-left: 2px solid var(--color-accent);
 }
@@ -79,6 +80,13 @@
     padding: 0.8rem;
 }
 
+/* =========================================================
+    ACTIVE DISTRO COLOR
+========================================================= */
+
+.distro-active {
+    color: var(--text-primary);
+}
 
 /* =========================================================
     TABLET / DESKTOP
@@ -88,7 +96,6 @@
 
     .header-card {
         grid-template-columns: 1fr auto;
-        grid-template-areas: "brand nav";
     }
 
     .header-nav {
@@ -102,15 +109,17 @@
     .brand-logo {
         width: 80px;
         height: 80px;
+        margin-left: 1rem;
     }
 
     .brand-title {
         font-size: var(--font-size-4xl);
+        margin-left: 1rem;
     }
 }
 
 /* =========================================================
-    DESKTOP OVERRIDES
+    DESKTOP LARGE
 ========================================================= */
 
 @media (min-width: 1200px) {
@@ -118,9 +127,11 @@
     .brand-logo {
         width: 92px;
         height: 92px;
+        margin-left: 1rem;
     }
 
     .brand-title {
         font-size: var(--font-size-5xl);
+        margin: -1rem 0 -1rem 1rem;
     }
 }

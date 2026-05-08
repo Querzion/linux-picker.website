@@ -31,6 +31,9 @@ const Header = () => {
         <Container>
             <Card className="header-card" bare>
 
+                {/* =====================================================
+                    BRAND
+                ===================================================== */}
                 <div className="brand">
                     {selectedDistro ? (
                         <>
@@ -39,10 +42,8 @@ const Header = () => {
                                 src={selectedDistro.logo}
                                 alt={selectedDistro.name}
                             />
-                            <span
-                                className="brand-title"
-                                style={{ color: selectedDistro.accentColor }}
-                            >
+
+                            <span className="brand-title distro-active">
                                 {selectedDistro.name.toUpperCase()}
                             </span>
                         </>
@@ -51,12 +52,18 @@ const Header = () => {
                     )}
                 </div>
 
+                {/* =====================================================
+                    MOBILE MENU
+                ===================================================== */}
                 <div className="mobile-menu">
                     <IconButton onClick={() => setOpen(true)} sx={{ p: 1 }}>
                         <MenuIcon sx={{ fontSize: 32 }} />
                     </IconButton>
                 </div>
 
+                {/* =====================================================
+                    DESKTOP NAV
+                ===================================================== */}
                 <div className="header-nav">
                     {selectedDistro ? (
                         <>
@@ -64,15 +71,20 @@ const Header = () => {
                                 variant="secondary"
                                 width="160px"
                                 external
-                                onClick={() => window.open(selectedDistro.website, "_blank")}
+                                onClick={() =>
+                                    window.open(selectedDistro.website, "_blank", "noopener,noreferrer")
+                                }
                             >
                                 Visit Site
                             </Button>
+
                             <Button
                                 variant="primary"
                                 width="160px"
                                 external
-                                onClick={() => window.open(selectedDistro.downloadPage, "_blank")}
+                                onClick={() =>
+                                    window.open(selectedDistro.downloadPage, "_blank", "noopener,noreferrer")
+                                }
                             >
                                 Download ISO
                             </Button>
@@ -86,6 +98,7 @@ const Header = () => {
                             >
                                 {isPicker ? "Home" : "ISO Picker"}
                             </Button>
+
                             <Button
                                 variant="secondary"
                                 width="160px"
@@ -97,6 +110,9 @@ const Header = () => {
                     )}
                 </div>
 
+                {/* =====================================================
+                    MOBILE DRAWER
+                ===================================================== */}
                 <Drawer
                     anchor="right"
                     open={open}
@@ -109,14 +125,21 @@ const Header = () => {
                                 <Button
                                     variant="secondary"
                                     fullWidth
-                                    onClick={() => { window.open(selectedDistro.website, "_blank"); setOpen(false); }}
+                                    onClick={() => {
+                                        window.open(selectedDistro.website, "_blank", "noopener,noreferrer");
+                                        setOpen(false);
+                                    }}
                                 >
                                     Visit Site
                                 </Button>
+
                                 <Button
                                     variant="primary"
                                     fullWidth
-                                    onClick={() => { window.open(selectedDistro.downloadPage, "_blank"); setOpen(false); }}
+                                    onClick={() => {
+                                        window.open(selectedDistro.downloadPage, "_blank", "noopener,noreferrer");
+                                        setOpen(false);
+                                    }}
                                 >
                                     Download ISO
                                 </Button>
@@ -130,6 +153,7 @@ const Header = () => {
                                 >
                                     {isPicker ? "Home" : "ISO Picker"}
                                 </Button>
+
                                 <Button
                                     variant="secondary"
                                     fullWidth
