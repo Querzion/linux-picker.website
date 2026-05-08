@@ -203,16 +203,16 @@
 
 :root[data-theme="penguin-light"] {
 
-    --bg-main: #eae7d9;
-    --bg-surface: #dadccd;
-    --bg-elevated: #e9e9e9;
+    --bg-main: #ddf0f5;
+    --bg-surface: #cce8ef;
+    --bg-elevated: #e4f4f7;
 
     --text-primary: #121212;
     --text-secondary: #4a4a4a;
     --text-muted: #777777;
 
-    --border-default: #dddddd;
-    --border-light: #e6e6e6;
+    --border-default: #cccccc;
+    --border-light: rgba(0, 0, 0, 0.15);
 
     --input-border: #333333;
     --input-text: var(--text-primary);
@@ -223,8 +223,8 @@
     --btn-secondary-border: var(--color-accent);
     --btn-secondary-hover-border: var(--color-accent);
 
-    --hover-overlay: rgba(0, 0, 0, 0.04);
-    --active-overlay: rgba(0, 0, 0, 0.08);
+    --hover-overlay: rgba(0, 0, 0, 0.06);
+    --active-overlay: rgba(0, 0, 0, 0.10);
 }
 
 
