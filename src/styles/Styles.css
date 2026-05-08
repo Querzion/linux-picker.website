@@ -26,3 +26,6 @@
 
 /* 6. Utilities */
 @import "./utilities/Display.css";
+
+/* 7. Pages */
+@import "./pages/NotFound.css";

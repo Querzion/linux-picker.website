@@ -1,0 +1,107 @@
+/* =========================================================
+    NOT FOUND PAGE
+========================================================= */
+
+.NotFound-Position {
+    margin-top: -1.5rem;
+}
+
+.NotFound {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+/* =========================================================
+    SECTION LAYOUT
+========================================================= */
+
+.NotFound .page-section {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 3rem 1rem;
+    gap: 1rem;
+
+    max-width: 600px;
+}
+
+/* =========================================================
+    TITLE
+========================================================= */
+
+.NotFound h2 {
+    font-size: 2rem;
+    font-weight: 700;
+
+    margin: 0;
+
+    color: var(--color-text-primary);
+}
+
+/* =========================================================
+    TEXT
+========================================================= */
+
+.NotFound p {
+    font-size: 1rem;
+    line-height: 1.6;
+
+    max-width: 420px;
+
+    color: var(--color-text-secondary);
+}
+
+/* =========================================================
+    BIG 404 BACKGROUND
+========================================================= */
+
+.NotFound .page-section::before {
+    content: "404";
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -60%);
+
+    font-size: clamp(6rem, 12vw, 10rem);
+    font-weight: 800;
+
+    opacity: 0.06;
+
+    pointer-events: none;
+
+    color: var(--color-text-primary);
+}
+
+/* =========================================================
+    BUTTON
+========================================================= */
+
+.NotFound button {
+    margin-top: 0.5rem;
+}
+
+/* =========================================================
+    MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .NotFound h2 {
+        font-size: 1.5rem;
+    }
+
+    .NotFound p {
+        font-size: 0.95rem;
+    }
+
+}
