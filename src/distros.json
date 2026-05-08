@@ -1465,7 +1465,7 @@
             "wayland",
             "x11"
         ],
-        "logo": "/src/assets/images/logos/garuda_blue.png",
+        "logo": "/src/assets/images/logos/garuda_orange.png",
         "logoColor": "#EF3939",
         "accentColor": "#FF6B35",
         "bgColor": "#1a0000",
