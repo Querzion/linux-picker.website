@@ -5,45 +5,25 @@
 @media (max-width: 919px) {
 
     .footer {
-        background: var(--bg-surface);
-
         padding: 24px 0;
         margin-bottom: 1rem;
-
-        /* Cleaner than border-top with rounded cards */
-        box-shadow: inset 0 1px 0 var(--border-default);
     }
-
-    /* =========================================================
-        MAIN WRAPPER
-    ========================================================= */
 
     .footer-container {
         max-width: 1120px;
-
         margin: 0 auto;
         padding: 0 16px;
-
         display: flex;
         flex-direction: column;
         gap: 16px;
     }
 
-    /* =========================================================
-        TOP ROW LAYOUT
-    ========================================================= */
-
     .footer-top {
         display: grid;
         grid-template-columns: 1fr auto 1fr;
-
         align-items: center;
         gap: 12px;
     }
-
-    /* =========================================================
-        LEFT SIDE
-    ========================================================= */
 
     .footer-left {
         display: flex;
@@ -51,21 +31,12 @@
         align-items: center;
     }
 
-    /* =========================================================
-        CENTER CONTENT
-    ========================================================= */
-
     .footer-center {
         text-align: center;
-
         display: flex;
         flex-direction: column;
         gap: 6px;
     }
-
-    /* =========================================================
-        RIGHT SIDE
-    ========================================================= */
 
     .footer-right {
         display: flex;
@@ -73,47 +44,30 @@
         align-items: center;
     }
 
-    /* =========================================================
-        TEXT STYLES
-    ========================================================= */
-
     .footer-title {
         font-size: var(--font-size-xl);
         font-weight: var(--font-weight-700);
-
         color: var(--text-primary);
     }
 
     .footer-subtitle {
         font-size: var(--font-size-sm);
         font-style: italic;
-
         color: var(--text-muted);
     }
 
     .footer-meta {
         font-size: var(--font-size-xs);
-
         color: var(--text-muted);
     }
-
-    /* =========================================================
-        COPYRIGHT
-    ========================================================= */
 
     .footer-copyright {
         display: flex;
         justify-content: center;
         gap: 4px;
-
         font-size: var(--font-size-sm);
-
         color: var(--text-secondary);
     }
-
-    /* =========================================================
-        LINKS
-    ========================================================= */
 
     .footer-link {
         color: var(--link-color);
@@ -129,10 +83,6 @@
         margin-top: -4rem;
     }
 
-    /* =========================================================
-        MOBILE SIMPLIFICATION
-    ========================================================= */
-
     .footer-subtitle {
         display: none;
     }
@@ -146,7 +96,6 @@
     }
 }
 
-
 /* =========================================================
     DESKTOP (>= 920px)
 ========================================================= */
@@ -154,45 +103,25 @@
 @media (min-width: 920px) {
 
     .footer {
-        background: var(--bg-surface);
-
         padding: 32px 0;
         margin-bottom: 1rem;
-
-        /* Cleaner than border-top with rounded cards */
-        box-shadow: inset 0 1px 0 var(--border-default);
     }
-
-    /* =========================================================
-        MAIN WRAPPER
-    ========================================================= */
 
     .footer-container {
         max-width: 1120px;
-
         margin: 0 auto;
         padding: 0 24px;
-
         display: flex;
         flex-direction: column;
         gap: 20px;
     }
 
-    /* =========================================================
-        TOP ROW LAYOUT
-    ========================================================= */
-
     .footer-top {
         display: grid;
         grid-template-columns: 1fr auto 1fr;
-
         align-items: center;
         gap: 16px;
     }
-
-    /* =========================================================
-        LEFT SIDE
-    ========================================================= */
 
     .footer-left {
         display: flex;
@@ -200,21 +129,12 @@
         align-items: center;
     }
 
-    /* =========================================================
-        CENTER CONTENT
-    ========================================================= */
-
     .footer-center {
         text-align: center;
-
         display: flex;
         flex-direction: column;
         gap: 10px;
     }
-
-    /* =========================================================
-        RIGHT SIDE
-    ========================================================= */
 
     .footer-right {
         display: flex;
@@ -222,47 +142,30 @@
         align-items: center;
     }
 
-    /* =========================================================
-        TEXT STYLES
-    ========================================================= */
-
     .footer-title {
         font-size: var(--font-size-xl);
         font-weight: var(--font-weight-700);
-
         color: var(--text-primary);
     }
 
     .footer-subtitle {
         font-size: var(--font-size-sm);
         font-style: italic;
-
         color: var(--text-muted);
     }
 
     .footer-meta {
         font-size: var(--font-size-xs);
-
         color: var(--text-muted);
     }
-
-    /* =========================================================
-        COPYRIGHT
-    ========================================================= */
 
     .footer-copyright {
         display: flex;
         justify-content: center;
         gap: 4px;
-
         font-size: var(--font-size-sm);
-
         color: var(--text-secondary);
     }
-
-    /* =========================================================
-        LINKS
-    ========================================================= */
 
     .footer-link {
         color: var(--link-color);
