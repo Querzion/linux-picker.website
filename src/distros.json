@@ -3303,5 +3303,53 @@
                 "textColor": "#141400"
             }
         }
+    },
+    {
+        "id": "nobara-linux",
+        "name": "Nobara Linux",
+        "stability": "stable",
+        "serverFocused": false,
+        "displayEnvironments": [
+            "kde-plasma",
+            "gnome"
+        ],
+        "displayProtocol": [
+            "wayland",
+            "x11"
+        ],
+        "logo": "/images/logos/nobara-blue.png",
+        "logoColor": "#7A3FF2",
+        "accentColor": "#7A3FF2",
+        "bgColor": "#0b001a",
+        "website": "https://nobaraproject.org/",
+        "downloadPage": "https://nobaraproject.org/",
+        "isoUrl": "https://nobaraproject.org/",
+        "description": "A Fedora-based Linux distribution tuned for gaming and content creation. Nobara ships with pre-applied fixes and enhancements for Steam, Proton, Wine, OBS, and NVIDIA drivers, reducing setup friction out of the box.",
+        "tags": [
+            "gaming",
+            "fedora-based",
+            "proton",
+            "wine",
+            "dxvk",
+            "beginner-friendly",
+            "performance"
+        ],
+        "family": "fedora-based",
+        "type": "desktop",
+        "origin": "community",
+        "themes": {
+            "dark": {
+                "bgColor": "#0a0014",
+                "accentColor": "#7A3FF2",
+                "borderColor": "#7A3FF2",
+                "textColor": "#ffffff"
+            },
+            "light": {
+                "bgColor": "#efe6ff",
+                "accentColor": "#4b1fa8",
+                "borderColor": "#4b1fa8",
+                "textColor": "#0a0014"
+            }
+        }
     }
 ]
