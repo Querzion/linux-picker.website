@@ -3351,5 +3351,50 @@
                 "textColor": "#0a0014"
             }
         }
+    },
+    {
+        "id": "omarchy",
+        "name": "Omarchy",
+        "stability": "bleeding-edge",
+        "serverFocused": false,
+        "displayEnvironments": [
+            "hyprland"
+        ],
+        "displayProtocol": [
+            "wayland"
+        ],
+        "logo": "/images/logos/_defaultlinuxlogo.png",
+        "logoColor": "#00D4FF",
+        "accentColor": "#00D4FF",
+        "bgColor": "#000a14",
+        "website": "https://omarchy.org/",
+        "downloadPage": "https://omarchy.org/",
+        "isoUrl": "https://omarchy.org/",
+        "description": "An Arch-based desktop distribution centered around the Hyprland Wayland compositor. Omarchy focuses on a minimal, keyboard-driven workflow with a highly curated setup inspired by modern tiling window manager environments.",
+        "tags": [
+            "arch-based",
+            "wayland",
+            "hyprland",
+            "tiling",
+            "advanced",
+            "rolling"
+        ],
+        "family": "arch-based",
+        "type": "desktop",
+        "origin": "community",
+        "themes": {
+            "dark": {
+                "bgColor": "#000814",
+                "accentColor": "#00D4FF",
+                "borderColor": "#00D4FF",
+                "textColor": "#ffffff"
+            },
+            "light": {
+                "bgColor": "#dff6ff",
+                "accentColor": "#007a99",
+                "borderColor": "#007a99",
+                "textColor": "#000814"
+            }
+        }
     }
 ]
