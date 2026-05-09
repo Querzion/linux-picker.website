@@ -1945,55 +1945,6 @@
         }
     },
     {
-        "id": "pikaos",
-        "name": "Pika OS",
-        "stability": "less-stable",
-        "serverFocused": false,
-        "displayEnvironments": [
-            "gnome",
-            "kde-plasma",
-            "niri",
-            "hyprland",
-            "cosmic"
-        ],
-        "displayProtocol": [
-            "wayland",
-            "x11"
-        ],
-        "logo": "/images/logos/pikaos-simple-nv.png",
-        "logoColor": "#F5A623",
-        "accentColor": "#F5A623",
-        "bgColor": "#1a1000",
-        "website": "https://pika-os.com/",
-        "downloadPage": "https://pika-os.com/",
-        "isoUrl": "https://pika-os.com/",
-        "description": "Debian-based but with a bleeding-edge gaming focus. PikaOS ships a patched kernel, up-to-date Mesa, and Wayland-first defaults \u2014 a gamer's shortcut to a working rig.",
-        "tags": [
-            "gaming",
-            "debian-based",
-            "bleeding-edge",
-            "apt",
-            "performance"
-        ],
-        "family": "debian-based",
-        "type": "gaming",
-        "origin": "community",
-        "themes": {
-            "dark": {
-                "bgColor": "#140d00",
-                "accentColor": "#F5A623",
-                "borderColor": "#F5A623",
-                "textColor": "#ffffff"
-            },
-            "light": {
-                "bgColor": "#fff3dc",
-                "accentColor": "#a06000",
-                "borderColor": "#a06000",
-                "textColor": "#140d00"
-            }
-        }
-    },
-    {
         "id": "gentoo",
         "name": "Gentoo",
         "stability": "less-stable",
