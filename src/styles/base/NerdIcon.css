@@ -1,0 +1,13 @@
+.nf-icon {
+    font-family: "JetBrains Mono";
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+
+    width: 1em;
+    height: 1em;
+
+    text-rendering: geometricPrecision;
+    -webkit-font-smoothing: antialiased;
+}
