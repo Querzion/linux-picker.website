@@ -14,25 +14,26 @@ import {
 } from "../../js/hooks/useDistoFilter";
 
 import IconButton from "@mui/material/IconButton";
-import MenuIcon from "@mui/icons-material/Menu";
-import Drawer from "@mui/material/Drawer";
+import MenuIcon   from "@mui/icons-material/Menu";
+import Drawer     from "@mui/material/Drawer";
 
 /* ═══════════════════════════════════════════════════════
     GRADIENT BAR
-    direction: "difficulty" → green › yellow › red
-    direction: "stability"  → red › yellow › green
 ═══════════════════════════════════════════════════════ */
 const GradientBar = ({
     score,
     min = 1,
     max = 10,
     direction,
+    barTitle,
     leftLabel,
     rightLabel,
     translatedLabel,
     mutedColor,
+    textColor,
 }) => {
     if (score === undefined) return null;
+
     const pct = ((score - min) / (max - min)) * 100;
     const gradient =
         direction === "difficulty"
@@ -41,15 +42,18 @@ const GradientBar = ({
 
     return (
         <div className="gradient-bar-wrap">
-            <div className="gradient-bar-header">
-                <span className="gradient-bar-left-label"  style={{ color: mutedColor }}>{leftLabel}</span>
-                <span className="gradient-bar-translation" style={{ color: mutedColor }}>{translatedLabel}</span>
-                <span className="gradient-bar-right-label" style={{ color: mutedColor }}>{rightLabel}</span>
+            <div className="gradient-bar-top-row">
+                <span className="gradient-bar-title"       style={{ color: mutedColor }}>{barTitle}</span>
+                <span className="gradient-bar-translation" style={{ color: textColor }}>{translatedLabel}</span>
             </div>
             <div className="gradient-bar-track">
                 <div className="gradient-bar-fill-bg" style={{ background: gradient }} />
                 <div className="gradient-bar-mask"    style={{ left: `${pct}%` }} />
                 <div className="gradient-bar-thumb"   style={{ left: `${pct}%` }} />
+            </div>
+            <div className="gradient-bar-scale">
+                <span style={{ color: mutedColor }}>{leftLabel}</span>
+                <span style={{ color: mutedColor }}>{rightLabel}</span>
             </div>
         </div>
     );
@@ -65,20 +69,21 @@ const Chip = ({ label, style }) => (
 /* ═══════════════════════════════════════════════════════
     HEADER
 ═══════════════════════════════════════════════════════ */
-const Header = () => {
+const Header = ({ onToggleLinks, linksOpen }) => {
     const navigate = useNavigate();
     const location = useLocation();
 
     const isPicker = location.pathname === "/picker";
     const isAbout  = location.pathname === "/about";
 
-    const [open, setOpen] = useState(false);
+    const [drawerOpen, setDrawerOpen] = useState(false);
     const { selectedDistro, themeMode } = useDistro();
 
-    const go = (path) => { navigate(path); setOpen(false); };
+    const go = (path) => { navigate(path); setDrawerOpen(false); };
 
     const theme     = selectedDistro?.themes?.[themeMode] ?? {};
     const muted     = theme.textMuted || theme.textSecondary || theme.textColor;
+    const textColor = theme.textColor || "#ffffff";
     const chipStyle = {
         borderColor: theme.tagBorder || theme.accentColor,
         background:  theme.tagBg,
@@ -153,7 +158,7 @@ const Header = () => {
 
                 {/* ── MOBILE MENU BUTTON ── */}
                 <div className="mobile-menu">
-                    <IconButton onClick={() => setOpen(true)} sx={{ p: 1 }}>
+                    <IconButton onClick={() => setDrawerOpen(true)} sx={{ p: 1 }}>
                         <MenuIcon
                             sx={{
                                 fontSize: 32,
@@ -166,46 +171,27 @@ const Header = () => {
                 {/* ── DESKTOP NAV ── */}
                 <div className="header-nav">
                     {selectedDistro ? (
-                        <>
-                            <Button
-                                variant="secondary"
-                                width="160px"
-                                external
-                                style={{
-                                    background:  theme.btnSecondaryBg,
-                                    color:       theme.btnSecondaryText,
-                                    borderColor: theme.btnSecondaryBorder,
-                                }}
-                                onClick={() =>
-                                    window.open(
-                                        selectedDistro.website,
-                                        "_blank",
-                                        "noopener,noreferrer"
-                                    )
-                                }
-                            >
-                                Visit Site
-                            </Button>
-                            <Button
-                                variant="primary"
-                                width="160px"
-                                external
-                                style={{
-                                    background:  theme.btnPrimaryBg,
-                                    color:       theme.btnPrimaryText,
-                                    borderColor: theme.btnPrimaryBorder,
-                                }}
-                                onClick={() =>
-                                    window.open(
-                                        selectedDistro.downloadPage,
-                                        "_blank",
-                                        "noopener,noreferrer"
-                                    )
-                                }
-                            >
-                                Download ISO
-                            </Button>
-                        </>
+                        /* Single Links button — toggles DistroLinks card */
+                        <Button
+                            variant={linksOpen ? "primary" : "secondary"}
+                            width="160px"
+                            style={
+                                linksOpen
+                                    ? {
+                                        background:  theme.btnPrimaryBg,
+                                        color:       theme.btnPrimaryText,
+                                        borderColor: theme.btnPrimaryBorder,
+                                    }
+                                    : {
+                                        background:  theme.btnSecondaryBg,
+                                        color:       theme.btnSecondaryText,
+                                        borderColor: theme.btnSecondaryBorder,
+                                    }
+                            }
+                            onClick={onToggleLinks}
+                        >
+                            {linksOpen ? "Close Links" : "Links"}
+                        </Button>
                     ) : (
                         <>
                             <Button
@@ -244,34 +230,34 @@ const Header = () => {
                     </p>
                 )}
 
-                {/* ── DIFFICULTY BAR — named wrapper for grid-area ── */}
+                {/* ── DIFFICULTY BAR ── */}
                 {selectedDistro && (
                     <div className="header-diffbar">
                         <GradientBar
                             score={selectedDistro.difficultyScore}
                             direction="difficulty"
+                            barTitle="Difficulty"
                             leftLabel="Beginner"
                             rightLabel="Expert"
-                            translatedLabel={getDifficultyLabel(
-                                selectedDistro.difficultyScore
-                            )}
+                            translatedLabel={getDifficultyLabel(selectedDistro.difficultyScore)}
                             mutedColor={muted}
+                            textColor={textColor}
                         />
                     </div>
                 )}
 
-                {/* ── STABILITY BAR — named wrapper for grid-area ── */}
+                {/* ── STABILITY BAR ── */}
                 {selectedDistro && (
                     <div className="header-stabbar">
                         <GradientBar
                             score={selectedDistro.stabilityScore}
                             direction="stability"
+                            barTitle="Stability"
                             leftLabel="Unstable"
                             rightLabel="Rock Solid"
-                            translatedLabel={getStabilityLabel(
-                                selectedDistro.stabilityScore
-                            )}
+                            translatedLabel={getStabilityLabel(selectedDistro.stabilityScore)}
                             mutedColor={muted}
+                            textColor={textColor}
                         />
                     </div>
                 )}
@@ -279,16 +265,13 @@ const Header = () => {
                 {/* ── SYSTEM REQUIREMENTS ── */}
                 {selectedDistro && sysReq && (
                     <div className="header-sysreq">
-                        <span
-                            className="header-sysreq-label"
-                            style={{ color: muted }}
-                        >
+                        <span className="header-sysreq-label" style={{ color: muted }}>
                             System Requirements
                         </span>
                         <div className="header-sysreq-row">
                             <span className="sysreq-item" style={{ color: muted }}>
                                 RAM:{" "}
-                                <strong style={{ color: theme.textColor }}>
+                                <strong style={{ color: textColor }}>
                                     {sysReq.minRamMb >= 1024
                                         ? `${sysReq.minRamMb / 1024} GB`
                                         : `${sysReq.minRamMb} MB`}{" "}
@@ -304,7 +287,7 @@ const Header = () => {
                             </span>
                             <span className="sysreq-item" style={{ color: muted }}>
                                 Storage:{" "}
-                                <strong style={{ color: theme.textColor }}>
+                                <strong style={{ color: textColor }}>
                                     {sysReq.minStorageGb} GB min
                                 </strong>
                             </span>
@@ -312,10 +295,7 @@ const Header = () => {
                                 <span className="sysreq-item" style={{ color: muted }}>
                                     Arch:{" "}
                                     {sysReq.architectures.map((a) => (
-                                        <strong
-                                            key={a}
-                                            style={{ color: theme.textColor }}
-                                        >
+                                        <strong key={a} style={{ color: textColor }}>
                                             {a}{" "}
                                         </strong>
                                     ))}
@@ -323,7 +303,7 @@ const Header = () => {
                             )}
                             <span className="sysreq-item" style={{ color: muted }}>
                                 BIOS:{" "}
-                                <strong style={{ color: theme.textColor }}>
+                                <strong style={{ color: textColor }}>
                                     {[
                                         sysReq.supportsLegacyBios && "Legacy",
                                         sysReq.supportsUefi && "UEFI",
@@ -351,26 +331,15 @@ const Header = () => {
                             />
                         )}
 
-                        <Chip
-                            label={selectedDistro.family}
-                            style={chipStyle}
-                        />
-                        <Chip
-                            label={selectedDistro.serverFocused ? "server" : "desktop"}
-                            style={chipStyle}
-                        />
+                        <Chip label={selectedDistro.family}                                style={chipStyle} />
+                        <Chip label={selectedDistro.serverFocused ? "server" : "desktop"}  style={chipStyle} />
+
                         {selectedDistro.releaseModel && (
-                            <Chip
-                                label={selectedDistro.releaseModel}
-                                style={chipStyle}
-                            />
+                            <Chip label={selectedDistro.releaseModel} style={chipStyle} />
                         )}
                         {selectedDistro.initSystem &&
                             selectedDistro.initSystem !== "systemd" && (
-                                <Chip
-                                    label={selectedDistro.initSystem}
-                                    style={chipStyle}
-                                />
+                                <Chip label={selectedDistro.initSystem} style={chipStyle} />
                             )}
 
                         {pkgChips.map((pkg) => (
@@ -394,8 +363,8 @@ const Header = () => {
                 {/* ── MOBILE DRAWER ── */}
                 <Drawer
                     anchor="right"
-                    open={open}
-                    onClose={() => setOpen(false)}
+                    open={drawerOpen}
+                    onClose={() => setDrawerOpen(false)}
                     className="mobile-drawer"
                     PaperProps={{
                         style: selectedDistro
@@ -408,46 +377,29 @@ const Header = () => {
                 >
                     <div className="drawer-menu">
                         {selectedDistro ? (
-                            <>
-                                <Button
-                                    variant="secondary"
-                                    fullWidth
-                                    style={{
-                                        background:  theme.btnSecondaryBg,
-                                        color:       theme.btnSecondaryText,
-                                        borderColor: theme.btnSecondaryBorder,
-                                    }}
-                                    onClick={() => {
-                                        window.open(
-                                            selectedDistro.website,
-                                            "_blank",
-                                            "noopener,noreferrer"
-                                        );
-                                        setOpen(false);
-                                    }}
-                                >
-                                    Visit Site
-                                </Button>
-                                <Button
-                                    variant="primary"
-                                    fullWidth
-                                    style={{
-                                        background:  theme.btnPrimaryBg,
-                                        color:       theme.btnPrimaryText,
-                                        borderColor: theme.btnPrimaryBorder,
-                                    }}
-                                    onClick={() => {
-                                        window.open(
-                                            selectedDistro.downloadPage,
-                                            "_blank",
-                                            "noopener,noreferrer"
-                                        );
-                                        setOpen(false);
-                                    }}
-                                >
-                                    Download ISO
-                                </Button>
-                            </>
+                            <Button
+                                variant={linksOpen ? "primary" : "secondary"}
+                                fullWidth
+                                style={
+                                    linksOpen
+                                        ? {
+                                            background:  theme.btnPrimaryBg,
+                                            color:       theme.btnPrimaryText,
+                                            borderColor: theme.btnPrimaryBorder,
+                                        }
+                                        : {
+                                            background:  theme.btnSecondaryBg,
+                                            color:       theme.btnSecondaryText,
+                                            borderColor: theme.btnSecondaryBorder,
+                                        }
+                                }
+                                onClick={() => {
+                                    onToggleLinks();
+                                    setDrawerOpen(false);
+                                }}
+                            >
+                                {linksOpen ? "Close Links" : "Links"}
+                            </Button>
                         ) : (
                             <>
                                 <Button

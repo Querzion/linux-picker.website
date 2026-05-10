@@ -9,43 +9,59 @@ import {
 
 /* ═══════════════════════════════════════════════════════
     GRADIENT BAR
-    direction: "difficulty"  → green › yellow › red  (low = good)
-    direction: "stability"   → red › yellow › green  (high = good)
+    direction: "difficulty" → green › yellow › red
+    direction: "stability"  → red › yellow › green
+
+    Layout:
+      [BAR TITLE]           [translated label — big, white]
+      ████████░░░░░░░░░░░░  Beginner ──────────────── Expert
 ═══════════════════════════════════════════════════════ */
-const GradientBar = ({ score, min = 1, max = 10, direction, leftLabel, rightLabel, translatedLabel, mutedColor }) => {
+const GradientBar = ({
+    score,
+    min = 1,
+    max = 10,
+    direction,
+    barTitle,
+    leftLabel,
+    rightLabel,
+    translatedLabel,
+    mutedColor,
+    textColor,
+}) => {
     if (score === undefined) return null;
 
     const pct = ((score - min) / (max - min)) * 100;
-
-    /* gradient stops */
-    const gradient = direction === "difficulty"
-        ? "linear-gradient(to right, #4ade80, #facc15, #f87171)"   /* green → yellow → red */
-        : "linear-gradient(to right, #f87171, #facc15, #4ade80)";  /* red → yellow → green */
+    const gradient =
+        direction === "difficulty"
+            ? "linear-gradient(to right, #4ade80, #facc15, #f87171)"
+            : "linear-gradient(to right, #f87171, #facc15, #4ade80)";
 
     return (
         <div className="gradient-bar-wrap">
-            <div className="gradient-bar-header">
-                <span className="gradient-bar-left-label"  style={{ color: mutedColor }}>{leftLabel}</span>
-                <span className="gradient-bar-translation" style={{ color: mutedColor }}>{translatedLabel}</span>
-                <span className="gradient-bar-right-label" style={{ color: mutedColor }}>{rightLabel}</span>
+
+            {/* ── ROW 1: bar title + translated label ── */}
+            <div className="gradient-bar-top-row">
+                <span className="gradient-bar-title" style={{ color: mutedColor }}>
+                    {barTitle}
+                </span>
+                <span className="gradient-bar-translation" style={{ color: textColor }}>
+                    {translatedLabel}
+                </span>
             </div>
+
+            {/* ── ROW 2: track ── */}
             <div className="gradient-bar-track">
-                {/* full gradient behind */}
-                <div
-                    className="gradient-bar-fill-bg"
-                    style={{ background: gradient }}
-                />
-                {/* dark overlay from indicator to right, masking unfilled portion */}
-                <div
-                    className="gradient-bar-mask"
-                    style={{ left: `${pct}%` }}
-                />
-                {/* thumb */}
-                <div
-                    className="gradient-bar-thumb"
-                    style={{ left: `${pct}%` }}
-                />
+                <div className="gradient-bar-fill-bg" style={{ background: gradient }} />
+                <div className="gradient-bar-mask"    style={{ left: `${pct}%` }} />
+                <div className="gradient-bar-thumb"   style={{ left: `${pct}%` }} />
             </div>
+
+            {/* ── ROW 3: scale anchors ── */}
+            <div className="gradient-bar-scale">
+                <span style={{ color: mutedColor }}>{leftLabel}</span>
+                <span style={{ color: mutedColor }}>{rightLabel}</span>
+            </div>
+
         </div>
     );
 };
@@ -75,14 +91,13 @@ const DistroCard = ({ distro }) => {
     };
 
     const mutedColor = theme.textMuted || theme.textSecondary || theme.textColor;
+    const textColor  = theme.textColor || "#ffffff";
 
-    /* package chips: primary + secondary + aur flag, capped at 4 */
+    /* package chips: primary + secondary + aur, capped at 4 */
     const pm = distro.packageManagement;
-    const pkgChips = pm ? [
-        pm.primary,
-        ...(pm.secondary || []),
-        ...(pm.aur ? ["aur"] : []),
-    ].slice(0, 4) : [];
+    const pkgChips = pm
+        ? [pm.primary, ...(pm.secondary || []), ...(pm.aur ? ["aur"] : [])].slice(0, 4)
+        : [];
 
     /* out-of-box truthy fields → chips */
     const oob = distro.outOfBox || {};
@@ -135,23 +150,25 @@ const DistroCard = ({ distro }) => {
                 {/* DIFFICULTY BAR */}
                 <GradientBar
                     score={distro.difficultyScore}
-                    min={1} max={10}
                     direction="difficulty"
+                    barTitle="Difficulty"
                     leftLabel="Beginner"
                     rightLabel="Expert"
                     translatedLabel={getDifficultyLabel(distro.difficultyScore)}
                     mutedColor={mutedColor}
+                    textColor={textColor}
                 />
 
                 {/* STABILITY BAR */}
                 <GradientBar
                     score={distro.stabilityScore}
-                    min={1} max={10}
                     direction="stability"
+                    barTitle="Stability"
                     leftLabel="Unstable"
                     rightLabel="Rock Solid"
                     translatedLabel={getStabilityLabel(distro.stabilityScore)}
                     mutedColor={mutedColor}
+                    textColor={textColor}
                 />
 
             </div>
@@ -159,7 +176,6 @@ const DistroCard = ({ distro }) => {
             {/* TAGS */}
             <div className="tag-row">
 
-                {/* beginner recommended */}
                 {beginner && (
                     <span
                         className="tag-chip tag-chip-beginner"
@@ -174,32 +190,26 @@ const DistroCard = ({ distro }) => {
                     </span>
                 )}
 
-                {/* release model */}
                 {distro.releaseModel && (
                     <span className="tag-chip" style={tagStyle}>{distro.releaseModel}</span>
                 )}
 
-                {/* init system — hide systemd, it's the default */}
                 {distro.initSystem && distro.initSystem !== "systemd" && (
                     <span className="tag-chip" style={tagStyle}>{distro.initSystem}</span>
                 )}
 
-                {/* package management */}
                 {pkgChips.map(pkg => (
                     <span key={pkg} className="tag-chip pkg-chip" style={tagStyle}>{pkg}</span>
                 ))}
 
-                {/* protocol */}
                 {distro.displayProtocol?.map(p => (
                     <span key={p} className="tag-chip" style={tagStyle}>{p}</span>
                 ))}
 
-                {/* out-of-box read-only chips */}
                 {oobChips.map(label => (
                     <OobChip key={label} label={label} tagStyle={tagStyle} />
                 ))}
 
-                {/* remaining distro tags — up to 3 */}
                 {distro.tags?.slice(0, 3).map(tag => (
                     <span key={tag} className="tag-chip" style={tagStyle}>{tag}</span>
                 ))}

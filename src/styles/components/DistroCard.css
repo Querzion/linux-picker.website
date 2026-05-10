@@ -20,7 +20,6 @@
     background: var(--card-hover-bg) !important;
     box-shadow: var(--card-shadow);
     transform: translateY(-.5rem);
-    border: transparent;
 }
 
 .distro-card-item.distro-card-selected {
@@ -86,44 +85,41 @@
 }
 
 /* =========================================================
-    GRADIENT BARS  (difficulty + stability)
+    GRADIENT BARS
 ========================================================= */
-
-.distro-card-item .gradient-bar-wrap {
-    margin: 2px 0;
-}
 
 .gradient-bar-wrap {
     display: flex;
     flex-direction: column;
     gap: 4px;
+    margin: 2px 0;
 }
 
-.gradient-bar-header {
+/* ROW 1: "Difficulty" label left, translated result right */
+.gradient-bar-top-row {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
+    gap: var(--space-2);
+}
+
+.gradient-bar-title {
     font-size: var(--font-size-xs);
-}
-
-.gradient-bar-left-label,
-.gradient-bar-right-label {
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
     color: var(--text-secondary);
-    min-width: 52px;
+    white-space: nowrap;
 }
 
-.gradient-bar-right-label {
-    text-align: right;
-}
-
+/* The AHA moment — same size as sysreq text, white, bold */
 .gradient-bar-translation {
     font-size: var(--font-size-xs);
-    font-weight: var(--font-weight-600);
-    color: var(--text-secondary);
-    text-align: center;
-    flex: 1;
+    font-weight: var(--font-weight-700);
+    color: var(--text-primary);
+    white-space: nowrap;
 }
 
+/* ROW 2: the actual bar track */
 .gradient-bar-track {
     position: relative;
     height: 6px;
@@ -157,6 +153,15 @@
     z-index: 1;
 }
 
+/* ROW 3: scale anchors — Beginner / Expert, small and muted */
+.gradient-bar-scale {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    color: var(--text-secondary);
+    opacity: 0.6;
+}
+
 /* =========================================================
     TAG ROW
 ========================================================= */
@@ -187,13 +192,11 @@
     line-height: 1.6;
 }
 
-/* BEGINNER chip — always green regardless of distro theme */
 .tag-chip-beginner {
     font-weight: var(--font-weight-700);
     letter-spacing: 0.01em;
 }
 
-/* OUT-OF-BOX chip — slightly muted, smaller feel */
 .oob-chip {
     opacity: 0.85;
 }
