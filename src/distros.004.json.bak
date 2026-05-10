@@ -34,8 +34,6 @@
         "outOfBox": {
             "codecs": true,
             "nvidiaDrivers": false,
-            "amdDrivers": true,
-            "intelDrivers": true,
             "officeTools": false,
             "creativeTools": false,
             "gamingTools": false,
@@ -54,7 +52,7 @@
         "isoUrl": "https://ubuntu.com/download/desktop",
         "description": "The world's most popular Linux distro. Polished GNOME desktop, excellent hardware support, massive community. The best starting point for newcomers.",
         "tags": ["beginner-friendly", "popular", "lts"],
-        "family": "ubuntu-based",
+        "family": "debian-based",
         "type": "desktop",
         "origin": "official",
         "themes": {
@@ -179,8 +177,6 @@
         "outOfBox": {
             "codecs": false,
             "nvidiaDrivers": false,
-            "amdDrivers": false,
-            "intelDrivers": false,
             "officeTools": false,
             "creativeTools": false,
             "gamingTools": false,
@@ -324,8 +320,6 @@
         "outOfBox": {
             "codecs": false,
             "nvidiaDrivers": false,
-            "amdDrivers": true,
-            "intelDrivers": true,
             "officeTools": false,
             "creativeTools": false,
             "gamingTools": false,
@@ -469,8 +463,6 @@
         "outOfBox": {
             "codecs": false,
             "nvidiaDrivers": false,
-            "amdDrivers": false,
-            "intelDrivers": false,
             "officeTools": false,
             "creativeTools": false,
             "gamingTools": false,
