@@ -34,78 +34,10 @@
         "outOfBox": {
             "codecs": true,
             "nvidiaDrivers": false,
-            "amdDrivers": true,
-            "intelDrivers": true,
             "officeTools": false,
             "creativeTools": false,
             "gamingTools": false,
             "dualBootFriendly": true
-        },
-        "links": {
-            "home": {
-                "label": "Home Page",
-                "url": "https://ubuntu.com/",
-                "importance": 10
-            },
-            "download": {
-                "page": {
-                    "label": "Download Page",
-                    "url": "https://ubuntu.com/download/desktop",
-                    "importance": 10
-                },
-                "latestIso": {
-                    "label": "Latest ISO",
-                    "url": "https://ubuntu.com/download/desktop",
-                    "importance": 9
-                }
-            },
-            "wiki": {
-                "label": "Wiki",
-                "url": "https://help.ubuntu.com/",
-                "importance": 10
-            },
-            "news": {
-                "label": "News",
-                "url": "https://ubuntu.com/blog",
-                "importance": 8
-            },
-            "forum": {
-                "label": "Forums",
-                "url": "https://ubuntuforums.org/",
-                "importance": 7
-            },
-            "rss": {
-                "label": "RSS Feed",
-                "url": "https://ubuntu.com/blog/feed",
-                "importance": 5
-            },
-            "source": {
-                "label": "GitHub",
-                "url": "https://github.com/ubuntu",
-                "importance": 8
-            },
-            "socials": {
-                "reddit": {
-                    "label": "Reddit",
-                    "url": "https://www.reddit.com/r/ubuntu/",
-                    "importance": 7
-                },
-                "discord": {
-                    "label": "Discord",
-                    "url": "https://discord.com/invite/ubuntu",
-                    "importance": 6
-                },
-                "x": {
-                    "label": "X (Twitter)",
-                    "url": "https://x.com/ubuntu",
-                    "importance": 5
-                },
-                "facebook": {
-                    "label": "Facebook",
-                    "url": "https://www.facebook.com/ubuntulinux",
-                    "importance": 3
-                }
-            }
         },
         "serverFocused": false,
         "displayEnvironments": [
@@ -115,9 +47,12 @@
         ],
         "displayProtocol": ["wayland", "x11"],
         "logo": "/images/logos/ubuntu.png",
+        "website": "https://ubuntu.com/",
+        "downloadPage": "https://ubuntu.com/download/desktop",
+        "isoUrl": "https://ubuntu.com/download/desktop",
         "description": "The world's most popular Linux distro. Polished GNOME desktop, excellent hardware support, massive community. The best starting point for newcomers.",
         "tags": ["beginner-friendly", "popular", "lts"],
-        "family": "ubuntu-based",
+        "family": "debian-based",
         "type": "desktop",
         "origin": "official",
         "themes": {
@@ -242,78 +177,10 @@
         "outOfBox": {
             "codecs": false,
             "nvidiaDrivers": false,
-            "amdDrivers": false,
-            "intelDrivers": false,
             "officeTools": false,
             "creativeTools": false,
             "gamingTools": false,
             "dualBootFriendly": false
-        },
-        "links": {
-            "home": {
-                "label": "Home Page",
-                "url": "https://archlinux.org/",
-                "importance": 10
-            },
-            "download": {
-                "page": {
-                    "label": "Download Page",
-                    "url": "https://archlinux.org/download/",
-                    "importance": 10
-                },
-                "latestIso": {
-                    "label": "Latest ISO",
-                    "url": "https://archlinux.org/download/",
-                    "importance": 9
-                }
-            },
-            "wiki": {
-                "label": "Wiki",
-                "url": "https://wiki.archlinux.org/",
-                "importance": 10
-            },
-            "news": {
-                "label": "News",
-                "url": "https://archlinux.org/news/",
-                "importance": 8
-            },
-            "forum": {
-                "label": "Forums",
-                "url": "https://bbs.archlinux.org/",
-                "importance": 7
-            },
-            "rss": {
-                "label": "RSS Feed",
-                "url": "https://archlinux.org/feeds/news/",
-                "importance": 5
-            },
-            "source": {
-                "label": "GitLab",
-                "url": "https://gitlab.archlinux.org/",
-                "importance": 8
-            },
-            "socials": {
-                "reddit": {
-                    "label": "Reddit",
-                    "url": "https://www.reddit.com/r/archlinux/",
-                    "importance": 7
-                },
-                "discord": {
-                    "label": "Discord",
-                    "url": "https://discord.com/invite/archlinux",
-                    "importance": 6
-                },
-                "x": {
-                    "label": "X (Twitter)",
-                    "url": "https://x.com/archlinux",
-                    "importance": 4
-                },
-                "facebook": {
-                    "label": "Facebook",
-                    "url": "https://www.facebook.com/archlinux",
-                    "importance": 3
-                }
-            }
         },
         "serverFocused": false,
         "displayEnvironments": [
@@ -323,6 +190,9 @@
         ],
         "displayProtocol": ["wayland", "x11"],
         "logo": "/images/logos/archlinux.png",
+        "website": "https://archlinux.org/",
+        "downloadPage": "https://archlinux.org/download/",
+        "isoUrl": "https://archlinux.org/download/",
         "description": "You build it, you own it. Arch is a blank canvas — install exactly what you need. Rolling release, AUR access, and the legendary Arch Wiki as your guide.",
         "tags": ["advanced", "diy", "bleeding-edge"],
         "family": "independent",
@@ -450,73 +320,10 @@
         "outOfBox": {
             "codecs": false,
             "nvidiaDrivers": false,
-            "amdDrivers": true,
-            "intelDrivers": true,
             "officeTools": false,
             "creativeTools": false,
             "gamingTools": false,
             "dualBootFriendly": true
-        },
-        "links": {
-            "home": {
-                "label": "Home Page",
-                "url": "https://www.debian.org/",
-                "importance": 10
-            },
-            "download": {
-                "page": {
-                    "label": "Download Page",
-                    "url": "https://www.debian.org/distrib/",
-                    "importance": 10
-                },
-                "latestIso": {
-                    "label": "Latest ISO",
-                    "url": "https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/",
-                    "importance": 9
-                }
-            },
-            "wiki": {
-                "label": "Wiki",
-                "url": "https://wiki.debian.org/",
-                "importance": 10
-            },
-            "news": {
-                "label": "News",
-                "url": "https://www.debian.org/News/",
-                "importance": 8
-            },
-            "forum": {
-                "label": "Forums",
-                "url": "https://forums.debian.net/",
-                "importance": 7
-            },
-            "rss": {
-                "label": "RSS Feed",
-                "url": "https://www.debian.org/News/news",
-                "importance": 5
-            },
-            "source": {
-                "label": "Salsa (GitLab)",
-                "url": "https://salsa.debian.org/",
-                "importance": 8
-            },
-            "socials": {
-                "reddit": {
-                    "label": "Reddit",
-                    "url": "https://www.reddit.com/r/debian/",
-                    "importance": 7
-                },
-                "x": {
-                    "label": "X (Twitter)",
-                    "url": "https://x.com/debian",
-                    "importance": 5
-                },
-                "facebook": {
-                    "label": "Facebook",
-                    "url": "https://www.facebook.com/debian",
-                    "importance": 3
-                }
-            }
         },
         "serverFocused": false,
         "displayEnvironments": [
@@ -526,6 +333,9 @@
         ],
         "displayProtocol": ["x11", "wayland"],
         "logo": "/images/logos/debian.png",
+        "website": "https://www.debian.org/",
+        "downloadPage": "https://www.debian.org/distrib/",
+        "isoUrl": "https://www.debian.org/distrib/",
         "description": "The universal operating system. Debian's legendary stability comes from an exhaustive testing process — packages are glacially slow to update, but never break.",
         "tags": ["universal", "super-stable"],
         "family": "independent",
@@ -653,78 +463,10 @@
         "outOfBox": {
             "codecs": false,
             "nvidiaDrivers": false,
-            "amdDrivers": false,
-            "intelDrivers": false,
             "officeTools": false,
             "creativeTools": false,
             "gamingTools": false,
             "dualBootFriendly": false
-        },
-        "links": {
-            "home": {
-                "label": "Home Page",
-                "url": "https://www.gentoo.org/",
-                "importance": 10
-            },
-            "download": {
-                "page": {
-                    "label": "Download Page",
-                    "url": "https://www.gentoo.org/downloads/",
-                    "importance": 10
-                },
-                "latestIso": {
-                    "label": "Latest ISO",
-                    "url": "https://distfiles.gentoo.org/releases/amd64/autobuilds/latest-install-amd64-minimal.txt",
-                    "importance": 9
-                }
-            },
-            "wiki": {
-                "label": "Wiki",
-                "url": "https://wiki.gentoo.org/",
-                "importance": 10
-            },
-            "news": {
-                "label": "News",
-                "url": "https://www.gentoo.org/news/",
-                "importance": 8
-            },
-            "forum": {
-                "label": "Forums",
-                "url": "https://forums.gentoo.org/",
-                "importance": 7
-            },
-            "rss": {
-                "label": "RSS Feed",
-                "url": "https://www.gentoo.org/feeds/news.xml",
-                "importance": 5
-            },
-            "source": {
-                "label": "GitHub",
-                "url": "https://github.com/gentoo",
-                "importance": 8
-            },
-            "socials": {
-                "reddit": {
-                    "label": "Reddit",
-                    "url": "https://www.reddit.com/r/Gentoo/",
-                    "importance": 7
-                },
-                "discord": {
-                    "label": "Discord",
-                    "url": "https://discord.com/invite/gentoo",
-                    "importance": 6
-                },
-                "x": {
-                    "label": "X (Twitter)",
-                    "url": "https://x.com/gentoo",
-                    "importance": 4
-                },
-                "facebook": {
-                    "label": "Facebook",
-                    "url": "https://www.facebook.com/GentooLinux",
-                    "importance": 3
-                }
-            }
         },
         "serverFocused": false,
         "displayEnvironments": [
@@ -733,6 +475,9 @@
         ],
         "displayProtocol": ["wayland", "x11"],
         "logo": "/images/logos/gentoo.png",
+        "website": "https://www.gentoo.org/",
+        "downloadPage": "https://www.gentoo.org/downloads/",
+        "isoUrl": "https://www.gentoo.org/downloads/",
         "description": "Compile everything from source, tune every USE flag, own every byte. Gentoo rewards patience with an intimately understood system and unmatched flexibility.",
         "tags": ["advanced", "source-based", "performance", "diy"],
         "family": "independent",

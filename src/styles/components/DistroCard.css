@@ -1,75 +1,202 @@
+/* =========================================================
+    DISTRO CARD
+========================================================= */
+
 .distro-card-item {
     display: flex;
     flex-direction: column;
-    min-height: 340px;
-    padding: 2px;
-    transition: transform var(--transition-normal), opacity var(--transition-normal);
+    justify-content: space-between;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    transition:
+        background var(--transition-base),
+        box-shadow var(--transition-base),
+        transform var(--transition-fast);
+    cursor: pointer;
+    margin-top: .5rem;
 }
+
+.distro-card-item:hover {
+    background: var(--card-hover-bg) !important;
+    box-shadow: var(--card-shadow);
+    transform: translateY(-.5rem);
+}
+
+.distro-card-item.distro-card-selected {
+    box-shadow: var(--card-shadow);
+}
+
+/* =========================================================
+    CARD TOP  (header + description + bars)
+========================================================= */
 
 .card-top {
-    flex: 1; /* THIS is what pushes tags to the bottom */
     display: flex;
     flex-direction: column;
+    gap: var(--space-2);
+    padding: var(--space-4);
 }
 
-.distro-card-item .card-header {
+/* =========================================================
+    CARD HEADER  (logo + title block)
+========================================================= */
+
+.card-header {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: var(--space-3);
 }
 
-.distro-card-item img {
-    width: 64px;
-    height: 64px;
+.card-header img {
+    width: 48px;
+    height: 48px;
     object-fit: contain;
-    margin-left: -0.5rem;
-    margin-right: 0.4rem;
+    flex-shrink: 0;
 }
 
-.distro-card-selected {
-    transform: translateY(-8px);
-    opacity: 0;
+.title-block {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
 }
 
 .title-block h3 {
     margin: 0;
-    font-size: 1.2rem;
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-700);
+    line-height: 1.2;
 }
 
-.stability {
-    font-size: 0.7rem;
-    opacity: 0.8;
+.title-block .stability {
+    font-size: var(--font-size-xs);
     text-transform: lowercase;
+    color: var(--color-accent);
 }
+
+/* =========================================================
+    DESCRIPTION
+========================================================= */
 
 .description {
-    font-size: 0.8rem;
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-relaxed);
     color: var(--text-secondary);
-    line-height: 1.4;
-    margin-top: 0.8rem;
-    flex: 1;
+    margin: 0;
 }
+
+/* =========================================================
+    GRADIENT BARS
+========================================================= */
+
+.gradient-bar-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin: 2px 0;
+}
+
+/* ROW 1: "Difficulty" label left, translated result right */
+.gradient-bar-top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: var(--space-2);
+}
+
+.gradient-bar-title {
+    font-size: var(--font-size-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-secondary);
+    white-space: nowrap;
+}
+
+/* The AHA moment — same size as sysreq text, white, bold */
+.gradient-bar-translation {
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-700);
+    color: var(--text-primary);
+    white-space: nowrap;
+}
+
+/* ROW 2: the actual bar track */
+.gradient-bar-track {
+    position: relative;
+    height: 6px;
+    border-radius: var(--radius-full);
+    overflow: hidden;
+}
+
+.gradient-bar-fill-bg {
+    position: absolute;
+    inset: 0;
+    border-radius: var(--radius-full);
+}
+
+.gradient-bar-mask {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.gradient-bar-thumb {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+/* ROW 3: scale anchors — Beginner / Expert, small and muted */
+.gradient-bar-scale {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    color: var(--text-secondary);
+    opacity: 0.6;
+}
+
+/* =========================================================
+    TAG ROW
+========================================================= */
 
 .tag-row {
     display: flex;
     flex-wrap: wrap;
-    gap: 6px;
-    padding-top: 10px;
-    flex-shrink: 0;
+    gap: var(--space-2);
+    padding: var(--space-3) var(--space-4);
+    border-top: 1px solid rgba(128, 128, 128, 0.15);
 }
+
+/* =========================================================
+    TAG CHIPS
+========================================================= */
 
 .tag-chip {
-    font-size: 0.7rem;
-    padding: 3px 8px;
-    border-radius: 999px;
+    display: inline-flex;
+    align-items: center;
+    padding: 2px 8px;
+    border-radius: var(--radius-full);
+    border: 1px solid var(--border-default);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-500);
     white-space: nowrap;
-    border: 1px solid var(--border-light);
-    background: var(--hover-overlay);
-    color: var(--text-primary);
-    opacity: 0.75;
+    color: var(--text-secondary);
+    background: transparent;
+    line-height: 1.6;
 }
 
-.tag-chip:hover {
-    background: var(--active-overlay);
-    opacity: 1;
+.tag-chip-beginner {
+    font-weight: var(--font-weight-700);
+    letter-spacing: 0.01em;
+}
+
+.oob-chip {
+    opacity: 0.85;
 }

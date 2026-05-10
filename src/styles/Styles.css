@@ -1,8 +1,9 @@
 /* 2. Base Layer */
 @import "./base/Reset.css";
 @import "./base/Fonts.css";
-@import "./base/Spacing.css";
+@import "./base/NerdIcon.css";
 @import "./base/Typography.css";
+@import "./base/Spacing.css";
 @import "./themes/Theme.css";
 
 /* 3. Layout System */
