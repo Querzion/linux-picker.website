@@ -4,62 +4,59 @@
 }
 
 /* =========================================================
-    2x2 GRID LAYOUT
+    MOBILE / TABLET (STACK EVERYTHING)
 ========================================================= */
 
-.distro-links-grid {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    grid-template-rows: auto auto;
-    gap: var(--space-2) var(--space-4);
-    align-items: center;
+.distro-layout {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
 }
 
-/* LEFT COLUMN (spans both rows visually) */
-.distro-links-main {
-    grid-row: 1 / span 2;
-
+/* LEFT */
+.distro-left {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: var(--space-2);
-    align-items: center;
 }
 
-/* RIGHT TOP: RSS + SOCIALS */
-.distro-links-right-top {
+/* RIGHT (container holding socials + download) */
+.distro-right {
     display: flex;
-    align-items: center;
-    gap: var(--space-1);
-    justify-self: end;
+    flex-direction: column;
+    gap: var(--space-3);
 }
 
-/* RIGHT BOTTOM: DOWNLOADS */
-.distro-links-right-bottom {
+/* SOCIAL ROW */
+.distro-social {
     display: flex;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
     gap: var(--space-2);
-    justify-self: end;
+    margin: .3rem 2rem .3rem 2rem;
 }
 
-/* =========================================================
-    SOCIAL BUTTONS
-========================================================= */
+/* DOWNLOAD */
+.distro-download {
+    display: flex;
+    justify-content: flex-start;
+}
 
+/* SOCIAL BUTTON */
 .distro-social-btn {
     display: flex;
     align-items: center;
     justify-content: center;
 
-    width: 32px;
-    height: 32px;
-
     border-radius: var(--radius-md);
     border: 1px solid transparent;
     background: transparent;
-
     cursor: pointer;
 
-    transition: all var(--transition-normal);
+    transition:
+        color var(--transition-normal),
+        border-color var(--transition-normal),
+        background var(--transition-normal);
 }
 
 .distro-social-btn:hover {
@@ -67,10 +64,50 @@
     background: var(--hover-overlay);
 }
 
-.distro-social-btn:active {
-    background: var(--active-overlay);
-}
+/* =========================================================
+    DESKTOP (FLEX SPLIT LAYOUT)
+========================================================= */
 
-.distro-social-btn span {
-    font-family: var(--font-mono);
+@media (min-width: 1055px) {
+    .distro-layout {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+        gap: var(--space-4);
+    }
+
+    /* LEFT SIDE = takes all available space */
+    .distro-left {
+        flex: 1;
+
+        display: flex;
+        flex-direction: row;
+        gap: var(--space-2);
+
+        min-width: 0;
+    }
+
+    /* RIGHT SIDE = fixed vertical column */
+    .distro-right {
+        flex: 0 0 260px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    /* SOCIAL TOP */
+    .distro-social {
+        display: flex;
+        justify-content: space-between;
+        gap: var(--space-2);
+        margin: 0 0 0 0;
+    }
+
+    /* DOWNLOAD BOTTOM */
+    .distro-download {
+        display: flex;
+        justify-content: flex-end;
+    }
 }
