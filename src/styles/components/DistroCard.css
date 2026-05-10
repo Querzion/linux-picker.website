@@ -13,12 +13,14 @@
         box-shadow var(--transition-base),
         transform var(--transition-fast);
     cursor: pointer;
+    margin-top: .5rem;
 }
 
 .distro-card-item:hover {
     background: var(--card-hover-bg) !important;
     box-shadow: var(--card-shadow);
-    transform: translateY(-2px);
+    transform: translateY(-.5rem);
+    border: transparent;
 }
 
 .distro-card-item.distro-card-selected {
