@@ -1,5 +1,5 @@
 /* =========================================================
-    HEADER (GRID - CLEAN VERSION)
+    HEADER (GRID)
 ========================================================= */
 
 .header-card {
@@ -11,17 +11,20 @@
 }
 
 /* =========================================================
-    DISTRO ACTIVE STATE - EXPANDED HEADER
+    DISTRO ACTIVE STATE — EXPANDED HEADER
 ========================================================= */
 
 .header-card.distro-selected {
     display: grid;
     grid-template-columns: 1fr auto;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
     grid-template-areas:
         "brand      nav"
         "divider    divider"
         "desc       desc"
+        "diffbar    diffbar"
+        "stabbar    stabbar"
+        "sysreq     sysreq"
         "tags       tags";
     align-items: start;
     gap: var(--space-3);
@@ -54,8 +57,109 @@
     margin: 0;
 }
 
-.header-distro-tags {
-    grid-area: tags;
+.header-diffbar  { grid-area: diffbar; }
+.header-stabbar  { grid-area: stabbar; }
+.header-sysreq   { grid-area: sysreq;  }
+.header-distro-tags { grid-area: tags; }
+
+/* =========================================================
+    GRADIENT BARS
+========================================================= */
+
+.gradient-bar-wrap {
+    margin: 4px 0;
+}
+
+.gradient-bar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--font-size-xs);
+    margin-bottom: 5px;
+}
+
+.gradient-bar-left-label,
+.gradient-bar-right-label {
+    color: var(--text-secondary);
+    min-width: 56px;
+}
+
+.gradient-bar-right-label {
+    text-align: right;
+}
+
+.gradient-bar-translation {
+    font-size: var(--font-size-xs);
+    color: var(--text-secondary);
+    font-weight: var(--font-weight-600);
+    text-align: center;
+    flex: 1;
+}
+
+.gradient-bar-track {
+    position: relative;
+    height: 6px;
+    border-radius: var(--radius-full);
+    overflow: hidden;
+}
+
+.gradient-bar-fill-bg {
+    position: absolute;
+    inset: 0;
+    border-radius: var(--radius-full);
+}
+
+.gradient-bar-mask {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.gradient-bar-thumb {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+/* =========================================================
+    SYSTEM REQUIREMENTS
+========================================================= */
+
+.header-sysreq {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.header-sysreq-label {
+    font-size: var(--font-size-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-secondary);
+    font-weight: var(--font-weight-600);
+}
+
+.header-sysreq-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    font-size: var(--font-size-xs);
+}
+
+.sysreq-item {
+    color: var(--text-secondary);
+}
+
+.sysreq-item strong {
+    font-weight: var(--font-weight-600);
 }
 
 /* =========================================================
@@ -75,7 +179,7 @@
 }
 
 /* =========================================================
-    BRAND TITLE BLOCK (distro selected state)
+    BRAND TITLE BLOCK
 ========================================================= */
 
 .brand-title-block {

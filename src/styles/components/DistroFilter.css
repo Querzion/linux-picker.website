@@ -1,3 +1,7 @@
+/* =========================================================
+    FILTER PANEL
+========================================================= */
+
 .protocol-card {
     position: relative;
     margin-bottom: 1rem;
@@ -15,55 +19,118 @@
     position: relative;
 }
 
-/* pushes search to bottom */
-.filter-search {
-    margin-top: 1.5rem;
+/* =========================================================
+    FILTER HEADER  (GPU group left, More options right)
+========================================================= */
+
+.filter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
     width: 100%;
 }
+
+/* =========================================================
+    GPU TOGGLE GROUP
+========================================================= */
+
+.gpu-toggle-group {
+    display: flex;
+    gap: 6px;
+}
+
+.gpu-btn {
+    padding: 4px 12px;
+    border-radius: var(--radius-md);
+    border: 1px solid transparent;
+    background: transparent;
+    cursor: pointer;
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-600);
+    color: var(--text-secondary);
+    transition:
+        border-color var(--btn-transition),
+        color var(--btn-transition),
+        box-shadow var(--btn-transition);
+}
+
+.gpu-btn:hover {
+    border-color: var(--gpu-color);
+    color: var(--gpu-color);
+}
+
+.gpu-btn-active {
+    border-color: var(--gpu-color);
+    color: var(--gpu-color);
+    box-shadow: 0 0 0 1px var(--gpu-color);
+}
+
+/* =========================================================
+    PROTOCOL BUTTON GROUP  (inside More options)
+========================================================= */
+
+.protocol-btn-group {
+    display: flex;
+    gap: 4px;
+}
+
+.protocol-btn {
+    padding: 4px 14px;
+    border-radius: var(--radius-md);
+    border: 1px solid transparent;
+    background: transparent;
+    cursor: pointer;
+    font-size: var(--font-size-sm);
+    color: var(--text-secondary);
+    transition:
+        border-color var(--btn-transition),
+        color var(--btn-transition);
+}
+
+.protocol-btn:hover {
+    color: var(--text-primary);
+}
+
+.protocol-btn-active {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+    font-weight: var(--font-weight-600);
+}
+
+/* =========================================================
+    FILTER ROW LABEL  (label + control side by side)
+========================================================= */
+
+.filter-row-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space-3);
+}
+
+.filter-row-label .slider-label {
+    font-size: var(--font-size-sm);
+    color: var(--text-secondary);
+    white-space: nowrap;
+}
+
+/* =========================================================
+    SEARCH + RESET
+========================================================= */
+
 .filter-search {
+    margin-top: 1.5rem;
     display: flex;
     align-items: center;
     gap: var(--space-2);
+    width: 100%;
 }
 
-/* ensures input stretches full width */
 .filter-search .input-container {
     width: 100%;
 }
 
 .filter-search .input {
     width: 100%;
-}
-
-.filter-header {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 10px;
-    width: 100%;
-    position: relative;
-}
-
-/* keeps layout stable while hiding */
-.protocol-toggle {
-    display: flex;
-    align-items: center;
-    transition: all 0.25s ease;
-}
-
-/* hidden state = collapses smoothly without breaking layout */
-.protocol-toggle.hidden {
-    opacity: 0;
-    transform: translateX(8px);
-    pointer-events: none;
-    width: 0;
-    overflow: hidden;
-}
-
-/* visible state */
-.protocol-toggle.visible {
-    opacity: 1;
-    transform: translateX(0);
-    pointer-events: auto;
-    width: auto;
 }

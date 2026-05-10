@@ -12,35 +12,26 @@ const DistroPicker = () => {
     const {
         filtered,
 
-        stabilityIndex,
-        setStabilityIndex,
+        /* core */
+        difficultyMax,        setDifficultyMax,
+        stabilityMin,         setStabilityMin,
+        systemTypeIndex,      setSystemTypeIndex,
+        originIndex,          setOriginIndex,
+        search,               setSearch,
 
-        systemTypeIndex,
-        setSystemTypeIndex,
-
-        environmentIndex,
-        setEnvironmentIndex,
-
-        difficultyIndex,
-        setDifficultyIndex,
-
-        packageManagerIndex,
-        setPackageManagerIndex,
-
-        familyIndex,
-        setFamilyIndex,
-
-        originIndex,
-        setOriginIndex,
-
-        desktopIndex,
-        setDesktopIndex,
-
-        protocol,
-        setProtocol,
-
-        search,
-        setSearch,
+        /* advanced */
+        protocol,             setProtocol,
+        environmentIndex,     setEnvironmentIndex,
+        safeEnvIndex,
+        packageManagerIndex,  setPackageManagerIndex,
+        secondaryPkgIndex,    setSecondaryPkgIndex,
+        releaseModelIndex,    setReleaseModelIndex,
+        initSystemIndex,      setInitSystemIndex,
+        familyIndex,          setFamilyIndex,
+        desktopIndex,         setDesktopIndex,
+        ramIndex,             setRamIndex,
+        archIndex,            setArchIndex,
+        gpu,                  setGpu,
 
         reset,
     } = useDistroFilter(distros);
@@ -49,43 +40,34 @@ const DistroPicker = () => {
         <div className="distro-picker">
 
             <DistroFilter
-                protocol={protocol}
-                setProtocol={setProtocol}
+                /* core */
+                difficultyMax={difficultyMax}        setDifficultyMax={setDifficultyMax}
+                stabilityMin={stabilityMin}          setStabilityMin={setStabilityMin}
+                systemTypeIndex={systemTypeIndex}    setSystemTypeIndex={setSystemTypeIndex}
+                originIndex={originIndex}            setOriginIndex={setOriginIndex}
+                search={search}                      setSearch={setSearch}
 
-                stabilityIndex={stabilityIndex}
-                setStabilityIndex={setStabilityIndex}
-
-                systemTypeIndex={systemTypeIndex}
-                setSystemTypeIndex={setSystemTypeIndex}
-
-                environmentIndex={environmentIndex}
-                setEnvironmentIndex={setEnvironmentIndex}
-
-                difficultyIndex={difficultyIndex}
-                setDifficultyIndex={setDifficultyIndex}
-
-                packageManagerIndex={packageManagerIndex}
-                setPackageManagerIndex={setPackageManagerIndex}
-
-                familyIndex={familyIndex}
-                setFamilyIndex={setFamilyIndex}
-
-                originIndex={originIndex}
-                setOriginIndex={setOriginIndex}
-
-                desktopIndex={desktopIndex}
-                setDesktopIndex={setDesktopIndex}
-
-                search={search}
-                setSearch={setSearch}
+                /* advanced */
+                protocol={protocol}                  setProtocol={setProtocol}
+                environmentIndex={environmentIndex}  setEnvironmentIndex={setEnvironmentIndex}
+                safeEnvIndex={safeEnvIndex}
+                packageManagerIndex={packageManagerIndex} setPackageManagerIndex={setPackageManagerIndex}
+                secondaryPkgIndex={secondaryPkgIndex}    setSecondaryPkgIndex={setSecondaryPkgIndex}
+                releaseModelIndex={releaseModelIndex}     setReleaseModelIndex={setReleaseModelIndex}
+                initSystemIndex={initSystemIndex}         setInitSystemIndex={setInitSystemIndex}
+                familyIndex={familyIndex}            setFamilyIndex={setFamilyIndex}
+                desktopIndex={desktopIndex}          setDesktopIndex={setDesktopIndex}
+                ramIndex={ramIndex}                  setRamIndex={setRamIndex}
+                archIndex={archIndex}                setArchIndex={setArchIndex}
+                gpu={gpu}                            setGpu={setGpu}
 
                 reset={reset}
             />
 
             <div className="distro-grid">
                 {filtered
-                    .filter((distro) => distro.id !== selectedDistro?.id)
-                    .map((distro) => (
+                    .filter(d => d.id !== selectedDistro?.id)
+                    .map(distro => (
                         <DistroCard key={distro.id} distro={distro} />
                     ))}
             </div>
