@@ -142,7 +142,7 @@ git clone https://github.com/LinuxPicker/linuxpicker.github.io.git
 Navigate into the project:
 
 ```bash
-cd linux-picker.website
+cd linuxpicker.github.io
 ```
 
 Install dependencies:
