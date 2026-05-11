@@ -108,20 +108,26 @@ The Linux Picker focuses on:
 
 ## Screenshots
 
-### Dark Theme
+### Dark BASE Theme
 
 | Screenshot | Preview |
 |---|---|
-| 001 | ![](./public/screenshots/dark/Screenshot_001.png) |
-| 002 | ![](./public/screenshots/dark/Screenshot_002.png) |
-| 003 | ![](./public/screenshots/dark/Screenshot_003.png) |
-| 004 | ![](./public/screenshots/dark/Screenshot_004.png) |
-| 005 | ![](./public/screenshots/dark/Screenshot_005.png) |
-| 006 | ![](./public/screenshots/dark/Screenshot_006.png) |
-| 007 | ![](./public/screenshots/dark/Screenshot_007.png) |
-| 008 | ![](./public/screenshots/dark/Screenshot_008.png) |
-| 009 | ![](./public/screenshots/dark/Screenshot_009.png) |
-| 010 | ![](./public/screenshots/dark/Screenshot_010.png) |
+| 032 | ![](./public/screenshots/dark/v9/Screenshot_032.png) |
+| 033 | ![](./public/screenshots/dark/v9/Screenshot_033.png) |
+| 034 | ![](./public/screenshots/dark/v9/Screenshot_034.png) |
+| 035 | ![](./public/screenshots/dark/v9/Screenshot_035.png) |
+| 036 | ![](./public/screenshots/dark/v9/Screenshot_036.png) |
+| 037 | ![](./public/screenshots/dark/v9/Screenshot_037.png) |
+
+### Light BASE Theme
+
+| Screenshot | Preview |
+|---|---|
+| 038 | ![](./public/screenshots/dark/v9/Screenshot_038.png) |
+| 039 | ![](./public/screenshots/dark/v9/Screenshot_039.png) |
+| 040 | ![](./public/screenshots/dark/v9/Screenshot_040.png) |
+| 041 | ![](./public/screenshots/dark/v9/Screenshot_041.png) |
+| 042 | ![](./public/screenshots/dark/v9/Screenshot_042.png) |
 
 ---
 
