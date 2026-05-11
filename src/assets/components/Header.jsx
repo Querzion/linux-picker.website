@@ -199,7 +199,7 @@ const Header = ({ onToggleLinks, linksOpen }) => {
                                 width="160px"
                                 onClick={() => navigate(isPicker ? "/" : "/picker")}
                             >
-                                {isPicker ? "Home" : "ISO Picker"}
+                                {isPicker ? "Home" : "Distro Filter"}
                             </Button>
                             <Button
                                 variant="secondary"
