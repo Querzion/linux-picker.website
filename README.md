@@ -112,22 +112,22 @@ The Linux Picker focuses on:
 
 | Screenshot | Preview |
 |---|---|
-| 032 | ![](./public/screenshots/dark/v9/Screenshot_032.png) |
-| 033 | ![](./public/screenshots/dark/v9/Screenshot_033.png) |
-| 034 | ![](./public/screenshots/dark/v9/Screenshot_034.png) |
-| 035 | ![](./public/screenshots/dark/v9/Screenshot_035.png) |
-| 036 | ![](./public/screenshots/dark/v9/Screenshot_036.png) |
-| 037 | ![](./public/screenshots/dark/v9/Screenshot_037.png) |
+| 032 | ![](./public/screenshots/v9/Screenshot_032.png) |
+| 033 | ![](./public/screenshots/v9/Screenshot_033.png) |
+| 034 | ![](./public/screenshots/v9/Screenshot_034.png) |
+| 035 | ![](./public/screenshots/v9/Screenshot_035.png) |
+| 036 | ![](./public/screenshots/v9/Screenshot_036.png) |
+| 037 | ![](./public/screenshots/v9/Screenshot_037.png) |
 
 ### Light BASE Theme
 
 | Screenshot | Preview |
 |---|---|
-| 038 | ![](./public/screenshots/dark/v9/Screenshot_038.png) |
-| 039 | ![](./public/screenshots/dark/v9/Screenshot_039.png) |
-| 040 | ![](./public/screenshots/dark/v9/Screenshot_040.png) |
-| 041 | ![](./public/screenshots/dark/v9/Screenshot_041.png) |
-| 042 | ![](./public/screenshots/dark/v9/Screenshot_042.png) |
+| 038 | ![](./public/screenshots/v9/Screenshot_038.png) |
+| 039 | ![](./public/screenshots/v9/Screenshot_039.png) |
+| 040 | ![](./public/screenshots/v9/Screenshot_040.png) |
+| 041 | ![](./public/screenshots/v9/Screenshot_041.png) |
+| 042 | ![](./public/screenshots/v9/Screenshot_042.png) |
 
 ---
 
