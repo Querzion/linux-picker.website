@@ -10,7 +10,7 @@ const About = () => {
                 <h2>About The Linux Picker</h2>
 
                 <p>
-                    <strong>[07 MAY 2026]</strong>
+                    <strong>[11 MAY 2026]</strong>
                 </p>
 
                 <p>
@@ -25,6 +25,23 @@ const About = () => {
                     accessibility, structure, and intelligent filtering — helping users
                     quickly identify operating systems that align with their goals,
                     hardware, workflow, and experience level.
+                </p>
+
+                <p>
+                    The platform covers over 90 Linux distributions, each with
+                    hand-authored difficulty and stability scores, detailed package
+                    management data, system requirements, out-of-box feature flags,
+                    and a curated links panel connecting users directly to official
+                    resources — wikis, forums, download pages, source repositories,
+                    and community channels.
+                </p>
+
+                <p>
+                    Filtering goes beyond surface-level labels. Users can narrow
+                    distributions by init system, display protocol, architecture,
+                    RAM requirements, GPU driver support, release model, secondary
+                    package formats, and more — with every filter designed to surface
+                    genuinely relevant results rather than generic lists.
                 </p>
 
                 <p>
