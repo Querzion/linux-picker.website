@@ -24898,7 +24898,7 @@
             "xfce (lite edition)"
         ],
         "displayProtocol": ["wayland", "x11"],
-        "logo": "/images/logos/zorin-os.svg",
+        "logo": "/images/logos/zorinos.png",
         "description": "User-friendly Ubuntu-based Linux distribution designed to mimic Windows and macOS layouts for easy transition.",
         "tags": ["ubuntu-based", "beginner-friendly", "desktop", "windows-like"],
         "family": "debian-based",
