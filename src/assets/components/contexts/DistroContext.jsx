@@ -8,9 +8,6 @@ export const DistroProvider = ({ children }) => {
         localStorage.getItem("theme") === "penguin-light" ? "light" : "dark"
     );
 
-    /* =====================================================
-        WATCH FOR DARK/LIGHT MODE CHANGES
-    ===================================================== */
     useEffect(() => {
         const observer = new MutationObserver(() => {
             const t = document.documentElement.getAttribute("data-theme");
@@ -25,27 +22,175 @@ export const DistroProvider = ({ children }) => {
         return () => observer.disconnect();
     }, []);
 
-    /* =====================================================
-        APPLY DISTRO THEME TO CSS VARIABLES
-    ===================================================== */
+    const applyVar = (key, value) => {
+        if (value !== undefined && value !== null) {
+            document.documentElement.style.setProperty(key, value);
+        }
+    };
+
+    const clearVar = (key) => {
+        document.documentElement.style.removeProperty(key);
+    };
+
     useEffect(() => {
-        if (selectedDistro) {
-            const theme = themeMode === "light"
+        if (!selectedDistro) {
+            [
+                "--bg-main",
+                "--bg-surface",
+                "--bg-elevated",
+                "--text-primary",
+                "--text-secondary",
+                "--text-muted",
+                "--border-default",
+                "--border-light",
+                "--color-accent",
+                "--bg-overlay",
+
+                "--card-bg",
+                "--card-border",
+                "--card-hover-bg",
+                "--card-shadow",
+
+                "--input-bg",
+                "--input-border",
+                "--input-text",
+                "--input-placeholder",
+
+                "--btn-primary-bg",
+                "--btn-primary-text",
+                "--btn-primary-border",
+                "--btn-primary-hover-bg",
+                "--btn-primary-hover-text",
+                "--btn-primary-hover-border",
+                "--btn-primary-focus-ring",
+
+                "--btn-secondary-bg",
+                "--btn-secondary-text",
+                "--btn-secondary-border",
+                "--btn-secondary-hover-bg",
+                "--btn-secondary-hover-text",
+
+                "--btn-ghost-bg",
+                "--btn-ghost-text",
+                "--btn-outline-text",
+                "--btn-outline-border",
+
+                "--slider-track-bg",
+                "--slider-track-fill",
+                "--slider-thumb-bg",
+                "--slider-thumb-border",
+                "--slider-thumb-hover",
+                "--slider-thumb-active",
+
+                "--link-color",
+                "--link-hover",
+
+                "--success",
+                "--warning",
+                "--error",
+                "--info",
+
+                "--divider-color"
+            ].forEach(clearVar);
+
+            return;
+        }
+
+        const theme =
+            themeMode === "light"
                 ? selectedDistro.themes.light
                 : selectedDistro.themes.dark;
 
-            document.documentElement.style.setProperty("--color-accent", theme.accentColor);
-            document.documentElement.style.setProperty("--bg-surface", theme.bgColor);
-            document.documentElement.style.setProperty("--card-bg", theme.bgColor);
-            document.documentElement.style.setProperty("--card-border", theme.borderColor);
-            document.documentElement.style.setProperty("--text-primary", theme.textColor);
-        } else {
-            document.documentElement.style.removeProperty("--color-accent");
-            document.documentElement.style.removeProperty("--bg-surface");
-            document.documentElement.style.removeProperty("--card-bg");
-            document.documentElement.style.removeProperty("--card-border");
-            document.documentElement.style.removeProperty("--text-primary");
-        }
+        /* =====================================================
+            BACKGROUNDS
+        ===================================================== */
+        applyVar("--bg-main", theme.bgColor);
+        applyVar("--bg-surface", theme.bgSurfaceColor);
+        applyVar("--bg-elevated", theme.bgElevated);
+        applyVar("--bg-overlay", theme.bgOverlay);
+
+        /* =====================================================
+            TEXT
+        ===================================================== */
+        applyVar("--text-primary", theme.textColor);
+        applyVar("--text-secondary", theme.textSecondary);
+        applyVar("--text-muted", theme.textMuted);
+
+        /* =====================================================
+            BORDERS
+        ===================================================== */
+        applyVar("--border-default", theme.borderColor);
+        applyVar("--border-light", theme.borderColor);
+        applyVar("--divider-color", theme.dividerColor);
+
+        /* =====================================================
+            ACCENT
+        ===================================================== */
+        applyVar("--color-accent", theme.accentColor);
+
+        /* =====================================================
+            CARDS
+        ===================================================== */
+        applyVar("--card-bg", theme.bgSurfaceColor);
+        applyVar("--card-border", theme.borderColor);
+        applyVar("--card-hover-bg", theme.cardHoverBg);
+        applyVar("--card-shadow", theme.cardShadow);
+
+        /* =====================================================
+            INPUTS
+        ===================================================== */
+        applyVar("--input-bg", theme.bgSurfaceColor);
+        applyVar("--input-border", theme.borderColor);
+        applyVar("--input-text", theme.textColor);
+        applyVar("--input-placeholder", theme.textMuted);
+
+        /* =====================================================
+            BUTTONS (FULL CONTRACT)
+        ===================================================== */
+        applyVar("--btn-primary-bg", theme.btnPrimaryBg);
+        applyVar("--btn-primary-text", theme.btnPrimaryText);
+        applyVar("--btn-primary-border", theme.btnPrimaryBorder);
+        applyVar("--btn-primary-hover-bg", theme.btnPrimaryHoverBg);
+        applyVar("--btn-primary-hover-text", theme.btnPrimaryHoverText);
+        applyVar("--btn-primary-hover-border", theme.btnPrimaryHoverBorder);
+        applyVar("--btn-primary-focus-ring", theme.btnPrimaryFocusRing);
+
+        applyVar("--btn-secondary-bg", theme.btnSecondaryBg);
+        applyVar("--btn-secondary-text", theme.btnSecondaryText);
+        applyVar("--btn-secondary-border", theme.btnSecondaryBorder);
+        applyVar("--btn-secondary-hover-bg", theme.btnSecondaryHoverBg);
+        applyVar("--btn-secondary-hover-text", theme.btnSecondaryHoverText);
+
+        applyVar("--btn-ghost-bg", theme.btnGhostBg);
+        applyVar("--btn-ghost-text", theme.btnGhostText);
+
+        applyVar("--btn-outline-text", theme.btnOutlineText);
+        applyVar("--btn-outline-border", theme.btnOutlineBorder);
+
+        /* =====================================================
+            SLIDER
+        ===================================================== */
+        applyVar("--slider-track-bg", theme.sliderTrackBg);
+        applyVar("--slider-track-fill", theme.sliderTrackFill);
+        applyVar("--slider-thumb-bg", theme.sliderThumbBg);
+        applyVar("--slider-thumb-border", theme.sliderThumbBorder);
+        applyVar("--slider-thumb-hover", theme.sliderThumbHover);
+        applyVar("--slider-thumb-active", theme.sliderThumbActive);
+
+        /* =====================================================
+            LINKS
+        ===================================================== */
+        applyVar("--link-color", theme.linkColor);
+        applyVar("--link-hover", theme.linkHover);
+
+        /* =====================================================
+            SEMANTIC STATES
+        ===================================================== */
+        applyVar("--success", theme.success);
+        applyVar("--warning", theme.warning);
+        applyVar("--error", theme.error);
+        applyVar("--info", theme.info);
+
     }, [selectedDistro, themeMode]);
 
     return (
