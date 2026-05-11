@@ -18692,7 +18692,7 @@
     },
     {
         "id": "steamos",
-        "name": "SteamOS (Steam client ecosystem)",
+        "name": "SteamOS",
         "stability": "stable",
         "stabilityScore": 8,
         "difficultyScore": 2,
@@ -18790,7 +18790,7 @@
             "x11"
         ],
         "logo": "/images/logos/steamos.png",
-        "description": "A gaming platform and ecosystem centered around PC game distribution, often paired with SteamOS for console-like Linux gaming experiences.",
+        "description": "A gaming platform and ecosystem centered around PC game distribution, often paired with SteamOS for console-like Linux gaming experiences. Used mainly in handheld devices such as the Steam Deck.",
         "tags": [
             "gaming",
             "proprietary",
