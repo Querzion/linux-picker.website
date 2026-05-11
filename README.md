@@ -11,7 +11,8 @@ Whether you're searching for:
 - a lightweight system for older hardware
 - a developer focused workstation
 - a privacy oriented environment
-- or a beginner friendly Linux experience
+- a gaming optimized setup
+- or a beginner friendly first Linux experience
 
 The Linux Picker helps guide users through the Linux landscape without unnecessary noise or gatekeeping.
 
@@ -39,24 +40,46 @@ This project exists to make that world more approachable for everyone.
 
 Users can filter Linux distributions by:
 
-- Stability
-- Difficulty
-- Desktop Environment
-- Package Manager
-- System Type
-- Display Protocol
-- Distribution Family
-- Origin
+- **Difficulty** — scored 1–10 with human-readable translations (Beginner Friendly → Expert)
+- **Stability** — scored 1–10 with human-readable translations (Bleeding Edge → Rock Solid)
+- **System Type** — Desktop, Server, Gaming, Minimal, Workstation
+- **Origin** — Official or Community
+- **GPU** — AMD, Intel, or NVIDIA out-of-box driver support
+- **Display Protocol** — Wayland or X11
+- **Desktop Environment** — filtered to only show environments valid for the selected protocol
+- **Primary Package Manager** — APT, DNF, Pacman, Portage, Nix, Zypper, XBPS, APK, eopkg
+- **Also Supports** — Flatpak, Snap, AppImage, AUR
+- **Release Model** — Rolling, LTS, Fixed, Immutable, Semi-Rolling
+- **Init System** — systemd, OpenRC, runit, s6, dinit
+- **Distribution Family** — Independent, Debian, Ubuntu, Arch, RedHat, SUSE
+- **Desktop Richness** — Minimal through Full Desktop
+- **Max RAM Requirement** — filter by how little RAM the distro needs
+- **Architecture** — x86_64, ARM64, ARMhf, i386, PPC64, MIPS
+
+---
+
+### Distribution Data
+
+Each distribution includes:
+
+- **Difficulty Score** — a 1–10 composite rating across installer complexity, hardware support, breakage risk, documentation quality, community size, and configuration required
+- **Stability Score** — a 1–10 rating reflecting how stable the release model and package pipeline is
+- **Gradient bars** — visual green-to-red difficulty and red-to-green stability indicators with human-readable translations
+- **System Requirements** — minimum and recommended RAM, storage, supported architectures, BIOS/UEFI support
+- **Package Management** — primary package manager, secondary formats (Snap, Flatpak), AUR availability, repo size
+- **Out-of-box highlights** — codecs, GPU drivers, gaming tools, office tools, dual-boot friendliness
+- **Links** — home page, download page, latest ISO, wiki, news, forums, source code, RSS feed, and social channels sorted by relevance
+- **Per-distro theming** — each card and the expanded header adopt the distro's own brand colors in both dark and light mode
 
 ---
 
 ### Modern UI
 
-- Responsive layout
+- Responsive layout — mobile, tablet, and desktop
 - Dark / Light mode
-- Card based interface
-- Fast filtering
-- Mobile friendly design
+- Card based interface with per-distro theming
+- Fast client-side filtering
+- Expandable Links card with primary links and social icons
 - Clean Linux inspired aesthetic
 
 ---
@@ -107,7 +130,7 @@ The Linux Picker focuses on:
 Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/linux-picker.website.git
+git clone https://github.com/LinuxPicker/linuxpicker.github.io.git
 ```
 
 Navigate into the project:
