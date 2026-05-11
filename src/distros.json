@@ -15163,7 +15163,7 @@
         "displayProtocol": [
             "wayland"
         ],
-        "logo": "/images/logos/pureos.svg",
+        "logo": "/images/logos/pureos.png",
         "description": "A privacy-focused Debian-based Linux distribution developed by Purism, designed to provide a fully free and security-hardened operating system.",
         "tags": [
             "privacy",

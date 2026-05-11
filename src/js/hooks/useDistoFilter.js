@@ -223,7 +223,7 @@ export function useDistroFilter(distros = []) {
     const [familyIndex,        setFamilyIndex]        = useState(0);
     const [desktopIndex,       setDesktopIndex]       = useState(0);
     const [ramIndex,           setRamIndex]           = useState(0);
-    const [archIndex,          setArchIndex]          = useState(0);
+    const [archIndex,          setArchIndex]          = useState(1);
     const [gpu,                setGpu]                = useState(null);
 
     /* resolved values */
